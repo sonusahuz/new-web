@@ -3,15 +3,25 @@ import React from 'react';
 const CustomWebsiteDesignArea = () => {
   return (
     <>
+      <link rel="canonical" href="https://www.nameagency.com" />
+      <meta property="og:url" content="https://www.nameagency.com" />
+      <link
+        rel="stylesheet"
+        href="assets/assetscustomwebsitedesigndevelopment/css/style.css"
+      />
       <link
         rel="stylesheet"
         href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css"
       />
-      <link
-        rel="stylesheet"
-        href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
-      />
-      <section className="breadcrumb-section">
+
+      <section
+        className="breadcrumb-section"
+        style={{
+          backgroundColor: '#f8f9fa',
+          padding: '60px 0',
+          textAlign: 'center',
+        }}
+      >
         <div className="container">
           <h1
             className="promo-title"
@@ -19,14 +29,14 @@ const CustomWebsiteDesignArea = () => {
               fontSize: '30px',
               fontWeight: 'bold',
               textAlign: 'center',
-              margin: '20px',
+              margin: '0',
             }}
           >
             Custom Website Design & Development
           </h1>
         </div>
       </section>
-      <section id="services">
+      <section id="services" style={{ textAlign: 'justify', color: '#212529' }}>
         <div className="container text-center">
           <div className="row">
             <div className="col-md-12">
@@ -47,15 +57,18 @@ const CustomWebsiteDesignArea = () => {
                   {/* <!-- Image slightly moved upwards --> */}
                 </div>
                 {/* <!-- Text Content Section --> */}
-                <div className="col-md-8">
-                  <p>
+                <div
+                  className="col-md-8"
+                  style={{ textAlign: 'left', color: 'black' }}
+                >
+                  <p style={{ color: 'black' }}>
                     In today’s digital-first world, a custom website acts as the
                     centerpiece of a business’s online presence. Nyas’s custom
                     website development helps companies to stand out,
                     communicate their brand story effectively, and convert
                     visitors into loyal customers.
                   </p>
-                  <p>
+                  <p style={{ color: 'black' }}>
                     <strong>Service Overview:</strong> Custom website design and
                     development involve creating a website specifically tailored
                     to a business’s unique goals, audience, and brand. Unlike
@@ -64,7 +77,7 @@ const CustomWebsiteDesignArea = () => {
                     aligns perfectly with the brand’s identity and customer
                     expectations.
                   </p>
-                  <p>
+                  <p style={{ color: 'black' }}>
                     <strong>Why businesses need it:</strong> Businesses
                     increasingly recognize that a unique and engaging website is
                     vital to building credibility, engaging audiences, and
@@ -76,7 +89,7 @@ const CustomWebsiteDesignArea = () => {
                     experience, and functionality, ensuring the website supports
                     and enhances business goals.
                   </p>
-                  <p>
+                  <p style={{ color: 'black' }}>
                     <strong>How Nyas Delivers Excellence:</strong> At Nyas, we
                     focus on creating websites that are not only visually
                     appealing but also built with user experience, speed, and
@@ -94,14 +107,13 @@ const CustomWebsiteDesignArea = () => {
           </div>
         </div>
       </section>
-
       {/* <!--- About Section ------> */}
       <section id="about">
         <div className="container">
           <h3 className="title text-center">Process Involved</h3>
           <div className="row">
             <div className="col-md-6 about">
-              <p className="about-title">
+              <p className="about-title" style={{ color: 'black' }}>
                 Comprehensive Custom Website Solutions: From Strategy to Ongoing
                 Support
               </p>
@@ -141,12 +153,11 @@ const CustomWebsiteDesignArea = () => {
           </div>
         </div>
       </section>
-
       <section id="services">
         <div className="container text-center">
           <div className="row">
             <div className="col-md-12">
-              <p>
+              <p style={{ color: 'black', textAlign: 'left' }}>
                 In today’s digital-first world, a custom website acts as the
                 centerpiece of a business’s online presence. Nyas’s custom
                 website development helps companies to stand out, communicate

@@ -6,43 +6,30 @@ const MVPDevelopmentTestingArea = () => {
       <link
         rel="stylesheet"
         type="text/css"
-        href="assets/assetsmvpdevelopment&testing/css/style.css"
-      />
-      <link
-        rel="stylesheet"
-        type="text/css"
         href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.0.0-beta.2.4/assets/owl.carousel.min.css"
       />
-      {/* <!-- bootstrap css --> */}
       <link
         rel="stylesheet"
         type="text/css"
         href="assets/assetsmvpdevelopment&testing/css/bootstrap.min.css"
       />
-      {/* <!-- style css --> */}
-
-      {/* <!-- Responsive--> */}
+      <link
+        rel="stylesheet"
+        type="text/css"
+        href="assets/assetsmvpdevelopment&testing/css/style.css"
+      />
       <link
         rel="stylesheet"
         href="assets/assetsmvpdevelopment&testing/css/responsive.css"
       />
-      {/* <!-- fevicon --> */}
-      <link
-        rel="icon"
-        href="assets/assetsmvpdevelopment&testing/images/fevicon.png"
-        type="image/gif"
-      />
-      {/* <!-- Scrollbar Custom CSS --> */}
       <link
         rel="stylesheet"
         href="assets/assetsmvpdevelopment&testing/css/jquery.mCustomScrollbar.min.css"
       />
-      {/* <!-- Tweaks for older IEs--> */}
       <link
         rel="stylesheet"
         href="https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css"
       />
-      {/* <!-- owl stylesheets --> */}
       <link
         rel="stylesheet"
         href="assets/assetsmvpdevelopment&testing/css/owl.carousel.min.css"
@@ -56,15 +43,9 @@ const MVPDevelopmentTestingArea = () => {
         href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.css"
         media="screen"
       />
-
-      {/* <!--header section start --> */}
       <div className="header_section">
         <nav className="navbar navbar-expand-lg navbar-light bg-light">
-          <div className="logo">
-            <a href="index.html">
-              <img src="assets/assetsmvpdevelopment&testing/images/logo.png" />
-            </a>
-          </div>
+          {/* <!-- <div className="logo"><a href="index.html"><img src="images/logo.png"/></a></div> --> */}
         </nav>
         <div className="banner_main">
           <h1 className="banner_taital">MVP Development </h1>
@@ -77,17 +58,11 @@ const MVPDevelopmentTestingArea = () => {
             <div className="more_bt">
               <a href="#">Contact Us</a>
             </div>
-            <div className="contact_bt">
-              <a href="#">Get a quote</a>
-            </div>
+            {/* <!-- <div className="contact_bt"><a href="#">Get a quote</a></div> --> */}
           </div>
         </div>
       </div>
-      {/* <!--header section end -->
-   <!--costume header section start -->
-   
-   <!--costume header section end -->
-   <!-- about section start --> */}
+
       <div className="about_section layout_padding">
         <div className="container">
           <div className="row">
@@ -115,8 +90,7 @@ const MVPDevelopmentTestingArea = () => {
           </div>
         </div>
       </div>
-      {/* <!--about section end -->
-   <!--services section start --> */}
+
       <div className="services_section layout_padding">
         <div className="container">
           <div className="row">
@@ -128,7 +102,7 @@ const MVPDevelopmentTestingArea = () => {
             </div>
             <div className="col-md-6">
               <div className="box_main">
-                <h1 className="technology_text">Service Overview</h1>
+                {/* <!-- <h1 className="technology_text">Service Overview</h1> --> */}
                 <p className="dummy_text">
                   Minimum Viable Product (MVP) development focuses on building a
                   streamlined version of a product that includes only core
@@ -158,9 +132,7 @@ const MVPDevelopmentTestingArea = () => {
                   product that resonates with the target audience.
                 </p>
               </div>
-              <div className="readmore_bt">
-                <a href="#">Read More</a>
-              </div>
+              {/* <div className="readmore_bt"><a href="#">Read More</a></div>  */}
             </div>
           </div>
           <div className="row">
@@ -184,18 +156,11 @@ const MVPDevelopmentTestingArea = () => {
                   smooth, reliable, and meets the core user needs.
                 </p>
               </div>
-              <div className="readmore_bt">
-                <a href="#">Read More</a>
-              </div>
+              {/* <!-- <div className="readmore_bt"><a href="#">Read More</a></div> --> */}
             </div>
           </div>
         </div>
       </div>
-      {/* <!--services section end -->
-   <!--software section start -->
-  
-   <!--software section end -->
-   <!--works section start --> */}
 
       <div className="works_section layout_padding">
         <div className="container">
@@ -256,6 +221,30 @@ const MVPDevelopmentTestingArea = () => {
           </div>
         </div>
       </div>
+
+      {/*    
+   <!-- Javascript files-->
+
+   <script>
+      var $owl = $('.owl-carousel');
+
+      $owl.children().each(function (index) {
+         $(this).attr('data-position', index); // NB: .attr() instead of .data()
+      });
+
+      $owl.owlCarousel({
+         center: true,
+         loop: true,
+         items: 3,
+      });
+
+      $(document).on('click', '.owl-item>div', function () {
+         // see https://owlcarousel2.github.io/OwlCarousel2/docs/api-events.html#to-owl-carousel
+         var $speed = 300;  // in ms
+         $owl.trigger('to.owl.carousel', [$(this).data('position'), $speed]);
+      });
+
+   </script> */}
     </>
   );
 };

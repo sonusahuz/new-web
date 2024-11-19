@@ -4,31 +4,31 @@ const DigitalProductDevelopmentArea = () => {
   return (
     <>
       <link
-        href="assets/assetssoftware/vendors/animate/animate.css"
+        href="assets/assetsoftware/vendors/animate/animate.css"
         rel="stylesheet"
       />
       {/* Icon CSS*/}
       <link
         rel="stylesheet"
-        href="assets/assetssoftware/vendors/font-awesome/css/font-awesome.min.css"
+        href="assets/assetsoftware/vendors/font-awesome/css/font-awesome.min.css"
       />
       {/* Camera Slider */}
       <link
         rel="stylesheet"
-        href="assets/assetssoftware/vendors/camera-slider/camera.css"
+        href="assets/assetsoftware/vendors/camera-slider/camera.css"
       />
       {/* Owlcarousel CSS*/}
       <link
         rel="stylesheet"
         type="text/css"
-        href="assets/assetssoftware/vendors/owl_carousel/owl.carousel.css"
+        href="assets/assetsoftware/vendors/owl_carousel/owl.carousel.css"
         media="all"
       />
       {/*Template Styles CSS*/}
       <link
         rel="stylesheet"
         type="text/css"
-        href="assets/assetssoftware/css/style.css"
+        href="assets/assetsoftware/css/style.css"
         media="all"
       />
       <link
@@ -127,7 +127,7 @@ const DigitalProductDevelopmentArea = () => {
             <div className="who_we_area col-md-4 col-sm-6 px_10 wow fadeInUp">
               <div className="service-about-services">
                 <div className="wow fadeInUp">
-                  <img src="assets/assetssoftware/images/web.png" />
+                  <img src="assets/assetsoftware/images/web.png" />
                 </div>
                 <h2 className="unify_about">
                   {' '}
@@ -144,7 +144,7 @@ const DigitalProductDevelopmentArea = () => {
             <div className="who_we_area col-md-4 col-sm-6 px_10 wow fadeInUp">
               <div className="service-about-services text-left">
                 <div className="wow fadeInUp">
-                  <img src="assets/assetssoftware/images/mvp.png" />
+                  <img src="assets/assetsoftware/images/mvp.png" />
                 </div>
                 <h2 className="unify_about"> MVP Development &amp; Testing </h2>
                 <p>
@@ -158,7 +158,7 @@ const DigitalProductDevelopmentArea = () => {
             <div className="who_we_area col-md-4 col-sm-6 px_10 wow fadeInUp">
               <div className="service-about-services">
                 <div className="wow fadeInUp">
-                  <img src="assets/assetssoftware/images/uiux.png" />
+                  <img src="assets/assetsoftware/images/uiux.png" />
                 </div>
                 <h2 className="unify_about">
                   {' '}
@@ -177,7 +177,7 @@ const DigitalProductDevelopmentArea = () => {
             <div className="who_we_area col-md-4 col-sm-6 px_10 wow fadeInUp">
               <div className="service-about-services">
                 <div className="wow fadeInUp">
-                  <img src="assets/assetssoftware/images/aintain.png" />
+                  <img src="assets/assetsoftware/images/aintain.png" />
                 </div>
                 <h2 className="unify_about">
                   {' '}
@@ -194,7 +194,7 @@ const DigitalProductDevelopmentArea = () => {
             <div className="who_we_area col-md-4 col-sm-6 px_10 wow fadeInUp">
               <div className="service-about-services text-left">
                 <div className="wow fadeInUp">
-                  <img src="assets/assetssoftware/images/blockchain.png" />
+                  <img src="assets/assetsoftware/images/blockchain.png" />
                 </div>
                 <h2 className="unify_about">
                   {' '}
@@ -224,23 +224,23 @@ const DigitalProductDevelopmentArea = () => {
               {/* flight section */}
               <div className="bhoechie-tab-content active">
                 <div className="col-md-12 py-0">
-                  <img src="assets/assetssoftware/images/click_1.png" />
+                  <img src="assets/assetsoftware/images/click_1.png" />
                 </div>
               </div>
               {/* train section */}
               <div className="bhoechie-tab-content">
                 <div className="col-md-12 py-0">
-                  <img src="assets/assetssoftware/images/click_2.png" />
+                  <img src="assets/assetsoftware/images/click_2.png" />
                 </div>
               </div>
               <div className="bhoechie-tab-content">
                 <div className="col-md-12 py-0">
-                  <img src="assets/assetssoftware/images/click_3.png" />
+                  <img src="assets/assetsoftware/images/click_3.png" />
                 </div>
               </div>
               <div className="bhoechie-tab-content">
                 <div className="col-md-12 py-0">
-                  <img src="assets/assetssoftware/images/click_4.png" />
+                  <img src="assets/assetsoftware/images/click_4.png" />
                 </div>
               </div>
             </div>
@@ -248,7 +248,7 @@ const DigitalProductDevelopmentArea = () => {
               <div className="list-group">
                 <a href="#" className="list-group-item active">
                   <img
-                    src="assets/assetssoftware/images/tabs_icone.png"
+                    src="assets/assetsoftware/images/tabs_icone.png"
                     alt=""
                     className="fitter"
                   />
@@ -265,7 +265,7 @@ const DigitalProductDevelopmentArea = () => {
                 </a>
                 <a href="#" className="list-group-item">
                   <img
-                    src="assets/assetssoftware/images/tabs_icone.png"
+                    src="assets/assetsoftware/images/tabs_icone.png"
                     alt=""
                     className="fitter"
                   />
@@ -282,7 +282,7 @@ const DigitalProductDevelopmentArea = () => {
                 </a>
                 <a href="#" className="list-group-item">
                   <img
-                    src="assets/assetssoftware/images/tabs_icone.png"
+                    src="assets/assetsoftware/images/tabs_icone.png"
                     alt=""
                     className="fitter"
                   />
@@ -299,7 +299,7 @@ const DigitalProductDevelopmentArea = () => {
                 </a>
                 <a href="#" className="list-group-item">
                   <img
-                    src="assets/assetssoftware/images/tabs_icone.png"
+                    src="assets/assetsoftware/images/tabs_icone.png"
                     alt=""
                     className="fitter"
                   />
