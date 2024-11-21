@@ -1,4 +1,10 @@
-const ConsultNowForm = ({ isOpen, onClose, description, width = '400px' }) => {
+const ConsultNowForm = ({
+  isOpen,
+  onClose,
+  description,
+  width = '400px',
+  height = 'auto',
+}) => {
   if (!isOpen) return null;
 
   return (
@@ -15,6 +21,7 @@ const ConsultNowForm = ({ isOpen, onClose, description, width = '400px' }) => {
           <p className="modal-description">{description}</p>
           <div className="modal-children">
             <form>
+              {/* Form fields */}
               <div className="mb-3">
                 <label htmlFor="Name" className="form-label">
                   Name
@@ -54,7 +61,6 @@ const ConsultNowForm = ({ isOpen, onClose, description, width = '400px' }) => {
                 <label htmlFor="phone" className="form-label">
                   Select Service
                 </label>
-
                 <select
                   className="form-select"
                   aria-label="Default select example"
@@ -64,16 +70,16 @@ const ConsultNowForm = ({ isOpen, onClose, description, width = '400px' }) => {
                   <option value="Custom Website Design & Development">
                     Custom Website Design & Development
                   </option>
-                  <option value="⁠MVP Development & Testing">
-                    ⁠MVP Development & Testing
+                  <option value="MVP Development & Testing">
+                    MVP Development & Testing
                   </option>
                   <option value="UI/UX Design & Prototyping">
                     UI/UX Design & Prototyping
                   </option>
-                  <option value="⁠Ongoing Software & Website Maintenance">
-                    ⁠Ongoing Software & Website Maintenance
+                  <option value="Ongoing Software & Website Maintenance">
+                    Ongoing Software & Website Maintenance
                   </option>
-                  <option value="lockchain Solutions & Decentralized Applications">
+                  <option value="Blockchain Solutions & Decentralized Applications">
                     Blockchain Solutions & Decentralized Applications
                   </option>
                 </select>
