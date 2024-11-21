@@ -25,7 +25,11 @@ const ContactAreaOne = () => {
                 data-aos-delay="200"
                 data-aos-duration="1500"
               >
-                <img className="w-100" src="assets/img/bg/4.png" alt="img" />
+                <img
+                  className="w-100"
+                  src="assets/img/get-started.jpeg"
+                  alt="img"
+                />
               </div>
               <div
                 className="col-lg-4 wow animated fadeInRight"
@@ -34,14 +38,15 @@ const ContactAreaOne = () => {
                 data-aos-duration="1500"
               >
                 <div className="section-title mb-0">
-                  
                   <h2 className="title">
-                  Get Started <span>With</span> Us
+                    Get Started <span>With</span> Us
                   </h2>
                   <p className="content">
-                  Ready to take your business to the next level with operations consulting and virtual
-assistant support? Contact us to discuss how our customized solutions can help you
-streamline your operations, reduce costs, and grow your business with confidence.
+                    Ready to take your business to the next level with
+                    operations consulting and virtual assistant support? Contact
+                    us to discuss how our customized solutions can help you
+                    streamline your operations, reduce costs, and grow your
+                    business with confidence.
                   </p>
                   <form className="mt-4">
                     <div className="row">

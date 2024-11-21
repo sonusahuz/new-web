@@ -5,28 +5,18 @@ import { Link } from 'react-router-dom';
 const BannerOne = () => {
   return (
     <>
-      {/* ================== BannerOne Start ==================*/}
+      {/* ================== BannerOne Start ==================*/} 
       <div
         className="banner-area bg-relative banner-area-1 pd-bottom-100 bg-cover"
         style={{ backgroundImage: 'url("./assets/img/banner/0.png")' }}
       >
-        <img
-          className="animate-img-1 top_image_bounce"
-          src="assets/img/banner/2.png"
-          alt="img"
-        />
-        <img
-          className="animate-img-2 left_image_bounce"
-          src="assets/img/banner/5.svg"
-          alt="img"
-        />
         <div className="container">
-          <div className="row">
-            <div className="col-lg-6" style={{ textAlign: 'left' }}>
+          <div className="row align-items-center">
+            {/* Left Content */}
+            <div className="col-lg-6 col-md-12 text-left text-lg-start">
               <div className="banner-inner pe-xl-5">
                 <h6
-                  style={{ fontWeight: 'bold' }}
-                  className="subtitle"
+                  className="subtitle fw-bold"
                   data-aos="fade-right"
                   data-aos-delay="100"
                   data-aos-duration="1500"
@@ -62,39 +52,22 @@ const BannerOne = () => {
                 </Link>
               </div>
             </div>
-            <div className="col-xl-4 col-lg-5 col-md-8 offset-xl-2 offset-lg-1">
-              <div
-                className="banner-thumb mt-5 mt-lg-0 ms-4 ms-lg-0"
+            {/* Right Content */}
+            <div className="col-lg-6 col-md-12 text-center">
+              <img
+                src="assets/img/banner.jpeg"
+                alt="img"
+                width={400}
+                className="img-fluid rounded pt-5"
                 data-aos="fade-left"
-                data-aos-delay="100"
+                data-aos-delay="300"
                 data-aos-duration="1500"
-              >
-                <img
-                  className="banner-animate-img banner-animate-img-1 top_image_bounce"
-                  src="assets/img/banner/2.png"
-                  alt="img"
-                />
-                <img
-                  className="banner-animate-img banner-animate-img-2"
-                  src="assets/img/banner/3.svg"
-                  alt="img"
-                />
-                <img
-                  className="banner-animate-img banner-animate-img-3 left_image_bounce"
-                  src="assets/img/banner/4.svg"
-                  alt="img"
-                />
-                <img
-                  className="main-img"
-                  src="assets/img/banner/1.png"
-                  alt="img"
-                />
-              </div>
+              />
             </div>
           </div>
         </div>
       </div>
-      {/* ================== BannerOne End ==================*/}
+      {/* ================== BannerOne End ==================*/} 
     </>
   );
 };
