@@ -32,7 +32,7 @@ const ServiceAreaGroupThree = () => {
                     expert strategy and consulting to align seamlessly with your
                     unique business objectives.
                   </p>
-                  <Link className="read-more-text" to="/service-details">
+                  <Link className="read-more-text" to="/mobile-app">
                     Read More <FaArrowRight />
                   </Link>
                 </div>
@@ -51,7 +51,10 @@ const ServiceAreaGroupThree = () => {
                     reduce costs and time, while reaching a broader audience
                     effectively.
                   </p>
-                  <Link className="read-more-text" to="/service-details">
+                  <Link
+                    className="read-more-text"
+                    to="/cross-platfrom-development"
+                  >
                     Read More <FaArrowRight />
                   </Link>
                 </div>
@@ -70,7 +73,10 @@ const ServiceAreaGroupThree = () => {
                     blockchain expertise, ensuring secure, engaging, and
                     up-to-date digital experiences for businesses
                   </p>
-                  <Link className="read-more-text" to="/service-details">
+                  <Link
+                    className="read-more-text"
+                    to="/digital-product-development"
+                  >
                     Read More <FaArrowRight />
                   </Link>
                 </div>
@@ -90,7 +96,7 @@ const ServiceAreaGroupThree = () => {
                     strategies for enhanced efficiency, growth, and brand
                     recognition.
                   </p>
-                  <Link className="read-more-text" to="/service-details">
+                  <Link className="read-more-text" to="/project-management">
                     Read More <FaArrowRight />
                   </Link>
                 </div>
@@ -109,7 +115,7 @@ const ServiceAreaGroupThree = () => {
                     online visibility, drive traffic, generate leads, and boost
                     business growth.
                   </p>
-                  <Link className="read-more-text" to="/service-details">
+                  <Link className="read-more-text" to="/meta-campaign">
                     Read More <FaArrowRight />
                   </Link>
                 </div>
@@ -128,9 +134,9 @@ const ServiceAreaGroupThree = () => {
                     requirements, ensuring compliance, and delivering efficient,
                     thorough preparation for all legal matters.
                   </p>
-                  {/* <Link className="read-more-text" to="/service-details">
+                  <Link className="read-more-text" to="/legal-services">
                     Read More <FaArrowRight />
-                  </Link> */}
+                  </Link>
                 </div>
               </div>
             </div>
