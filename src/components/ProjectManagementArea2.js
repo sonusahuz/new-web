@@ -1,21 +1,22 @@
 import React from 'react';
+import { Helmet } from 'react-helmet';
 
 const ProjectsManagement = () => {
   return (
     <>
+      {/* Google Fonts */}
       <link href="https://fonts.googleapis.com" rel="preconnect" />
       <link href="https://fonts.gstatic.com" rel="preconnect" crossOrigin="" />
       <link
-        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900&display=swap"
         rel="stylesheet"
       />
+
       {/* Vendor CSS Files */}
-      {/* <link href="assets/assetscross/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet" /> */}
       <link
         href="assets/assetscross/vendor/bootstrap-icons/bootstrap-icons.css"
         rel="stylesheet"
       />
-      {/* <link href="assets/assetscross/vendor/aos/aos.css" rel="stylesheet" /> */}
       <link
         href="assets/assetscross/vendor/glightbox/css/glightbox.min.css"
         rel="stylesheet"
@@ -24,25 +25,27 @@ const ProjectsManagement = () => {
         href="assets/assetscross/vendor/swiper/swiper-bundle.min.css"
         rel="stylesheet"
       />
+
       {/* Main CSS File */}
       <link href="assets/assetscross/css/main.css" rel="stylesheet" />
+
       {/* Hero Section */}
-      <div className="container-fluid text-white py-2">
+      <div className="container-fluid text-white py-5">
         <div className="container">
-          <div className="row align-items-center justify-content-between text-left text-lg-start">
+          <div className="row align-items-center text-center text-lg-start">
             <div className="col-lg-6">
               <h1 className="display-4 fw-bold mb-3">
-                Projects Management Dashboard
+                Operations Consultancy Services
               </h1>
               <p className="lead">
-                Efficiently manage your projects, track progress, and deliver
-                outstanding results with our intuitive dashboard.
+                Optimizing processes, technology, and support for business
+                growth and efficiency.
               </p>
               <a href="#create-project" className="btn btn-primary">
-                Create New Project
+                Get Started
               </a>
             </div>
-            <div className="col-lg-6 py-5 text-center text-lg-end">
+            <div className="col-lg-6 text-lg-end">
               <img
                 src="assets/assetscross/img/project.png"
                 alt="Projects Management"
@@ -54,7 +57,179 @@ const ProjectsManagement = () => {
         </div>
       </div>
 
-      {/* Project Statistics */}
+      <section
+        id="featured-services"
+        className="featured-services section light-background"
+      >
+        <div className="container">
+          <div className="row gy-4">
+            <div
+              className="col-xl-4 col-lg-6"
+              data-aos="fade-up"
+              data-aos-delay={100}
+            >
+              <div className="service-item d-flex">
+                <div className="icon flex-shrink-0">
+                  <i className="bi bi-arrow-repeat" />
+                </div>
+                <div>
+                  <h4 className="title">
+                    <a href="#" className="stretched-link">
+                      Workflow Optimization
+                    </a>
+                  </h4>
+                  <p className="description">
+                    Streamlining processes to enhance efficiency and reduce
+                    operational costs.
+                  </p>
+                </div>
+              </div>
+            </div>
+            {/* End Service Item */}
+            <div
+              className="col-xl-4 col-lg-6"
+              data-aos="fade-up"
+              data-aos-delay={200}
+            >
+              <div className="service-item d-flex">
+                <div className="icon flex-shrink-0">
+                  <i className="bi bi-cpu" />
+                </div>
+                <div>
+                  <h4 className="title">
+                    <a href="#" className="stretched-link">
+                      Tech Integration
+                    </a>
+                  </h4>
+                  <p className="description">
+                    Leveraging advanced automation and AI for modernized,
+                    efficient operations.
+                  </p>
+                </div>
+              </div>
+            </div>
+            {/* End Service Item */}
+            <div
+              className="col-xl-4 col-lg-6"
+              data-aos="fade-up"
+              data-aos-delay={300}
+            >
+              <div className="service-item d-flex">
+                <div className="icon flex-shrink-0">
+                  <i className="bi bi-people-fill" />
+                </div>
+                <div>
+                  <h4 className="title">
+                    <a href="#" className="stretched-link">
+                      Client Growth
+                    </a>
+                  </h4>
+                  <p className="description">
+                    Building strategies to expand reach and increase long-term
+                    clientele.
+                  </p>
+                </div>
+              </div>
+            </div>
+            {/* End Service Item */}
+          </div>
+        </div>
+      </section>
+      {/* /Featured Services Section */}
+      {/* About Section */}
+      <section id="about" className="about section">
+        <div className="container">
+          <div className="row gy-4">
+            <div
+              className="col-lg-6 content"
+              data-aos="fade-up"
+              data-aos-delay={100}
+            >
+              {/* <p class="who-we-are">Tailored project management solutions...</p> */}
+              <h4>
+                Comprehensive Operations Optimization by Nyas Consultants{' '}
+              </h4>
+              <p className="fst-italic">
+                Nyas Consultants offers comprehensive services to optimize
+                business operations. They streamline processes to improve
+                efficiency and reduce costs, implement advanced technologies to
+                enhance productivity, and provide virtual assistant support for
+                administrative tasks. Additionally, they offer round-the-clock
+                operations monitoring and control to ensure seamless service
+                delivery. Their business development strategies help expand
+                market reach and attract new clients, ensuring long-term growth
+                and brand recognition for businesses.
+              </p>
+              <ul>
+                <li>
+                  <i className="bi bi-check-circle" />{' '}
+                  <span>
+                    Streamline processes to enhance efficiency and reduce
+                    operational costs.
+                  </span>
+                </li>
+                <li>
+                  <i className="bi bi-check-circle" />{' '}
+                  <span>
+                    Implement advanced technology solutions for modernization
+                    and productivity enhancement.
+                  </span>
+                </li>
+                <li>
+                  <i className="bi bi-check-circle" />{' '}
+                  <span>
+                    Provide virtual assistants for efficient administrative and
+                    client support.
+                  </span>
+                </li>
+                <li>
+                  <i className="bi bi-check-circle" />{' '}
+                  <span>
+                    Offer 24/7 monitoring to ensure uninterrupted service and
+                    operations.
+                  </span>
+                </li>
+              </ul>
+              {/* <a href="#" class="read-more"><span>Read More</span><i class="bi bi-arrow-right"></i></a> */}
+            </div>
+            <div
+              className="col-lg-6 about-images"
+              data-aos="fade-up"
+              data-aos-delay={200}
+            >
+              <div className="row gy-4">
+                <div className="col-lg-6">
+                  <img
+                    src="assets/assetscross/img/project-second.png"
+                    className="img-fluid"
+                    alt=""
+                  />
+                </div>
+                <div className="col-lg-6">
+                  <div className="row gy-4">
+                    <div className="col-lg-12">
+                      <img
+                        src="assets/assetscross/img/project-second.1.png"
+                        className="img-fluid"
+                        alt=""
+                      />
+                    </div>
+                    <div className="col-lg-12">
+                      <img
+                        src="assets/assetscross/img/project-second.2.png"
+                        className="img-fluid"
+                        alt=""
+                      />
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      {/* /Features Details Section */}
+      {/* Services Section */}
       <section id="services" className="services section light-background">
         {/* Section Title */}
         <div className="container section-title" data-aos="fade-up">
@@ -159,7 +334,8 @@ const ProjectsManagement = () => {
           </div>
         </div>
       </section>
-
+      {/* /Services Section */}
+      {/* More Features Section */}
       <section id="more-features" className="more-features section">
         <div className="container">
           <div className="row justify-content-around gy-4">
@@ -239,107 +415,104 @@ const ProjectsManagement = () => {
       </section>
       {/* /More Features Section */}
       {/* Faq Section */}
-      <section id="faq" className="faq section">
-        {/* Section Title */}
+      <section id="faq" className="faq section py-5">
         <div className="container section-title" data-aos="fade-up">
           <h2>Frequently Asked Questions</h2>
+          <p>
+            Optimizing processes, technology, support, and monitoring for
+            business growth and success.
+          </p>
         </div>
         {/* End Section Title */}
         <div className="container">
-          <div className="row justify-content-center">
-            <div className="col-lg-10" data-aos="fade-up" data-aos-delay={100}>
-              <div className="faq-container">
-                <div className="faq-item faq-active">
-                  <h3>What is Process Design &amp; Workflow Optimization?</h3>
-                  <div className="faq-content">
-                    <p>
-                      Process Design &amp; Workflow Optimization focuses on
-                      streamlining processes to increase efficiency, reduce
-                      costs, and ensure standardized workflows across teams and
-                      departments.
-                    </p>
-                  </div>
-                  <i className="faq-toggle bi bi-chevron-right" />
+          <div className="accordion" id="faqAccordion">
+            {/* FAQ Item 1 */}
+            <div className="accordion-item">
+              <h2 className="accordion-header" id="headingOne">
+                <button
+                  className="accordion-button"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#collapseOne"
+                  aria-expanded="true"
+                  aria-controls="collapseOne"
+                >
+                  What is Process Design & Workflow Optimization?
+                </button>
+              </h2>
+              <div
+                id="collapseOne"
+                className="accordion-collapse collapse show"
+                aria-labelledby="headingOne"
+                data-bs-parent="#faqAccordion"
+              >
+                <div className="accordion-body">
+                  Process Design & Workflow Optimization focuses on streamlining
+                  processes to increase efficiency, reduce costs, and ensure
+                  standardized workflows across teams and departments.
                 </div>
-                {/* End Faq item*/}
-                <div className="faq-item">
-                  <h3>
-                    How does Digital Transformation &amp; Technology Enhancement
-                    help my business?
-                  </h3>
-                  <div className="faq-content">
-                    <p>
-                      We implement advanced technologies, including automation
-                      and AI, to modernize your operations, boost productivity,
-                      and future-proof your business.
-                    </p>
-                  </div>
-                  <i className="faq-toggle bi bi-chevron-right" />
-                </div>
-                {/* End Faq item*/}
-                <div className="faq-item">
-                  <h3>
-                    What benefits do Virtual Assistant &amp; Administrative
-                    Support services offer?
-                  </h3>
-                  <div className="faq-content">
-                    <p>
-                      Our trained virtual assistants handle administrative
-                      tasks, client communications, and scheduling, allowing
-                      your business to focus on core operations.
-                    </p>
-                  </div>
-                  <i className="faq-toggle bi bi-chevron-right" />
-                </div>
-                {/* End Faq item*/}
-                <div className="faq-item">
-                  <h3>
-                    How does the 24/7 Operations Monitoring &amp; Control Center
-                    improve service?
-                  </h3>
-                  <div className="faq-content">
-                    <p>
-                      We provide round-the-clock monitoring and coordination to
-                      ensure uninterrupted services and efficient daily
-                      operations management.
-                    </p>
-                  </div>
-                  <i className="faq-toggle bi bi-chevron-right" />
-                </div>
-                {/* End Faq item*/}
-                <div className="faq-item">
-                  <h3>
-                    How can Business Development &amp; CRM services help grow my
-                    business?
-                  </h3>
-                  <div className="faq-content">
-                    <p>
-                      Our strategic initiatives help increase market reach,
-                      attract new clients, and sustain long-term growth and
-                      brand recognition for your business.
-                    </p>
-                  </div>
-                  <i className="faq-toggle bi bi-chevron-right" />
-                </div>
-                {/* End Faq item*/}
-                <div className="faq-item">
-                  <h3>
-                    Why is Performance Monitoring important for my business
-                    operations?
-                  </h3>
-                  <div className="faq-content">
-                    <p>
-                      Regular performance tracking with data-driven insights
-                      enables us to make timely adjustments, ensuring projects
-                      stay on target and deadlines are met.
-                    </p>
-                  </div>
-                  <i className="faq-toggle bi bi-chevron-right" />
-                </div>
-                {/* End Faq item*/}
               </div>
             </div>
-            {/* End Faq Column*/}
+
+            {/* FAQ Item 2 */}
+            <div className="accordion-item">
+              <h2 className="accordion-header" id="headingTwo">
+                <button
+                  className="accordion-button collapsed"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#collapseTwo"
+                  aria-expanded="false"
+                  aria-controls="collapseTwo"
+                >
+                  How does Digital Transformation & Technology Enhancement help
+                  my business?
+                </button>
+              </h2>
+              <div
+                id="collapseTwo"
+                className="accordion-collapse collapse"
+                aria-labelledby="headingTwo"
+                data-bs-parent="#faqAccordion"
+              >
+                <div className="accordion-body">
+                  We implement advanced technologies, including automation and
+                  AI, to modernize your operations, boost productivity, and
+                  future-proof your business.
+                </div>
+              </div>
+            </div>
+
+            {/* FAQ Item 3 */}
+            <div className="accordion-item">
+              <h2 className="accordion-header" id="headingThree">
+                <button
+                  className="accordion-button collapsed"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#collapseThree"
+                  aria-expanded="false"
+                  aria-controls="collapseThree"
+                >
+                  What benefits do Virtual Assistant & Administrative Support
+                  services offer?
+                </button>
+              </h2>
+              <div
+                id="collapseThree"
+                className="accordion-collapse collapse"
+                aria-labelledby="headingThree"
+                data-bs-parent="#faqAccordion"
+              >
+                <div className="accordion-body">
+                  Our trained virtual assistants handle administrative tasks,
+                  client communications, and scheduling, allowing your business
+                  to focus on core operations.
+                </div>
+              </div>
+            </div>
+
+            {/* Add more FAQ items as needed */}
           </div>
         </div>
       </section>

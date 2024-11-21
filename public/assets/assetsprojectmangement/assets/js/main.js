@@ -177,4 +177,13 @@
   window.addEventListener('load', navmenuScrollspy);
   document.addEventListener('scroll', navmenuScrollspy);
 
+  document.addEventListener('DOMContentLoaded', () => {
+    // All the code inside main.js goes here
+    const element = document.querySelector('#some-element'); // Example
+    if (element) {
+      element.addEventListener('click', () => {
+        console.log('Element clicked');
+      });
+    }
+  });
 })();
