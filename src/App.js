@@ -49,7 +49,6 @@ import LegalService from './pages/LegalService';
 import CustomWebsiteDesign from './pages/CustomWebsiteDesign';
 import MVPDevelopmentTesting from './pages/MVPDevelopmentDesign';
 import UiuxDesignPrototype from './pages/UiuxDesignPrototype';
-import OnGoingSoftwareWebsite from './pages/OnGoingSoftwareWebsite';
 import BlockChainSolution from './pages/BlockChainSolution';
 function App() {
   useEffect(() => {
@@ -99,12 +98,7 @@ function App() {
         <Route exact path="/project-details" element={<ProjectDetails />} />
         <Route exact path="/technologies" element={<Technologies />} />
         <Route exact path="/career" element={<Career />} />
-        <Route exact path="/mobile-app" element={<MobileApp />} />
-        <Route
-          exact
-          path="/cross-platfrom-development"
-          element={<CrossPlatformDevelopment />}
-        />
+
         <Route
           exact
           path="/custom-website-design-development"
@@ -123,30 +117,40 @@ function App() {
           element={<UiuxDesignPrototype />}
         />
 
-        <Route
-          exact
-          path="/on-going-software-website"
-          element={<OnGoingSoftwareWebsite />}
-        />
+        {/* 5 part here  */}
 
         <Route
           exact
           path="/blockchain-solutions"
           element={<BlockChainSolution />}
         />
+
+        <Route exact path="/mobile-app" element={<MobileApp />} />
+
+        <Route exact path="/legal-services" element={<LegalService />} />
+
+        {/* 9 part hre  */}
+
         <Route exact path="/virtual-assistant" element={<VirtualAssistant />} />
-        <Route exact path="/meta-campaign" element={<MetaCampaign />} />
+
         <Route
           exact
           path="/project-management"
           element={<ProjectManagement />}
         />
+        <Route exact path="/meta-campaign" element={<MetaCampaign />} />
+
+        <Route
+          exact
+          path="/cross-platfrom-development"
+          element={<CrossPlatformDevelopment />}
+        />
+
         <Route
           exact
           path="/digital-product-development"
           element={<DigitalProductDevelopment />}
         />
-        <Route exact path="/legal-services" element={<LegalService />} />
       </Routes>
       <ScrollToTop smooth color="#246BFD" />
     </BrowserRouter>

@@ -107,7 +107,7 @@ const ServiceAreaOne = () => {
                     <i className="bi bi-tools" style={{ color: '#e361ff' }} />
                     <h3>
                       <a
-                        href="/on-going-software-website"
+                        href="/digital-product-development"
                         className="stretched-link"
                       >
                         Ongoing Software &amp; Website Maintenance
@@ -181,7 +181,7 @@ const ServiceAreaOne = () => {
                       style={{ color: '#4233ff' }}
                     />
                     <h3>
-                      <a href="" className="stretched-link">
+                      <a href="/project-management" className="stretched-link">
                         Operations Consultancy Services
                       </a>
                     </h3>

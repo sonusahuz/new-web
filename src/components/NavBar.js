@@ -154,30 +154,33 @@ const NavBar = () => {
                 <Link to="/service">Our Services</Link>
                 <ul className="sub-menu">
                   <li>
-                    <Link to="/mobile-app">Digital App Development Services
+                    <Link to="/mobile-app">
+                      Digital App Development Services
                     </Link>
                   </li>
                   <li>
-                    <Link to="/cross-platfrom-development">Cross Platform Apps Development</Link>
+                    <Link to="/cross-platfrom-development">
+                      Cross Platform Apps Development
+                    </Link>
                   </li>
-                  
+
                   <li>
-                    <Link to="/digital-product-development">Software Development
+                    <Link to="/digital-product-development">
+                      Software Development
                     </Link>
                   </li>
                   <li>
-                    <Link to="/project-management">Operations Consultancy Services
+                    <Link to="/project-management">
+                      Operations Consultancy Services
                     </Link>
                   </li>
                   <li>
-                    <Link to="/meta-campaign">Digital Marketing
-                    </Link>
+                    <Link to="/meta-campaign">Digital Marketing</Link>
                   </li>
                   <li>
-                    <Link to="/legal-services">Legal Services
-                    </Link>
+                    <Link to="/legal-services">Legal Services</Link>
                   </li>
-                 
+
                   {/* <li>
                     <Link to="/pricing-2">Pricing 02</Link>
                   </li> */}

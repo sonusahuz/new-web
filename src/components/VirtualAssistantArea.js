@@ -55,12 +55,17 @@ const VirtualAssistantArea = () => {
                 <a href="#about" className="btn-get-started">
                   Get Started
                 </a>
-                {/* <a href="https://www.youtube.com/watch?v=Y7f98aduVJ8" class="glightbox btn-watch-video d-flex align-items-center"><i class="bi bi-play-circle"></i><span>Watch Video</span></a> */}
+                <a
+                  href="https://www.youtube.com/watch?v=Y7f98aduVJ8"
+                  class="glightbox btn-watch-video d-flex align-items-center"
+                >
+                  <i class="bi bi-play-circle"></i>
+                  <span>Watch Video</span>
+                </a>
               </div>
               <img
                 src="assets/assetscross/img/hero-services-img.webp"
                 className="img-fluid hero-img"
-                alt=""
                 data-aos="zoom-out"
                 data-aos-delay={300}
               />
