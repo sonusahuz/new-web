@@ -4,7 +4,16 @@ const UiuxDesignArea = () => {
   return (
     <>
       {/* Header Section */}
-      <header className="header position-relative">
+      <header
+        className="header position-relative"
+        style={{
+          height: '100vh',
+          backgroundImage:
+            'url(assets/assetsuiuxdesign/images/header-background.jpg)',
+          backgroundSize: 'cover',
+          backgroundPosition: 'center',
+        }}
+      >
         <div className="header-content text-center text-light d-flex align-items-center justify-content-center vh-100">
           <div className="container">
             <h1 className="display-4 fw-bold text-white">
@@ -12,20 +21,6 @@ const UiuxDesignArea = () => {
             </h1>
           </div>
         </div>
-        <video
-          autoPlay
-          loop
-          muted
-          className="position-absolute w-100 h-100 top-0 start-0"
-          style={{ objectFit: 'cover', zIndex: -1 }}
-          poster="assets/assetsuiuxdesign/images/header-background.jpg"
-          playsInline
-        >
-          <source
-            src="assets/assetsuiuxdesign/images/header-background-video.mp4"
-            type="video/mp4"
-          />
-        </video>
       </header>
 
       {/* Introduction Section */}

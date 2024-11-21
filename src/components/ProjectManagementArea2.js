@@ -34,12 +34,10 @@ const ProjectsManagement = () => {
         <div className="container">
           <div className="row align-items-center text-center text-lg-start">
             <div className="col-lg-6">
-              <h1 className="display-4 fw-bold mb-3">
-                Operations Consultancy Services
-              </h1>
+              <h1 className="display-4 fw-bold mb-3">Project Management</h1>
               <p className="lead">
-                Optimizing processes, technology, and support for business
-                growth and efficiency.
+                Our PMO uses advanced tech for innovative, continuous
+                development and effective governance.
               </p>
               <a href="#create-project" className="btn btn-primary">
                 Get Started
@@ -75,12 +73,12 @@ const ProjectsManagement = () => {
                 <div>
                   <h4 className="title">
                     <a href="#" className="stretched-link">
-                      Workflow Optimization
+                      Strategic Alignment
                     </a>
                   </h4>
                   <p className="description">
-                    Streamlining processes to enhance efficiency and reduce
-                    operational costs.
+                    Ensures projects align with business goals for maximum
+                    impact.
                   </p>
                 </div>
               </div>
@@ -98,12 +96,12 @@ const ProjectsManagement = () => {
                 <div>
                   <h4 className="title">
                     <a href="#" className="stretched-link">
-                      Tech Integration
+                      Resource Optimization
                     </a>
                   </h4>
                   <p className="description">
-                    Leveraging advanced automation and AI for modernized,
-                    efficient operations.
+                    Manages resources effectively for enhanced efficiency and
+                    cost savings.
                   </p>
                 </div>
               </div>
@@ -121,12 +119,12 @@ const ProjectsManagement = () => {
                 <div>
                   <h4 className="title">
                     <a href="#" className="stretched-link">
-                      Client Growth
+                      Risk Mitigation
                     </a>
                   </h4>
                   <p className="description">
-                    Building strategies to expand reach and increase long-term
-                    clientele.
+                    Proactively addresses risks to ensure smooth, secure project
+                    delivery.
                   </p>
                 </div>
               </div>
@@ -146,47 +144,45 @@ const ProjectsManagement = () => {
               data-aos-delay={100}
             >
               {/* <p class="who-we-are">Tailored project management solutions...</p> */}
-              <h4>
-                Comprehensive Operations Optimization by Nyas Consultants{' '}
-              </h4>
+              <h4>The Rise of Effective Project Management Solutions</h4>
               <p className="fst-italic">
-                Nyas Consultants offers comprehensive services to optimize
-                business operations. They streamline processes to improve
-                efficiency and reduce costs, implement advanced technologies to
-                enhance productivity, and provide virtual assistant support for
-                administrative tasks. Additionally, they offer round-the-clock
-                operations monitoring and control to ensure seamless service
-                delivery. Their business development strategies help expand
-                market reach and attract new clients, ensuring long-term growth
-                and brand recognition for businesses.
+                In today’s fast-paced business world, efficient project
+                management is key to success. Nyas Consultants provides
+                comprehensive solutions to help businesses optimize project
+                workflows, reduce risks, and ensure timely deliveries. According
+                to studies, organizations with strong project management
+                practices are 20% more successful in achieving project goals.
+                This article explores the essential strategies Nyas Consultants
+                uses to ensure that projects are completed on time, within
+                budget, and to the highest quality standards.
               </p>
               <ul>
                 <li>
                   <i className="bi bi-check-circle" />{' '}
                   <span>
-                    Streamline processes to enhance efficiency and reduce
-                    operational costs.
+                    Clear objectives set a strong foundation for effective
+                    project delivery.
                   </span>
                 </li>
                 <li>
                   <i className="bi bi-check-circle" />{' '}
                   <span>
-                    Implement advanced technology solutions for modernization
-                    and productivity enhancement.
+                    Risk management practices ensure smooth project execution
+                    and minimal delays.
                   </span>
                 </li>
                 <li>
                   <i className="bi bi-check-circle" />{' '}
                   <span>
-                    Provide virtual assistants for efficient administrative and
-                    client support.
+                    Resource management optimizes project costs and resource
+                    allocation.
                   </span>
                 </li>
                 <li>
                   <i className="bi bi-check-circle" />{' '}
                   <span>
-                    Offer 24/7 monitoring to ensure uninterrupted service and
-                    operations.
+                    Continuous monitoring ensures projects meet deadlines and
+                    quality standards.
                   </span>
                 </li>
               </ul>
@@ -416,7 +412,7 @@ const ProjectsManagement = () => {
       {/* /More Features Section */}
       {/* Faq Section */}
       <section id="faq" className="faq section py-5">
-        <div className="container section-title" data-aos="fade-up">
+        <div className="section-title" data-aos="fade-up">
           <h2>Frequently Asked Questions</h2>
           <p>
             Optimizing processes, technology, support, and monitoring for
@@ -426,7 +422,6 @@ const ProjectsManagement = () => {
         {/* End Section Title */}
         <div className="container">
           <div className="accordion" id="faqAccordion">
-            {/* FAQ Item 1 */}
             <div className="accordion-item">
               <h2 className="accordion-header" id="headingOne">
                 <button
@@ -437,7 +432,7 @@ const ProjectsManagement = () => {
                   aria-expanded="true"
                   aria-controls="collapseOne"
                 >
-                  What is Process Design & Workflow Optimization?
+                  What is project management?
                 </button>
               </h2>
               <div
@@ -447,9 +442,10 @@ const ProjectsManagement = () => {
                 data-bs-parent="#faqAccordion"
               >
                 <div className="accordion-body">
-                  Process Design & Workflow Optimization focuses on streamlining
-                  processes to increase efficiency, reduce costs, and ensure
-                  standardized workflows across teams and departments.
+                  Project management is the process of planning, organizing, and
+                  managing resources to achieve specific goals within a defined
+                  timeline and budget. It ensures the effective execution of
+                  projects to meet desired outcomes.
                 </div>
               </div>
             </div>
@@ -465,8 +461,7 @@ const ProjectsManagement = () => {
                   aria-expanded="false"
                   aria-controls="collapseTwo"
                 >
-                  How does Digital Transformation & Technology Enhancement help
-                  my business?
+                  Why is project management crucial for business success?
                 </button>
               </h2>
               <div
@@ -476,9 +471,10 @@ const ProjectsManagement = () => {
                 data-bs-parent="#faqAccordion"
               >
                 <div className="accordion-body">
-                  We implement advanced technologies, including automation and
-                  AI, to modernize your operations, boost productivity, and
-                  future-proof your business.
+                  Project management ensures that projects are completed
+                  efficiently, align with organizational goals, and meet quality
+                  standards while staying within scope, time, and budget
+                  constraints. This drives productivity and business growth.
                 </div>
               </div>
             </div>
@@ -494,8 +490,7 @@ const ProjectsManagement = () => {
                   aria-expanded="false"
                   aria-controls="collapseThree"
                 >
-                  What benefits do Virtual Assistant & Administrative Support
-                  services offer?
+                  What role does risk management play in project management?
                 </button>
               </h2>
               <div
@@ -505,9 +500,38 @@ const ProjectsManagement = () => {
                 data-bs-parent="#faqAccordion"
               >
                 <div className="accordion-body">
-                  Our trained virtual assistants handle administrative tasks,
-                  client communications, and scheduling, allowing your business
-                  to focus on core operations.
+                  Risk management identifies, assesses, and mitigates potential
+                  risks that could impact a project's success. Proactively
+                  managing risks ensures smooth project execution and minimizes
+                  unexpected challenges.
+                </div>
+              </div>
+            </div>
+
+            <div className="accordion-item">
+              <h2 className="accordion-header" id="headingThree">
+                <button
+                  className="accordion-button collapsed"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#collapseThree"
+                  aria-expanded="false"
+                  aria-controls="collapseThree"
+                >
+                  What tools or methodologies are commonly used in project
+                  management?
+                </button>
+              </h2>
+              <div
+                id="collapseThree"
+                className="accordion-collapse collapse"
+                aria-labelledby="headingThree"
+                data-bs-parent="#faqAccordion"
+              >
+                <div className="accordion-body">
+                  Popular tools include Microsoft Project, Trello, and Asana.
+                  Common methodologies include Agile, Scrum, Waterfall, and
+                  Lean, depending on the project’s complexity and requirements.
                 </div>
               </div>
             </div>

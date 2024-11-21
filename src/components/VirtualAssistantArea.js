@@ -432,113 +432,199 @@ const VirtualAssistantArea = () => {
           </div>
         </section>
         {/* Faq Section */}
-        <section id="faq" className="faq section">
+        <section id="faq" className="faq section py-5">
           {/* Section Title */}
           <div className="container section-title" data-aos="fade-up">
             <h2>Frequently Asked Questions</h2>
           </div>
           {/* End Section Title */}
+
           <div className="container">
-            <div className="row justify-content-center">
-              <div
-                className="col-lg-10"
-                data-aos="fade-up"
-                data-aos-delay={100}
-              >
-                <div className="faq-container">
-                  <div className="faq-item faq-active">
-                    <h3>
-                      What services do virtual assistants at NYAS provide?
-                    </h3>
-                    <div className="faq-content">
-                      <p>
-                        NYAS Assistants offer a wide range of services,
-                        including telemarketing, accounting, transcription,
-                        customer support, digital marketing, and content
-                        creation. Each service is tailored to meet specific
-                        business needs and enhance overall productivity.
-                      </p>
-                    </div>
-                    <i className="faq-toggle bi bi-chevron-right" />
+            <div className="accordion" id="faqAccordion">
+              {/* Faq Item 1 */}
+              <div className="accordion-item">
+                <h2 className="accordion-header" id="headingOne">
+                  <button
+                    className="accordion-button"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#collapseOne"
+                    aria-expanded="true"
+                    aria-controls="collapseOne"
+                  >
+                    What services do virtual assistants at NYAS provide?
+                  </button>
+                </h2>
+                <div
+                  id="collapseOne"
+                  className="accordion-collapse collapse show"
+                  aria-labelledby="headingOne"
+                  data-bs-parent="#faqAccordion"
+                >
+                  <div className="accordion-body">
+                    NYAS Assistants offer a wide range of services, including
+                    telemarketing, accounting, transcription, customer support,
+                    digital marketing, and content creation. Each service is
+                    tailored to meet specific business needs and enhance overall
+                    productivity.
                   </div>
-                  {/* End Faq item*/}
-                  <div className="faq-item">
-                    <h3>
-                      How can hiring a virtual assistant help my business?
-                    </h3>
-                    <div className="faq-content">
-                      <p>
-                        Hiring a virtual assistant from NYAS can save you time
-                        and money by allowing you to delegate core and non-core
-                        tasks to experienced professionals. This enables you to
-                        focus on your primary business activities, leading to
-                        increased productivity and growth.{' '}
-                      </p>
-                    </div>
-                    <i className="faq-toggle bi bi-chevron-right" />
-                  </div>
-                  {/* End Faq item*/}
-                  <div className="faq-item">
-                    <h3>
-                      Are NYAS virtual assistants specialized in certain areas?
-                    </h3>
-                    <div className="faq-content">
-                      <p>
-                        Yes, many virtual assistants at NYAS have specialized
-                        skills and focus on specific industries. This allows
-                        them to provide targeted support and expertise tailored
-                        to your business's unique requirements.
-                      </p>
-                    </div>
-                    <i className="faq-toggle bi bi-chevron-right" />
-                  </div>
-                  {/* End Faq item*/}
-                  <div className="faq-item">
-                    <h3>
-                      How does the pricing for NYAS Assistant services work?
-                    </h3>
-                    <div className="faq-content">
-                      <p>
-                        NYAS offers cost-effective solutions compared to hiring
-                        full-time employees. Pricing varies based on the
-                        specific services you require, allowing you to choose
-                        options that fit your budget and business needs.{' '}
-                      </p>
-                    </div>
-                    <i className="faq-toggle bi bi-chevron-right" />
-                  </div>
-                  {/* End Faq item*/}
-                  <div className="faq-item">
-                    <h3>How can I get in touch with NYAS Assistants?</h3>
-                    <div className="faq-content">
-                      <p>
-                        You can easily reach out to NYAS Assistants by clicking
-                        on the "Consult Now" option on our website. Our team
-                        will be happy to discuss your requirements and provide
-                        the support you need to succeed.{' '}
-                      </p>
-                    </div>
-                    <i className="faq-toggle bi bi-chevron-right" />
-                  </div>
-                  {/* End Faq item*/}
-                  <div className="faq-item">
-                    <h3>What is the best way to contact NYAS?</h3>
-                    <div className="faq-content">
-                      <p>
-                        You can contact us via email at info@nyasconsultants.com
-                        or by phone at +353 85 161 3637. You can also reach us
-                        through our website for immediate assistance.
-                      </p>
-                    </div>
-                    <i className="faq-toggle bi bi-chevron-right" />
-                  </div>
-                  {/* End Faq item*/}
                 </div>
               </div>
-              {/* End Faq Column*/}
+              {/* End Faq item */}
+
+              {/* Faq Item 2 */}
+              <div className="accordion-item">
+                <h2 className="accordion-header" id="headingTwo">
+                  <button
+                    className="accordion-button"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#collapseTwo"
+                    aria-expanded="false"
+                    aria-controls="collapseTwo"
+                  >
+                    How can hiring a virtual assistant help my business?
+                  </button>
+                </h2>
+                <div
+                  id="collapseTwo"
+                  className="accordion-collapse collapse"
+                  aria-labelledby="headingTwo"
+                  data-bs-parent="#faqAccordion"
+                >
+                  <div className="accordion-body">
+                    Hiring a virtual assistant from NYAS can save you time and
+                    money by allowing you to delegate core and non-core tasks to
+                    experienced professionals. This enables you to focus on your
+                    primary business activities, leading to increased
+                    productivity and growth.
+                  </div>
+                </div>
+              </div>
+              {/* End Faq item */}
+
+              {/* Faq Item 3 */}
+              <div className="accordion-item">
+                <h2 className="accordion-header" id="headingThree">
+                  <button
+                    className="accordion-button"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#collapseThree"
+                    aria-expanded="false"
+                    aria-controls="collapseThree"
+                  >
+                    Are NYAS virtual assistants specialized in certain areas?
+                  </button>
+                </h2>
+                <div
+                  id="collapseThree"
+                  className="accordion-collapse collapse"
+                  aria-labelledby="headingThree"
+                  data-bs-parent="#faqAccordion"
+                >
+                  <div className="accordion-body">
+                    Yes, many virtual assistants at NYAS have specialized skills
+                    and focus on specific industries. This allows them to
+                    provide targeted support and expertise tailored to your
+                    business's unique requirements.
+                  </div>
+                </div>
+              </div>
+              {/* End Faq item */}
+
+              {/* Faq Item 4 */}
+              <div className="accordion-item">
+                <h2 className="accordion-header" id="headingFour">
+                  <button
+                    className="accordion-button"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#collapseFour"
+                    aria-expanded="false"
+                    aria-controls="collapseFour"
+                  >
+                    How does the pricing for NYAS Assistant services work?
+                  </button>
+                </h2>
+                <div
+                  id="collapseFour"
+                  className="accordion-collapse collapse"
+                  aria-labelledby="headingFour"
+                  data-bs-parent="#faqAccordion"
+                >
+                  <div className="accordion-body">
+                    NYAS offers cost-effective solutions compared to hiring
+                    full-time employees. Pricing varies based on the specific
+                    services you require, allowing you to choose options that
+                    fit your budget and business needs.
+                  </div>
+                </div>
+              </div>
+              {/* End Faq item */}
+
+              {/* Faq Item 5 */}
+              <div className="accordion-item">
+                <h2 className="accordion-header" id="headingFive">
+                  <button
+                    className="accordion-button"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#collapseFive"
+                    aria-expanded="false"
+                    aria-controls="collapseFive"
+                  >
+                    How can I get in touch with NYAS Assistants?
+                  </button>
+                </h2>
+                <div
+                  id="collapseFive"
+                  className="accordion-collapse collapse"
+                  aria-labelledby="headingFive"
+                  data-bs-parent="#faqAccordion"
+                >
+                  <div className="accordion-body">
+                    You can easily reach out to NYAS Assistants by clicking on
+                    the "Consult Now" option on our website. Our team will be
+                    happy to discuss your requirements and provide the support
+                    you need to succeed.
+                  </div>
+                </div>
+              </div>
+              {/* End Faq item */}
+
+              {/* Faq Item 6 */}
+              <div className="accordion-item">
+                <h2 className="accordion-header" id="headingSix">
+                  <button
+                    className="accordion-button"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#collapseSix"
+                    aria-expanded="false"
+                    aria-controls="collapseSix"
+                  >
+                    What is the best way to contact NYAS?
+                  </button>
+                </h2>
+                <div
+                  id="collapseSix"
+                  className="accordion-collapse collapse"
+                  aria-labelledby="headingSix"
+                  data-bs-parent="#faqAccordion"
+                >
+                  <div className="accordion-body">
+                    You can contact us via email at info@nyasconsultants.com or
+                    by phone at +353 85 161 3637. You can also reach us through
+                    our website for immediate assistance.
+                  </div>
+                </div>
+              </div>
+              {/* End Faq item */}
             </div>
           </div>
         </section>
+
         {/* /Faq Section */}
       </main>
       {/* Scroll Top */}
