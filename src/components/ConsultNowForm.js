@@ -5,7 +5,7 @@ const ConsultNowForm = ({ isOpen, onClose, description, width = '400px' }) => {
     <div className="modal-overlay">
       <div className="modal-content" style={{ width }}>
         <div className="modal-header">
-          <h1 className="modal-title text-center">Fill Your Details</h1>
+          <h1 className="modal-title text-center mx-auto">Enquire Now</h1>
           <i
             className="bi bi-x-lg modal-close"
             onClick={() => onClose(false)}
@@ -52,14 +52,15 @@ const ConsultNowForm = ({ isOpen, onClose, description, width = '400px' }) => {
               </div>
               <div className="mb-3">
                 <label htmlFor="phone" className="form-label">
-                  Select an Option
+                  Select Service
                 </label>
 
                 <select
                   className="form-select"
                   aria-label="Default select example"
+                  required
                 >
-                  <option selected>Open this select menu</option>
+                  <option selected>Select - </option>
                   <option value="Custom Website Design & Development">
                     Custom Website Design & Development
                   </option>
@@ -73,7 +74,7 @@ const ConsultNowForm = ({ isOpen, onClose, description, width = '400px' }) => {
                     ⁠Ongoing Software & Website Maintenance
                   </option>
                   <option value="lockchain Solutions & Decentralized Applications">
-                    lockchain Solutions & Decentralized Applications
+                    Blockchain Solutions & Decentralized Applications
                   </option>
                 </select>
               </div>
@@ -90,7 +91,7 @@ const ConsultNowForm = ({ isOpen, onClose, description, width = '400px' }) => {
               <div>
                 <button
                   type="submit"
-                  className="btn btn-primary bg-black rounded-1 button"
+                  className="btn rounded-1 btn-primary mt-0 w-100 border-radius-5"
                 >
                   Submit
                 </button>
