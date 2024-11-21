@@ -51,6 +51,7 @@ import MVPDevelopmentTesting from './pages/MVPDevelopmentDesign';
 import UiuxDesignPrototype from './pages/UiuxDesignPrototype';
 import BlockChainSolution from './pages/BlockChainSolution';
 import ProjectManagement2 from './pages/ProjectManagement2';
+
 function App() {
   useEffect(() => {
     AOS.init({

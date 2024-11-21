@@ -1,7 +1,5 @@
 import React from 'react';
-import { FaPlus } from 'react-icons/fa';
-import { Link } from 'react-router-dom';
-import serviceList from '../scripts/serviceList';
+import { GoLaw } from 'react-icons/go';
 
 const ServiceAreaOne = () => {
   return (
@@ -158,12 +156,9 @@ const ServiceAreaOne = () => {
                   data-aos-delay={700}
                 >
                   <div className="features-item" style={{ height: 80 }}>
-                    <i
-                      className="bi bi-balance-scale"
-                      style={{ color: '#11dbcf' }}
-                    />
+                    <GoLaw className="bi bi-law" style={{ color: '#11dbcf' }}  size={35}/>
                     <h3>
-                      <a href="/legal-services" className="stretched-link">
+                      <a href="/legal-services" className="stretched-link p-2">
                         Legal Services
                       </a>
                     </h3>

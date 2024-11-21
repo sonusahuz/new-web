@@ -1,8 +1,14 @@
-import React from 'react';
 import { FaPlus } from 'react-icons/fa';
-import { Link } from 'react-router-dom';
+import ConsultNowForm from './ConsultNowForm';
+import { useState } from 'react';
 
 const BannerOne = () => {
+  const [open, setOpen] = useState(false);
+
+  const handleClose = () => {
+    setOpen(false);
+  };
+
   return (
     <>
       {/* ================== BannerOne Start ==================*/}
@@ -41,15 +47,15 @@ const BannerOne = () => {
                   guaranteeing smooth execution and driving success in every
                   aspect of your operations.
                 </p>
-                <Link
+                <button
                   className="btn btn-border-base"
                   data-aos="fade-right"
                   data-aos-delay="300"
                   data-aos-duration="1500"
-                  to="/about"
+                  onClick={() => setOpen(true)}
                 >
                   Consult Now <FaPlus />
-                </Link>
+                </button>
               </div>
             </div>
             <div className="col-lg-6 col-md-12 text-center">
@@ -66,7 +72,7 @@ const BannerOne = () => {
           </div>
         </div>
       </div>
-      {/* ================== BannerOne End ==================*/}
+      {open && <ConsultNowForm isOpen={open} onClose={handleClose} />}
     </>
   );
 };
