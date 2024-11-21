@@ -1,5 +1,6 @@
 import React from 'react';
 import Marquee from 'react-fast-marquee';
+
 const BrandAreaOne = () => {
   return (
     <div className="about-area bg-gray pt-5 pb-5">
