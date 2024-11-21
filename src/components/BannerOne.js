@@ -31,7 +31,7 @@ const BannerOne = () => {
                   data-aos-delay="100"
                   data-aos-duration="1500"
                 >
-                  DESIGNING FOR THE FUTURE
+                  Your all-in-One Solution for every Business Need.
                 </h6>
                 <h2
                   className="title"
@@ -39,7 +39,7 @@ const BannerOne = () => {
                   data-aos-delay="200"
                   data-aos-duration="1500"
                 >
-                  Making The <span>Digital</span> World Work For You
+                  Welcome to<span> NYAS!</span>
                 </h2>
                 <p
                   className="content pe-xl-5"
@@ -47,9 +47,9 @@ const BannerOne = () => {
                   data-aos-delay="250"
                   data-aos-duration="1500"
                 >
-                  And In Order To Make A Business, Brand Advertising And
-                  Marketing Plays An Important Role. Similarly, In Making
-                  Cultivation Business Are Necessary.
+                  We offer customized solutions to business challenges,
+                  guaranteeing smooth execution and driving success in every
+                  aspect of your operations.
                 </p>
                 <Link
                   className="btn btn-border-base"
@@ -58,7 +58,7 @@ const BannerOne = () => {
                   data-aos-duration="1500"
                   to="/about"
                 >
-                  Dicover More <FaPlus />
+                  Consult Now <FaPlus />
                 </Link>
               </div>
             </div>

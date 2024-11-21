@@ -42,7 +42,7 @@ const FooterOne = () => {
             <div className="col-lg-3 col-md-6">
               <div className="widget widget_about">
                 <div className="thumb">
-                  <img src="assets/img/logo.png" alt="img" className='bg-white' />
+                  <img src="assets/img/logo4.png" alt="img" />
                 </div>
                 <div className="details">
                   <p>

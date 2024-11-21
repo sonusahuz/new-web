@@ -72,7 +72,7 @@ const NavBar = () => {
           </div>
           <div className="logo">
             <Link to="/">
-              <img src="assets/img/logo.png" alt="img" />
+              <img src="assets/img/logo4.png" alt="img" />
             </Link>
           </div>
           <div className="nav-right-part nav-right-part-mobile">
@@ -91,7 +91,7 @@ const NavBar = () => {
             <ul className="navbar-nav menu-open text-lg-end">
               <li className="menu-item-has-children">
                 <Link to="/">Home</Link>
-                <ul className="sub-menu">
+                {/* <ul className="sub-menu">
                   <li>
                     <Link to="/">IT / Softwer Agency</Link>
                   </li>
@@ -125,11 +125,11 @@ const NavBar = () => {
                   <li>
                     <Link to="/index-11">SEO Service</Link>
                   </li>
-                </ul>
+                </ul> */}
               </li>
               <li className="menu-item-has-children">
                 <Link to="/about">About Us</Link>
-                <ul className="sub-menu">
+                {/* <ul className="sub-menu">
                   <li>
                     <Link to="/service">Service 01</Link>
                   </li>
@@ -148,47 +148,44 @@ const NavBar = () => {
                   <li>
                     <Link to="/service-details">Service Single</Link>
                   </li>
-                </ul>
+                </ul> */}
               </li>
               <li className="menu-item-has-children">
                 <Link to="/service">Our Services</Link>
                 <ul className="sub-menu">
                   <li>
-                    <Link to="/mobile-app">
-                      Digital App Development Services
+                    <Link to="/mobile-app">Digital App Development Services
                     </Link>
                   </li>
                   <li>
-                    <Link to="/cross-platfrom-development">
-                      Cross Platform Apps Development
-                    </Link>
+                    <Link to="/cross-platfrom-development">Cross Platform Apps Development</Link>
                   </li>
-
+                  
                   <li>
-                    <Link to="/digital-product-development">
-                      Software Development
+                    <Link to="/digital-product-development">Software Development
                     </Link>
                   </li>
                   <li>
-                    <Link to="/project-management">
-                      Operations Consultancy Services
+                    <Link to="/project-management">Operations Consultancy Services
                     </Link>
                   </li>
                   <li>
-                    <Link to="/meta-campaign">Digital Marketing</Link>
+                    <Link to="/meta-campaign">Digital Marketing
+                    </Link>
                   </li>
                   <li>
-                    <Link to="/legal-services">Legal Services</Link>
+                    <Link to="/legal-services">Legal Services
+                    </Link>
                   </li>
-
-                  <li>
+                 
+                  {/* <li>
                     <Link to="/pricing-2">Pricing 02</Link>
-                  </li>
+                  </li> */}
                 </ul>
               </li>
               <li className="menu-item-has-children mega-menu">
                 <Link to="/technologies">Technologies</Link>
-                <div className="sub-menu">
+                {/* <div className="sub-menu">
                   <div className="row">
                     <div className=" mb-lg-4 col-lg-4 col-xl-3">
                       <ul>
@@ -291,12 +288,12 @@ const NavBar = () => {
                       </ul>
                     </div>
                   </div>
-                </div>
+                </div> */}
               </li>
 
               <li className="menu-item-has-children">
                 <Link to="/career">Career</Link>
-                <ul className="sub-menu">
+                {/* <ul className="sub-menu">
                   <li>
                     <Link to="/blog">Blog 01</Link>
                   </li>
@@ -312,7 +309,7 @@ const NavBar = () => {
                   <li>
                     <Link to="/blog-details">Blog Details</Link>
                   </li>
-                </ul>
+                </ul> */}
               </li>
               <li>
                 <Link to="/contact">Contact Us</Link>
