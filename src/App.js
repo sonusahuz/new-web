@@ -50,6 +50,7 @@ import CustomWebsiteDesign from './pages/CustomWebsiteDesign';
 import MVPDevelopmentTesting from './pages/MVPDevelopmentDesign';
 import UiuxDesignPrototype from './pages/UiuxDesignPrototype';
 import BlockChainSolution from './pages/BlockChainSolution';
+import ProjectManagement2 from './pages/ProjectManagement2';
 function App() {
   useEffect(() => {
     AOS.init({
@@ -137,6 +138,11 @@ function App() {
           exact
           path="/project-management"
           element={<ProjectManagement />}
+        />
+        <Route
+          exact
+          path="/project-management-1"
+          element={<ProjectManagement2 />}
         />
         <Route exact path="/meta-campaign" element={<MetaCampaign />} />
 

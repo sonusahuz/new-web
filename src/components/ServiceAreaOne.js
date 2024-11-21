@@ -217,7 +217,10 @@ const ServiceAreaOne = () => {
                       style={{ color: '#3aaf4e' }}
                     />
                     <h3>
-                      <a href="/project-management" className="stretched-link">
+                      <a
+                        href="/project-management-1"
+                        className="stretched-link"
+                      >
                         Project Management
                       </a>
                     </h3>
