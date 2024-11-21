@@ -143,7 +143,7 @@ const ProjectsManagement = () => {
               data-aos="fade-up"
               data-aos-delay={100}
             >
-              {/* <p class="who-we-are">Tailored project management solutions...</p> */}
+              <p class="who-we-are">Tailored project management solutions...</p>
               <h4>The Rise of Effective Project Management Solutions</h4>
               <p className="fst-italic">
                 In today’s fast-paced business world, efficient project
@@ -224,193 +224,6 @@ const ProjectsManagement = () => {
           </div>
         </div>
       </section>
-      {/* /Features Details Section */}
-      {/* Services Section */}
-      <section id="services" className="services section light-background">
-        {/* Section Title */}
-        <div className="container section-title" data-aos="fade-up">
-          <h2>Services</h2>
-          <p>
-            Optimizing processes, technology, support, and monitoring for
-            business growth and success.
-          </p>
-        </div>
-        {/* End Section Title */}
-        <div className="container">
-          <div className="row g-5">
-            <div className="col-lg-6" data-aos="fade-up" data-aos-delay={100}>
-              <div className="service-item item-cyan position-relative">
-                <i className="bi bi-arrow-repeat icon" />{' '}
-                {/* Workflow Optimization Icon */}
-                <div>
-                  <h3>Process Design &amp; Workflow Optimization</h3>
-                  <p>
-                    Streamlining processes to increase efficiency, reduce costs,
-                    and establish smooth, standardized workflows across teams
-                    and departments.
-                  </p>
-                </div>
-              </div>
-            </div>
-            {/* End Service Item */}
-            <div className="col-lg-6" data-aos="fade-up" data-aos-delay={200}>
-              <div className="service-item item-orange position-relative">
-                <i className="bi bi-cpu icon" />{' '}
-                {/* Digital Transformation Icon */}
-                <div>
-                  <h3>Digital Transformation &amp; Technology Enhancement</h3>
-                  <p>
-                    Implementing advanced technologies, from automation to AI,
-                    to modernize operations, enhance productivity, and keep the
-                    business future-ready.
-                  </p>
-                </div>
-              </div>
-            </div>
-            {/* End Service Item */}
-            <div className="col-lg-6" data-aos="fade-up" data-aos-delay={300}>
-              <div className="service-item item-teal position-relative">
-                <i className="bi bi-person-lines-fill icon" />{' '}
-                {/* Virtual Assistant Icon */}
-                <div>
-                  <h3>Virtual Assistant &amp; Administrative Support</h3>
-                  <p>
-                    Providing trained virtual assistants to handle
-                    administrative tasks, client communications, and scheduling,
-                    allowing businesses to focus on core objectives.
-                  </p>
-                </div>
-              </div>
-            </div>
-            {/* End Service Item */}
-            <div className="col-lg-6" data-aos="fade-up" data-aos-delay={400}>
-              <div className="service-item item-red position-relative">
-                <i className="bi bi-clock icon" /> {/* 24/7 Monitoring Icon */}
-                <div>
-                  <h3>24/7 Operations Monitoring &amp; Control Center</h3>
-                  <p>
-                    Offering round-the-clock monitoring and coordination to
-                    ensure uninterrupted service and efficient management of
-                    daily operations.
-                  </p>
-                </div>
-              </div>
-            </div>
-            {/* End Service Item */}
-            <div className="col-lg-6" data-aos="fade-up" data-aos-delay={500}>
-              <div className="service-item item-indigo position-relative">
-                <i className="bi bi-bar-chart-line icon" />{' '}
-                {/* Business Development Icon */}
-                <div>
-                  <h3>Business Development &amp; CRM</h3>
-                  <p>
-                    Developing strategic initiatives to increase market reach,
-                    attract new clients, and sustain long-term business growth
-                    and brand recognition.
-                  </p>
-                </div>
-              </div>
-            </div>
-            {/* End Service Item */}
-            <div className="col-lg-6" data-aos="fade-up" data-aos-delay={600}>
-              <div className="service-item item-pink position-relative">
-                <i className="bi bi-graph-up-arrow icon" />{' '}
-                {/* Performance Monitoring Icon (added service) */}
-                <div>
-                  <h3>Performance Monitoring</h3>
-                  <p>
-                    Regularly tracking project progress with data-driven
-                    insights, enabling timely adjustments to meet deadlines and
-                    stay on target.
-                  </p>
-                </div>
-              </div>
-            </div>
-            {/* End Service Item */}
-          </div>
-        </div>
-      </section>
-      {/* /Services Section */}
-      {/* More Features Section */}
-      <section id="more-features" className="more-features section">
-        <div className="container">
-          <div className="row justify-content-around gy-4">
-            <div
-              className="col-lg-6 d-flex flex-column justify-content-center order-2 order-lg-1"
-              data-aos="fade-up"
-              data-aos-delay={100}
-            >
-              <h3>Operations Consultancy Services by Nyas Consultants</h3>
-              <p>
-                Unlocking Efficiency, Innovation, and Growth through Expert
-                Consultancy.
-              </p>
-              <div className="row">
-                <div className="col-lg-6 icon-box d-flex">
-                  <i className="bi bi-cpu flex-shrink-0" />{' '}
-                  {/* Operations Efficiency Icon */}
-                  <div>
-                    <h4>Enhancing Operational Efficiency</h4>
-                    <p>
-                      Streamlining workflows to improve productivity and reduce
-                      costs.
-                    </p>
-                  </div>
-                </div>
-                {/* End Icon Box */}
-                <div className="col-lg-6 icon-box d-flex">
-                  <i className="bi bi-gear-wide-connected flex-shrink-0" />{' '}
-                  {/* Digital Transformation Icon */}
-                  <div>
-                    <h4>Future-Proofing with Digital Transformation</h4>
-                    <p>
-                      Implementing AI and automation for modernized, productive
-                      operations.
-                    </p>
-                  </div>
-                </div>
-                {/* End Icon Box */}
-                <div className="col-lg-6 icon-box d-flex">
-                  <i className="bi bi-person-circle flex-shrink-0" />{' '}
-                  {/* Virtual Assistant Icon */}
-                  <div>
-                    <h4>Comprehensive Administrative Support</h4>
-                    <p>
-                      Providing virtual assistants for efficient administrative
-                      assistance.
-                    </p>
-                  </div>
-                </div>
-                {/* End Icon Box */}
-                <div className="col-lg-6 icon-box d-flex">
-                  <i className="bi bi-graph-up-arrow flex-shrink-0" />{' '}
-                  {/* Continuous Monitoring Icon */}
-                  <div>
-                    <h4>Continuous Monitoring for Seamless Operations</h4>
-                    <p>
-                      24/7 monitoring ensuring uninterrupted service and quick
-                      responses.
-                    </p>
-                  </div>
-                </div>
-                {/* End Icon Box */}
-              </div>
-            </div>
-            <div
-              className="features-image col-lg-5 order-1 order-lg-2"
-              data-aos="fade-up"
-              data-aos-delay={200}
-            >
-              <img
-                src="assets/assetscross/img/project2.png"
-                alt="Operations Consultancy Services by Nyas Consultants"
-              />
-            </div>
-          </div>
-        </div>
-      </section>
-      {/* /More Features Section */}
-      {/* Faq Section */}
       <section id="faq" className="faq section py-5">
         <div className="section-title" data-aos="fade-up">
           <h2>Frequently Asked Questions</h2>
@@ -442,10 +255,9 @@ const ProjectsManagement = () => {
                 data-bs-parent="#faqAccordion"
               >
                 <div className="accordion-body">
-                  Project management is the process of planning, organizing, and
-                  managing resources to achieve specific goals within a defined
-                  timeline and budget. It ensures the effective execution of
-                  projects to meet desired outcomes.
+                  Project management is the process of planning, executing, and
+                  overseeing projects to achieve defined objectives efficiently,
+                  ensuring proper resource utilization and timely delivery.
                 </div>
               </div>
             </div>
@@ -461,7 +273,7 @@ const ProjectsManagement = () => {
                   aria-expanded="false"
                   aria-controls="collapseTwo"
                 >
-                  Why is project management crucial for business success?
+                  Why is project management important for business success?
                 </button>
               </h2>
               <div
@@ -471,10 +283,9 @@ const ProjectsManagement = () => {
                 data-bs-parent="#faqAccordion"
               >
                 <div className="accordion-body">
-                  Project management ensures that projects are completed
-                  efficiently, align with organizational goals, and meet quality
-                  standards while staying within scope, time, and budget
-                  constraints. This drives productivity and business growth.
+                  Effective project management ensures that projects align with
+                  business goals, use resources efficiently, stay on schedule,
+                  and meet quality standards, driving overall business growth.
                 </div>
               </div>
             </div>
@@ -490,7 +301,7 @@ const ProjectsManagement = () => {
                   aria-expanded="false"
                   aria-controls="collapseThree"
                 >
-                  What role does risk management play in project management?
+                  What are the key stages of a project management process?
                 </button>
               </h2>
               <div
@@ -500,38 +311,93 @@ const ProjectsManagement = () => {
                 data-bs-parent="#faqAccordion"
               >
                 <div className="accordion-body">
-                  Risk management identifies, assesses, and mitigates potential
-                  risks that could impact a project's success. Proactively
-                  managing risks ensures smooth project execution and minimizes
-                  unexpected challenges.
+                  Key stages include goal setting, planning, execution,
+                  monitoring, risk management, and communication to ensure a
+                  structured approach and successful project completion.
                 </div>
               </div>
             </div>
 
+            {/* FAQ Item 4 */}
             <div className="accordion-item">
-              <h2 className="accordion-header" id="headingThree">
+              <h2 className="accordion-header" id="headingFour">
                 <button
                   className="accordion-button collapsed"
                   type="button"
                   data-bs-toggle="collapse"
-                  data-bs-target="#collapseThree"
+                  data-bs-target="#collapseFour"
                   aria-expanded="false"
-                  aria-controls="collapseThree"
+                  aria-controls="collapseFour"
                 >
-                  What tools or methodologies are commonly used in project
-                  management?
+                  How does risk management play a role in project management?
                 </button>
               </h2>
               <div
-                id="collapseThree"
+                id="collapseFour"
                 className="accordion-collapse collapse"
-                aria-labelledby="headingThree"
+                aria-labelledby="headingFour"
                 data-bs-parent="#faqAccordion"
               >
                 <div className="accordion-body">
-                  Popular tools include Microsoft Project, Trello, and Asana.
-                  Common methodologies include Agile, Scrum, Waterfall, and
-                  Lean, depending on the project’s complexity and requirements.
+                  Risk management involves identifying potential risks,
+                  assessing their impact, and developing mitigation strategies
+                  to minimize disruptions and keep projects on track.
+                </div>
+              </div>
+            </div>
+
+            {/* FAQ Item 5 */}
+            <div className="accordion-item">
+              <h2 className="accordion-header" id="headingFive">
+                <button
+                  className="accordion-button collapsed"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#collapseFive"
+                  aria-expanded="false"
+                  aria-controls="collapseFive"
+                >
+                  What tools or methodologies do you use in project management?
+                </button>
+              </h2>
+              <div
+                id="collapseFive"
+                className="accordion-collapse collapse"
+                aria-labelledby="headingFive"
+                data-bs-parent="#faqAccordion"
+              >
+                <div className="accordion-body">
+                  We use a combination of methodologies like Agile, Scrum, and
+                  traditional project management tools, tailored to each
+                  project’s needs for optimal results.
+                </div>
+              </div>
+            </div>
+
+            {/* FAQ Item 6 */}
+            <div className="accordion-item">
+              <h2 className="accordion-header" id="headingSix">
+                <button
+                  className="accordion-button collapsed"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#collapseSix"
+                  aria-expanded="false"
+                  aria-controls="collapseSix"
+                >
+                  How do you ensure stakeholder alignment throughout a project?
+                </button>
+              </h2>
+              <div
+                id="collapseSix"
+                className="accordion-collapse collapse"
+                aria-labelledby="headingSix"
+                data-bs-parent="#faqAccordion"
+              >
+                <div className="accordion-body">
+                  We maintain open communication channels, provide regular
+                  updates, and involve stakeholders in key decisions to ensure
+                  their alignment and satisfaction.
                 </div>
               </div>
             </div>

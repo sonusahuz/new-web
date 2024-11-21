@@ -3,6 +3,22 @@ import React from 'react';
 const UiuxDesignArea = () => {
   return (
     <>
+      <link
+        href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,600;0,700;1,400&display=swap"
+        rel="stylesheet"
+      />
+      <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap"
+        rel="stylesheet"
+      />
+
+      <link
+        href="/assets/assetsuiuxdesign/css/fontawesome-all.min.css"
+        rel="stylesheet"
+      />
+      <link href="/assets/assetsuiuxdesign/css/swiper.css" rel="stylesheet" />
+
+      <link rel="icon" href="images/favicon.png" />
       {/* Header Section */}
       <header
         className="header position-relative"
