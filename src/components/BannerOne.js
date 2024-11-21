@@ -5,18 +5,18 @@ import { Link } from 'react-router-dom';
 const BannerOne = () => {
   return (
     <>
-      {/* ================== BannerOne Start ==================*/} 
+      {/* ================== BannerOne Start ==================*/}
       <div
         className="banner-area bg-relative banner-area-1 pd-bottom-100 bg-cover"
         style={{ backgroundImage: 'url("./assets/img/banner/0.png")' }}
       >
         <div className="container">
-          <div className="row align-items-center">
-            {/* Left Content */}
-            <div className="col-lg-6 col-md-12 text-left text-lg-start">
+          <div className="row">
+            <div className="col-lg-6" style={{ textAlign: 'left' }}>
               <div className="banner-inner pe-xl-5">
                 <h6
-                  className="subtitle fw-bold"
+                  style={{ fontWeight: 'bold' }}
+                  className="subtitle"
                   data-aos="fade-right"
                   data-aos-delay="100"
                   data-aos-duration="1500"
@@ -52,7 +52,6 @@ const BannerOne = () => {
                 </Link>
               </div>
             </div>
-            {/* Right Content */}
             <div className="col-lg-6 col-md-12 text-center">
               <img
                 src="assets/img/banner.jpeg"
@@ -67,7 +66,7 @@ const BannerOne = () => {
           </div>
         </div>
       </div>
-      {/* ================== BannerOne End ==================*/} 
+      {/* ================== BannerOne End ==================*/}
     </>
   );
 };
