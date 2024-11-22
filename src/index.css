@@ -164,14 +164,63 @@ input:focus {
   justify-content: space-between;
   margin-top: 50px;
 }
+/* Initial swipe-up animation */
 .app-container {
   opacity: 0;
   transform: translateY(100%);
   transition: opacity 1.2s cubic-bezier(0.25, 0.1, 0.25, 1),
     transform 1.2s cubic-bezier(0.25, 0.1, 0.25, 1);
+
+  animation-duration: 2s;
+  animation-name: bouncing;
+  animation-iteration-count: infinite;
+}
+
+@keyframes bouncing {
+  0% {
+    top: 0px;
+  }
+  100% {
+    top: 50px;
+  }
 }
 
 .app-container.animate-swipe-up {
   opacity: 1;
   transform: translateY(0);
+}
+
+/* Up and down smooth animation */
+@keyframes smoothUpDown {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+.image-container,
+.form-container {
+  animation: smoothUpDown 3s ease-in-out infinite;
+}
+
+@keyframes float {
+  0% {
+    transform: translatey(0px);
+  }
+  50% {
+    transform: translatey(-20px);
+  }
+  100% {
+    transform: translatey(0px);
+  }
+}
+
+.animate {
+  transform: translatey(0px);
+  animation: float 6s ease-in-out infinite;
 }

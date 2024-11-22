@@ -121,7 +121,7 @@ const App = () => {
 
           {/* Right Side - Form */}
           <div
-            className="col-lg-6 border-1 rounded-2"
+            className="col-lg-6 border-1 rounded-2 animate"
             style={{ width: 'auto', height: 'auto', padding: '20px' }}
           >
             <h1 className="fs-3 mb-4 fw-bold">Get in Touch</h1>
