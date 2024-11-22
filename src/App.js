@@ -51,6 +51,7 @@ import MVPDevelopmentTesting from './pages/MVPDevelopmentDesign';
 import UiuxDesignPrototype from './pages/UiuxDesignPrototype';
 import BlockChainSolution from './pages/BlockChainSolution';
 import ProjectManagement2 from './pages/ProjectManagement2';
+import ThankYou from './pages/ThankYou';
 
 function App() {
   useEffect(() => {
@@ -81,6 +82,8 @@ function App() {
         <Route exact path="/blog-3" element={<BlogThree />} />
         <Route exact path="/blog-4" element={<BlogFour />} />
         <Route exact path="/blog-details" element={<BlogDetails />} />
+        <Route exact path="/thank-you" element={<ThankYou />} />
+
         <Route exact path="/contact" element={<Contact />} />
         <Route exact path="/service-3" element={<Service />} />
         <Route exact path="/service-2" element={<ServiceTwo />} />

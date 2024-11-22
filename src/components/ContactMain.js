@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
+import { useNavigate } from 'react-router-dom';
 
 const App = () => {
   const [formData, setFormData] = useState({
@@ -9,6 +10,8 @@ const App = () => {
     service: '',
     message: '',
   });
+
+  const navigate = useNavigate();
 
   // Handle form input changes
   const handleInputChange = (e) => {
@@ -28,12 +31,17 @@ const App = () => {
       return;
     }
 
-    // Proceed with form submission (e.g., send data to an API)
-    console.log('Form submitted:', formData);
+    // Validate phone number (should be exactly 10 digits)
+    const phoneRegex = /^[0-9]{10}$/;
+    if (!phoneRegex.test(phone)) {
+      alert('Phone number must be 10 digits.');
+      return;
+    }
 
-    // Show the success alert
-    alert('Submit Successfully');
+    // Redirect to the Thank You page
+    navigate('/thank-you');
   };
+
   return (
     <div>
       {/* Header Section */}
@@ -139,12 +147,15 @@ const App = () => {
                   Phone
                 </label>
                 <input
-                  type="number"
+                  type="text"
                   placeholder="Enter Your Phone Number"
                   className="form-control"
                   id="phone"
                   value={formData.phone}
-                  onChange={handleInputChange}
+                  onChange={(e) => {
+                    const value = e.target.value.replace(/[^0-9]/g, '');
+                    setFormData((prevData) => ({ ...prevData, phone: value }));
+                  }}
                   required
                 />
               </div>
