@@ -72,7 +72,7 @@ const App = () => {
             className="col-lg-6 border-1 p-6 rounded-2"
             style={{ width: '400px', height: 'auto' }}
           >
-            <form>
+            <form required>
               {/* Form fields */}
               <div className="mb-3">
                 <label htmlFor="Name" className="form-label">

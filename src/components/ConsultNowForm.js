@@ -32,6 +32,7 @@ const ConsultNowForm = ({
                   placeholder="Enter Your Name"
                   id="name"
                   aria-describedby="nameHelp"
+                  required
                 />
               </div>
               <div className="mb-3">
@@ -43,6 +44,7 @@ const ConsultNowForm = ({
                   className="form-control"
                   placeholder="Enter Your Email"
                   id="Email"
+                  required
                   aria-describedby="emailHelp"
                 />
               </div>
@@ -54,6 +56,7 @@ const ConsultNowForm = ({
                   type="number"
                   placeholder="Enter Your Phone Number"
                   className="form-control"
+                  required
                   id="number"
                 />
               </div>
