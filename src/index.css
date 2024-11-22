@@ -106,3 +106,31 @@
 ::-webkit-scrollbar-thumb:hover {
   background: #555; /* Color of the scrollbar handle when hovered */
 }
+
+/* Optional custom styling */
+body {
+  font-family: Arial, sans-serif;
+}
+
+.bg-primary {
+  background-color: #246BFD !important;
+}
+
+img {
+  border-radius: 8px;
+}
+
+button {
+  background-color: #007bff;
+  border: none;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+textarea:focus,
+input:focus {
+  outline: none;
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}

@@ -1,170 +1,133 @@
-import React, { useRef } from 'react';
-import emailjs from '@emailjs/browser';
-import { toast, Toaster } from 'react-hot-toast';
-const ContactMain = () => {
-  const form = useRef();
+import React from 'react';
+import 'bootstrap/dist/css/bootstrap.min.css';
 
-  const sendEmail = (e) => {
-    e.preventDefault();
-    // Please See Documentation for more information
-    emailjs
-      .sendForm(
-        'service_yipk4xg', //YOUR_SERVICE_ID
-        'template_71bgc2q', //YOUR_TEMPLATE_ID
-        form.current,
-        'cwf8kROl5o3__96Ti', //YOUR_PUBLIC_KEY
-      )
-      .then(
-        (result) => {
-          if (result.text === 'OK') {
-            toast.success('Massage Sent Successfully!');
-            form.current[0].value = '';
-            form.current[1].value = '';
-            form.current[2].value = '';
-            form.current[3].value = '';
-          }
-        },
-        (error) => {
-          if (error.text !== 'OK') {
-            toast.success('Massage Not Sent!');
-          }
-        },
-      );
-  };
+const App = () => {
   return (
-    <>
-      {/* ================= Contact Main start =================*/}
-      <Toaster position="bottom-center" reverseOrder={false} />
-      <>
-        {/* contact area start */}
-        <div className="contact-area pd-top-120 pd-bottom-120">
-          <div className="container">
-            <div className="contact-page-inner bg-gray">
-              <div className="section-title mb-4 pb-2">
-                <h2 className="title">Direct contact us? </h2>
-                {/* <p className="content mb-0">
-                  For your car we will do everything advice, repairs and
-                  maintenance. We are the some preferred choice by many car
-                  owners because our experience and knowledge is selfe
-                  vident.For your car we will do som everything.
-                </p> */}
-              </div>
-              <form ref={form} onSubmit={sendEmail}>
-                <div className="row">
-                  <div className="col-md-12">
-                    <div className="single-input-inner">
-                      <input
-                        id="name"
-                        name="user_name"
-                        type="text"
-                        placeholder="Enter Your Name."
-                        required
-                      />
-                    </div>
-                  </div>
-                  <div className="col-md-12">
-                    <div className="single-input-inner">
-                      <input
-                        id="email"
-                        name="user_email"
-                        type="email"
-                        placeholder="Enter Your Email."
-                        required
-                      />
-                    </div>
-                  </div>
-                  <div className="col-md-12">
-                    <div className="single-input-inner">
-                      <input
-                        id="subject"
-                        name="subject"
-                        type="text"
-                        placeholder="Enter Your Subject."
-                        required
-                      />
-                    </div>
-                  </div>
-                  <div className="col-12">
-                    <div className="single-input-inner">
-                      <textarea
-                        name="message"
-                        id="massage"
-                        cols="1"
-                        rows="5"
-                        placeholder="Enter Your Message ..."
-                        required
-                      />
-                    </div>
-                  </div>
-                  <div className="col-12 text-center">
-                    <button
-                      type="submit"
-                      className="btn btn-base border-radius-5"
-                    >
-                      Send Message
-                    </button>
-                  </div>
-                </div>
-              </form>
-            </div>
+    <div>
+      {/* Header Section */}
+      <div className="bg-primary text-white py-5">
+        <div className="container d-flex flex-wrap align-items-center justify-content-between">
+          {/* Left Section */}
+          <div>
+            <h1 className="text-white fs-1"> CONTACT US</h1>
+            <p className="mt-3 text-white fs-3">
+              Connect with Nyas Consultants for innovative tech <br />{' '}
+              solutions—your partner in driving digital transformation!
+            </p>
           </div>
-        </div>
-        {/* contact area end */}
-        {/* contact list start */}
-        <div className="contact-page-list">
-          <div className="container">
-            <div className="row justify-content-center">
-              <div className="col-lg-4 col-md-6">
-                <div className="media single-contact-list">
-                  <div className="media-left">
-                    <img src="assets/img/icon/13.svg" alt="img" />
-                  </div>
-                  <div className="media-body">
-                    <h5>Contacts us</h5>
-                    <h6>+353 85 161 3637</h6>
-                  </div>
-                </div>
-              </div>
-              <div className="col-lg-4 col-md-6">
-                <div className="media single-contact-list">
-                  <div className="media-left">
-                    <img src="assets/img/icon/14.svg" alt="img" />
-                  </div>
-                  <div className="media-body">
-                    <h5>Your Email</h5>
-                    <h6>info@nyasconsultants.com</h6>
-                  </div>
-                </div>
-              </div>
-              <div className="col-lg-4 col-md-6">
-                <div className="media single-contact-list">
-                  <div className="media-left">
-                    <img src="assets/img/icon/15.svg" alt="img" />
-                  </div>
-                  <div className="media-body">
-                    <h5>Location</h5>
-                    <h6>Mountjoy, Dublin 1, D01 XY58,
-                    Ireland</h6>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        {/* contact list start */}
-        {/* map start */}
-        <div className="contact-g-map">
-          <iframe
-            src="https://www.google.com/maps/embed?pb=!1m10!1m8!1m3!1d29208.601361499546!2d90.3598076!3d23.7803374!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sbd!4v1589109092857!5m2!1sen!2sbd"
-            title="new title"
-          />
-        </div>
-        {/* map end */}
-      </>
 
-      {/* ================= Contact Main End =================*/}
-    </>
+          {/* Right Section */}
+          <div className="d-flex align-items-center justify-content-between py-4">
+            {/* Left Section - Two icons stacked */}
+            <div className="d-flex flex-column align-items-center">
+              <div className="mb-3">
+                <img
+                  src="/assets/img/email.png" // Replace with your Gmail icon
+                  alt="Gmail"
+                  className="rounded-circle"
+                  style={{ width: '100px', height: '100px' }}
+                />
+              </div>
+              <div>
+                <img
+                  src="/assets/img/phone.png" // Replace with your Phone icon
+                  alt="Phone"
+                  className="rounded-circle"
+                  style={{ width: '100px', height: '100px' }}
+                />
+              </div>
+            </div>
+
+            {/* Right Section - Single icon */}
+            <div>
+              <img
+                src="/assets/img/internet.png" // Replace with your Globe icon
+                alt="Globe"
+                className="rounded-circle"
+                style={{ width: '100px', height: '100px' }}
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+
+      {/* Request a Consultation Section */}
+      <div className="container py-5">
+        <h2 className="text-center mb-4 fs-1 font-bold">
+          Request a Consultation
+        </h2>
+        <div className="row align-items-center justify-content-between">
+          {/* Left Side */}
+          <div className="col-lg-6 text-center">
+            <img
+              src="/assets/img/contact-form.png" // Replace with your image URL
+              alt="Consultation illustration"
+              className="img-fluid"
+            />
+          </div>
+
+          {/* Right Side - Form */}
+          <div
+            className="col-lg-6 border-1 p-6"
+            style={{ width: '400px', height: 'auto' }}
+          >
+            <form className="mx-auto">
+              <div className="mb-3 mt-4">
+                <label htmlFor="name" className="form-label">
+                  Name
+                </label>
+                <input
+                  type="text"
+                  className="form-control"
+                  id="name"
+                  placeholder="Enter your name"
+                />
+              </div>
+              <div className="mb-3">
+                <label htmlFor="surname" className="form-label">
+                  Surname
+                </label>
+                <input
+                  type="text"
+                  className="form-control"
+                  id="surname"
+                  placeholder="Enter your surname"
+                />
+              </div>
+              <div className="mb-3">
+                <label htmlFor="email" className="form-label">
+                  Email
+                </label>
+                <input
+                  type="email"
+                  className="form-control"
+                  id="email"
+                  placeholder="Enter your email"
+                />
+              </div>
+              <div className="mb-3">
+                <label htmlFor="message" className="form-label">
+                  Message
+                </label>
+                <textarea
+                  className="form-control"
+                  id="message"
+                  rows="4"
+                  placeholder="Write your message"
+                ></textarea>
+              </div>
+              <button
+                type="submit"
+                className="btn btn-primary w-100 rounded-2 mb-4"
+              >
+                Submit
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
   );
 };
 
-export default ContactMain;
+export default App;
