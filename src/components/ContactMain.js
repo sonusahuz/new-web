@@ -30,6 +30,9 @@ const App = () => {
 
     // Proceed with form submission (e.g., send data to an API)
     console.log('Form submitted:', formData);
+
+    // Show the success alert
+    alert('Submit Successfully');
   };
   return (
     <div>
