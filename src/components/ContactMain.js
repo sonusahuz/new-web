@@ -5,11 +5,11 @@ const App = () => {
   return (
     <div>
       {/* Header Section */}
-      <div className="bg-primary text-white py-5">
-        <div className="container d-flex flex-wrap align-items-center justify-content-between">
+      <div className="bg-primary text-white">
+        <div className="container d-flex flex-wrap align-items-center justify-content-between py-5 p-lg-0">
           {/* Left Section */}
           <div>
-            <h1 className="text-white fs-1"> CONTACT US</h1>
+            <h1 className="text-white fs-1 fw-bold"> CONTACT US</h1>
             <p className="mt-3 text-white fs-3">
               Connect with Nyas Consultants for innovative tech <br />{' '}
               solutions—your partner in driving digital transformation!
@@ -25,15 +25,16 @@ const App = () => {
                   src="/assets/img/email.png" // Replace with your Gmail icon
                   alt="Gmail"
                   className="rounded-circle"
-                  style={{ width: '100px', height: '100px' }}
+                  style={{ width: '180px', height: '150px' }}
                 />
               </div>
+
               <div>
                 <img
-                  src="/assets/img/phone.png" // Replace with your Phone icon
+                  src="/assets/img/internet.png" // Replace with your Phone icon
                   alt="Phone"
                   className="rounded-circle"
-                  style={{ width: '100px', height: '100px' }}
+                  style={{ width: '180px', height: '150px' }}
                 />
               </div>
             </div>
@@ -41,10 +42,10 @@ const App = () => {
             {/* Right Section - Single icon */}
             <div>
               <img
-                src="/assets/img/internet.png" // Replace with your Globe icon
+                src="/assets/img/phone.png" // Replace with your Globe icon
                 alt="Globe"
                 className="rounded-circle"
-                style={{ width: '100px', height: '100px' }}
+                style={{ width: '180px', height: '150px' }}
               />
             </div>
           </div>
@@ -53,7 +54,7 @@ const App = () => {
 
       {/* Request a Consultation Section */}
       <div className="container py-5">
-        <h2 className="text-center mb-4 fs-1 font-bold">
+        <h2 className="text-center mb-4 fs-1 fw-bold">
           Request a Consultation
         </h2>
         <div className="row align-items-center justify-content-between">
@@ -68,7 +69,7 @@ const App = () => {
 
           {/* Right Side - Form */}
           <div
-            className="col-lg-6 border-1 p-6"
+            className="col-lg-6 border-1 p-6 rounded-2"
             style={{ width: '400px', height: 'auto' }}
           >
             <form className="mx-auto">
