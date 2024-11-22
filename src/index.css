@@ -113,7 +113,7 @@ body {
 }
 
 .bg-primary {
-  background-color: #246BFD !important;
+  background-color: #246bfd !important;
 }
 
 img {
@@ -133,4 +133,27 @@ textarea:focus,
 input:focus {
   outline: none;
   box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
+.request {
+  font-size: 50px;
+}
+
+.contact {
+  font-size: 60px;
+}
+@media screen and (max-width: 768px) {
+  .contact {
+    font-size: 40px;
+  }
+}
+
+.description {
+  line-height: 1.2;
+  font-weight: 500;
+}
+
+.contact-img-form {
+  margin: auto;
+  margin-top: 50px;
 }
