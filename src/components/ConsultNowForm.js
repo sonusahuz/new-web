@@ -1,3 +1,5 @@
+import React, { useState } from 'react';
+
 const ConsultNowForm = ({
   isOpen,
   onClose,
@@ -5,7 +7,38 @@ const ConsultNowForm = ({
   width = '400px',
   height = 'auto',
 }) => {
+  const [formData, setFormData] = useState({
+    name: '',
+    email: '',
+    phone: '',
+    service: '',
+    message: '',
+  });
+
   if (!isOpen) return null;
+
+  // Handle form data change
+  const handleInputChange = (e) => {
+    const { id, value } = e.target;
+    setFormData((prevData) => ({ ...prevData, [id]: value }));
+  };
+
+  // Form submission handler
+  const handleSubmit = (e) => {
+    e.preventDefault();
+
+    const { name, email, phone, service } = formData;
+
+    // Check if required fields are filled
+    if (!name || !email || !phone || !service) {
+      alert('Please fill out all required fields.');
+      return;
+    }
+
+    // If all required fields are filled, you can handle form submission (e.g., send to API)
+    console.log('Form submitted', formData);
+    onClose(false); // Close the form modal after submission (optional)
+  };
 
   return (
     <div className="modal-overlay">
@@ -20,10 +53,10 @@ const ConsultNowForm = ({
         <div className="modal-body">
           <p className="modal-description">{description}</p>
           <div className="modal-children">
-            <form>
+            <form onSubmit={handleSubmit}>
               {/* Form fields */}
               <div className="mb-3">
-                <label htmlFor="Name" className="form-label">
+                <label htmlFor="name" className="form-label">
                   Name
                 </label>
                 <input
@@ -31,21 +64,23 @@ const ConsultNowForm = ({
                   className="form-control"
                   placeholder="Enter Your Name"
                   id="name"
-                  aria-describedby="nameHelp"
+                  value={formData.name}
+                  onChange={handleInputChange}
                   required
                 />
               </div>
               <div className="mb-3">
-                <label htmlFor="Email1" className="form-label">
+                <label htmlFor="email" className="form-label">
                   Email
                 </label>
                 <input
                   type="email"
                   className="form-control"
                   placeholder="Enter Your Email"
-                  id="Email"
+                  id="email"
+                  value={formData.email}
+                  onChange={handleInputChange}
                   required
-                  aria-describedby="emailHelp"
                 />
               </div>
               <div className="mb-3">
@@ -56,20 +91,24 @@ const ConsultNowForm = ({
                   type="number"
                   placeholder="Enter Your Phone Number"
                   className="form-control"
+                  id="phone"
+                  value={formData.phone}
+                  onChange={handleInputChange}
                   required
-                  id="number"
                 />
               </div>
               <div className="mb-3">
-                <label htmlFor="phone" className="form-label">
+                <label htmlFor="service" className="form-label">
                   Select Service
                 </label>
                 <select
                   className="form-select"
-                  aria-label="Default select example"
+                  id="service"
+                  value={formData.service}
+                  onChange={handleInputChange}
                   required
                 >
-                  <option selected>Select - </option>
+                  <option value="">Select -</option>
                   <option value="Custom Website Design & Development">
                     Custom Website Design & Development
                   </option>
@@ -95,6 +134,8 @@ const ConsultNowForm = ({
                   className="form-control"
                   id="message"
                   placeholder="Enter Your Message"
+                  value={formData.message}
+                  onChange={handleInputChange}
                 />
               </div>
               <div>
