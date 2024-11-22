@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { useNavigate } from 'react-router-dom';
 
@@ -18,6 +18,14 @@ const App = () => {
     const { id, value } = e.target;
     setFormData((prevData) => ({ ...prevData, [id]: value }));
   };
+
+  const [animate, setAnimate] = useState(false);
+
+  useEffect(() => {
+    // Trigger the swipe-up animation after a small delay
+    const timer = setTimeout(() => setAnimate(true), 100);
+    return () => clearTimeout(timer); // Cleanup on component unmount
+  }, []);
 
   // Handle form submission
   const handleSubmit = (e) => {
@@ -93,13 +101,17 @@ const App = () => {
       </div>
 
       {/* Request a Consultation Section */}
-      <div className="container py-5">
-        <h2 className="text-center mb-4 fw-bold request">
-          Request a Consultation
-        </h2>
+      <div
+        className={`app-container container py-5 ${
+          animate ? 'animate-swipe-up' : ''
+        }`}
+      >
         <div className="row contact-img-form">
           {/* Left Side */}
           <div className="col-lg-6 text-center">
+            <h2 className="text-center mb-4 fw-bold request">
+              Request a Consultation
+            </h2>
             <img
               src="/assets/img/contact-form.png" // Replace with your image URL
               alt="Consultation illustration"
@@ -109,9 +121,10 @@ const App = () => {
 
           {/* Right Side - Form */}
           <div
-            className="col-lg-6 border-1 p-6 rounded-2"
-            style={{ width: '400px', height: 'auto' }}
+            className="col-lg-6 border-1 rounded-2"
+            style={{ width: 'auto', height: 'auto', padding: '20px' }}
           >
+            <h1 className="fs-3 mb-4 fw-bold">Get in Touch</h1>
             <form onSubmit={handleSubmit}>
               {/* Form fields */}
               <div className="mb-3">
@@ -120,7 +133,7 @@ const App = () => {
                 </label>
                 <input
                   type="text"
-                  className="form-control"
+                  className="form-control form-control-lg"
                   placeholder="Enter Your Name"
                   id="name"
                   value={formData.name}
@@ -134,7 +147,7 @@ const App = () => {
                 </label>
                 <input
                   type="email"
-                  className="form-control"
+                  className="form-control form-control-lg"
                   placeholder="Enter Your Email"
                   id="email"
                   value={formData.email}
@@ -149,7 +162,7 @@ const App = () => {
                 <input
                   type="text"
                   placeholder="Enter Your Phone Number"
-                  className="form-control"
+                  className="form-control form-control-lg"
                   id="phone"
                   value={formData.phone}
                   onChange={(e) => {
@@ -164,7 +177,7 @@ const App = () => {
                   Select Service
                 </label>
                 <select
-                  className="form-select"
+                  className="form-select form-select-lg"
                   id="service"
                   value={formData.service}
                   onChange={handleInputChange}
@@ -193,7 +206,7 @@ const App = () => {
                   Message
                 </label>
                 <textarea
-                  className="form-control"
+                  className="form-control form-control-lg"
                   id="message"
                   placeholder="Enter Your Message"
                   value={formData.message}

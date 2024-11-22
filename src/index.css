@@ -137,6 +137,7 @@ input:focus {
 
 .request {
   font-size: 50px;
+  text-align: left;
 }
 
 .contact {
@@ -146,6 +147,10 @@ input:focus {
   .contact {
     font-size: 40px;
   }
+  .request {
+    font-size: 40px;
+    text-align: left;
+  }
 }
 
 .description {
@@ -154,6 +159,19 @@ input:focus {
 }
 
 .contact-img-form {
-  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
   margin-top: 50px;
+}
+.app-container {
+  opacity: 0;
+  transform: translateY(100%);
+  transition: opacity 1.2s cubic-bezier(0.25, 0.1, 0.25, 1),
+    transform 1.2s cubic-bezier(0.25, 0.1, 0.25, 1);
+}
+
+.app-container.animate-swipe-up {
+  opacity: 1;
+  transform: translateY(0);
 }
