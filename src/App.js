@@ -16,7 +16,7 @@ import Team from './pages/Team';
 import TeamDetails from './pages/TeamDetails';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
-import { useEffect } from 'react';
+import { useEffect, useState } from 'react';
 import ScrollToTop from 'react-scroll-to-top';
 import HomeFive from './pages/HomeFive';
 import HomeSix from './pages/HomeSix';
@@ -52,8 +52,12 @@ import UiuxDesignPrototype from './pages/UiuxDesignPrototype';
 import BlockChainSolution from './pages/BlockChainSolution';
 import ProjectManagement2 from './pages/ProjectManagement2';
 import ThankYou from './pages/ThankYou';
+import ChatBotBox from './components/ChatBotBox';
+import ChatBotModal from './components/ChatBotModal';
 
 function App() {
+  const [openChatBox, setOpenChatBox] = useState(false);
+
   useEffect(() => {
     AOS.init({
       offset: 0,
@@ -83,7 +87,6 @@ function App() {
         <Route exact path="/blog-4" element={<BlogFour />} />
         <Route exact path="/blog-details" element={<BlogDetails />} />
         <Route exact path="/thank-you" element={<ThankYou />} />
-
         <Route exact path="/contact" element={<Contact />} />
         <Route exact path="/service-3" element={<Service />} />
         <Route exact path="/service-2" element={<ServiceTwo />} />
@@ -155,7 +158,7 @@ function App() {
           path="/cross-platfrom-development"
           element={<CrossPlatformDevelopment />}
         />
-
+a
         <Route
           exact
           path="/digital-product-development"
@@ -163,6 +166,13 @@ function App() {
         />
       </Routes>
       <ScrollToTop smooth color="#246BFD" />
+      <ChatBotBox openChatBox={openChatBox} setOpenChatBox={setOpenChatBox} />
+      {openChatBox && (
+        <ChatBotModal
+          openChat={openChatBox}
+          setOpenChat={() => setOpenChatBox(false)}
+        />
+      )}
     </BrowserRouter>
   );
 }

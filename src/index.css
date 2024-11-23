@@ -11,7 +11,20 @@
   align-items: center;
   z-index: 1000;
   backdrop-filter: blur(5px); /* Blur the background */
-  z-index: 1000; /* Ensure it appears above other content */
+}
+
+.modal-overlay2 {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  z-index: 1000;
+  backdrop-filter: blur(5px); /* Blur the background */
 }
 
 /* Modal Content */
@@ -25,6 +38,17 @@
   box-sizing: border-box;
 }
 
+/* Modal Content */
+.modal-content2 {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  position: relative;
+  max-width: 100%;
+  margin-right: 20px;
+  box-sizing: border-box;
+}
 /* Modal Header (Title and Close Button) */
 .modal-header {
   display: flex;
@@ -72,6 +96,11 @@
 
   .modal-title {
     font-size: 20px;
+  }
+  /* Modal Content */
+  .modal-content2 {
+    margin-right: 0px;
+    height: 100vh;
   }
 }
 
@@ -223,4 +252,39 @@ input:focus {
 .animate {
   transform: translatey(0px);
   animation: float 6s ease-in-out infinite;
+}
+.icons {
+  color: white;
+  padding: 10px;
+  border-radius: 50%;
+}
+.chat-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 50px;
+  width: 50px;
+  position: fixed; /* Use fixed to stick it to the screen's bottom-right corner */
+  bottom: 50px; /* Distance from the bottom edge of the screen */
+  right: 100px; /* Distance from the right edge of the screen */
+  background: #ffffff; /* Background color for better visibility */
+  border-radius: 50%; /* Circular shape */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+  cursor: pointer; /* Indicate clickability */
+  z-index: 1000; /* Ensure it's above other elements */
+  transition: transform 0.2s ease-in-out; /* Smooth scaling on hover */
+}
+
+.chat-icon:hover {
+  transform: scale(1.1); /* Slight enlargement on hover */
+}
+
+@media (max-width: 768px) {
+  .chat-icon {
+    bottom: 40px; /* Adjust position for smaller screens */
+    right: 20px;
+    height: 50px; /* Slightly smaller icon */
+    width: 50px;
+    font-size: 20px;
+  }
 }
