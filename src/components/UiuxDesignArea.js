@@ -20,21 +20,24 @@ const UiuxDesignArea = () => {
 
       <link rel="icon" href="images/favicon.png" />
       {/* Header Section */}
-      <header
-        className="header position-relative"
-        style={{
-          height: '100vh',
-          backgroundImage:
-            'url(assets/assetsuiuxdesign/images/header-background.jpg)',
-          backgroundSize: 'cover',
-          backgroundPosition: 'center',
-        }}
-      >
-        <div className="header-content text-center text-light d-flex align-items-center justify-content-center vh-100">
-          <div className="container">
-            <h1 className="display-4 fw-bold text-white">
-              UI/UX Design &<br /> Prototyping
-            </h1>
+      <header className="header position-relative py-5">
+        <div className="container">
+          <div className="row d-flex align-items-center justify-content-center flex-wrap mx-auto">
+            {/* Text Section */}
+            <div className="col-12 col-md-6 text-center text-md-start mb-4 mb-md-0">
+              <h1 className="display-4 fw-bold text-black">
+                UI/UX Design &<br /> Prototyping
+              </h1>
+            </div>
+            {/* Image Section */}
+            <div className="col-12 col-md-6 text-center">
+              <img
+                src={'/assets/assetsuiuxdesign/images/ui-ux.png'}
+                className="img-fluid "
+                style={{ maxWidth: '500px' }}
+                alt="UI/UX Design Logo"
+              />
+            </div>
           </div>
         </div>
       </header>
@@ -98,7 +101,7 @@ const UiuxDesignArea = () => {
               <div className="col-md-4 col-sm-6" key={index}>
                 <div className="card h-100">
                   <img
-                    src={step.image}
+                    src={`/${step.image}`}
                     className="card-img-top"
                     alt={step.title}
                   />
