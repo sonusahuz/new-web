@@ -13,10 +13,10 @@ const UiuxDesignArea = () => {
       />
 
       <link
-        href="/assets/assetsuiuxdesign/css/fontawesome-all.min.css"
+        href="/assets/uiuxdesign/css/fontawesome-all.min.css"
         rel="stylesheet"
       />
-      <link href="/assets/assetsuiuxdesign/css/swiper.css" rel="stylesheet" />
+      <link href="/assets/uiuxdesign/css/swiper.css" rel="stylesheet" />
 
       <link rel="icon" href="images/favicon.png" />
       {/* Header Section */}
@@ -32,7 +32,7 @@ const UiuxDesignArea = () => {
             {/* Image Section */}
             <div className="col-12 col-md-6 text-center">
               <img
-                src={'/assets/assetsuiuxdesign/images/ui-ux.png'}
+                src={'/assets/uiuxdesign/images/ui-ux.png'}
                 className="img-fluid "
                 style={{ maxWidth: '500px' }}
                 alt="UI/UX Design Logo"
@@ -71,31 +71,31 @@ const UiuxDesignArea = () => {
                 title: 'User Research and Persona Development',
                 description:
                   'Identifying target audience needs and behaviors to inform design choices.',
-                image: 'assets/assetsuiuxdesign/images/project-1.jpg',
+                image: 'assets/uiuxdesign/images/project-1.jpg',
               },
               {
                 title: 'Wireframing and Mockups',
                 description:
                   'Creating initial layouts to organize content, navigation, and design elements.',
-                image: 'assets/assetsuiuxdesign/images/project-2.jpg',
+                image: 'assets/uiuxdesign/images/project-2.jpg',
               },
               {
                 title: 'Visual Design',
                 description:
                   'Developing the final aesthetic, including typography, color schemes, and branding elements.',
-                image: 'assets/assetsuiuxdesign/images/project-3.jpg',
+                image: 'assets/uiuxdesign/images/project-3.jpg',
               },
               {
                 title: 'Prototyping and Testing',
                 description:
                   'Building interactive prototypes to validate design flow, usability, and user satisfaction.',
-                image: 'assets/assetsuiuxdesign/images/project-4.jpg',
+                image: 'assets/uiuxdesign/images/project-4.jpg',
               },
               {
                 title: 'Final Design and Handoff',
                 description:
                   'Refining the design based on feedback and preparing assets for development.',
-                image: 'assets/assetsuiuxdesign/images/project-5.jpg',
+                image: 'assets/uiuxdesign/images/project-5.jpg',
               },
             ].map((step, index) => (
               <div className="col-md-4 col-sm-6" key={index}>
