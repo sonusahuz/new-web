@@ -35,8 +35,12 @@ const ChatBotModal = ({
       return;
     }
 
-    // If all required fields are filled, you can handle form submission (e.g., send to API)
-    console.log('Form submitted', formData);
+    const phoneRegex = /^[0-9]{10}$/;
+    if (!phoneRegex.test(phone)) {
+      alert('Phone number must be 10 digits.');
+      return;
+    }
+
     setOpenChat(false); // Close the form modal after submission (optional)
   };
 
@@ -94,12 +98,15 @@ const ChatBotModal = ({
                   Phone
                 </label>
                 <input
-                  type="number"
+                  type="text"
                   placeholder="Enter Your Phone Number"
                   className="form-control"
                   id="phone"
                   value={formData.phone}
-                  onChange={handleInputChange}
+                  onChange={(e) => {
+                    const value = e.target.value.replace(/[^0-9]/g, '');
+                    setFormData((prevData) => ({ ...prevData, phone: value }));
+                  }}
                   required
                 />
               </div>

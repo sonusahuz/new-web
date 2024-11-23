@@ -100,7 +100,7 @@
   /* Modal Content */
   .modal-content2 {
     margin-right: 0px;
-    height: 100vh;
+    height: auto;
   }
 }
 
