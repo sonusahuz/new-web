@@ -2,7 +2,7 @@ import React from 'react';
 
 const ChatBotBox = ({ openChatBox, setOpenChatBox }) => {
   return (
-    <div className="chat-icon bg-warning text-white">
+    <div className="chat-icon bg-primary text-white">
       {openChatBox ? (
         <i
           className="bi bi-x-lg fs-3 rounded-circle"

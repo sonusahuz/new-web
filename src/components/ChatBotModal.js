@@ -49,19 +49,14 @@ const ChatBotModal = ({
       <div className="modal-content2" style={{ width }}>
         <div className="banner">
           <div className="modal-header mb-2">
-            <h1 className="fs-3">Hi there 👋</h1>
+            <h1 className="fs-3">Get In Touch</h1>
             <i
               className="bi bi-x-lg modal-close"
               onClick={() => setOpenChat(false)}
             ></i>
           </div>
-          <p>
-            Need help? Search our help center for answers or start a
-            conversation:
-          </p>
         </div>
         <div className="modal-body">
-          <p className="modal-description">{description}</p>
           <div className="modal-children">
             <form onSubmit={handleSubmit}>
               {/* Form fields */}
@@ -139,24 +134,12 @@ const ChatBotModal = ({
                   </option>
                 </select>
               </div>
-              <div className="mb-3">
-                <label htmlFor="message" className="form-label">
-                  Message
-                </label>
-                <textarea
-                  className="form-control"
-                  id="message"
-                  placeholder="Enter Your Message"
-                  value={formData.message}
-                  onChange={handleInputChange}
-                />
-              </div>
               <div>
                 <button
                   type="submit"
                   className="btn rounded-1 btn-primary mt-0 w-100 border-radius-5"
                 >
-                  Submit
+                  Send Message
                 </button>
               </div>
             </form>

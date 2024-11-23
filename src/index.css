@@ -49,6 +49,7 @@
   margin-right: 20px;
   box-sizing: border-box;
 }
+
 /* Modal Header (Title and Close Button) */
 .modal-header {
   display: flex;
@@ -266,7 +267,7 @@ input:focus {
   width: 50px;
   position: fixed; /* Use fixed to stick it to the screen's bottom-right corner */
   bottom: 50px; /* Distance from the bottom edge of the screen */
-  right: 100px; /* Distance from the right edge of the screen */
+  right: 120px; /* Distance from the right edge of the screen */
   background: #ffffff; /* Background color for better visibility */
   border-radius: 50%; /* Circular shape */
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow */
