@@ -1,157 +1,45 @@
 import React, { useState } from 'react';
-import { FaSearch } from 'react-icons/fa';
 import { Link } from 'react-router-dom';
+import '../NavBar.css';
+import Drawer from './Drawer';
 
 const NavBar = () => {
-  const [active, setActive] = useState(false);
-  const [searchShow, setSearchShow] = useState(false);
-  const menuActive = () => {
-    setActive(!active);
-  };
-  const searchActive = () => {
-    setSearchShow(!searchShow);
-  };
-
-  // Control sidebar navigation
-  let items = document.querySelectorAll('.menu-item-has-children > a');
-  for (let i in items) {
-    if (items.hasOwnProperty(i)) {
-      items[i].onclick = function () {
-        this.parentElement
-          .querySelector('.sub-menu')
-          .classList.toggle('active');
-        this.classList.toggle('open');
-      };
-    }
-  }
-
+  const [open, setOpen] = useState(false);
   return (
     <>
-      {/* search popup start*/}
-      <div
-        className={searchShow ? 'td-search-popup active' : 'td-search-popup '}
-        id="td-search-popup"
-      >
-        <form action="/" className="search-form">
-          <div className="form-group">
-            <input
-              type="text"
-              className="form-control"
-              placeholder="Search....."
-            />
-          </div>
-          <button type="submit" className="submit-btn">
-            <FaSearch />
-          </button>
-        </form>
-      </div>
-      {/* search popup end*/}
-      <div
-        onClick={searchActive}
-        className={searchShow ? 'body-overlay active' : 'body-overlay'}
-        id="body-overlay"
-      ></div>
-      {/* navbar start */}
-      <nav className="navbar navbar-area navbar-area_1 navbar-expand-lg">
-        <div className="container nav-container navbar-bg">
-          <div className="responsive-mobile-menu">
-            <button
-              onClick={menuActive}
-              className={
-                active
-                  ? 'menu toggle-btn d-block d-lg-none open'
-                  : 'menu toggle-btn d-block d-lg-none'
-              }
-              data-target="#itech_main_menu"
-              aria-expanded="false"
-              aria-label="Toggle navigation"
-            >
-              <span className="icon-left" />
-              <span className="icon-right" />
-            </button>
-          </div>
+      <nav className="navbar bg-primary" style={{ zIndex: 1 }}>
+        <div className="container d-flex align-items-center ">
+          {/* Logo */}
           <div className="logo">
             <Link to="/">
-              <img src="assets/img/logo4.png" alt="img" />
+              <img
+                src="assets/img/logo4.png"
+                alt="Logo"
+                style={{ width: '100px' }}
+              />
             </Link>
           </div>
-          <div className="nav-right-part nav-right-part-mobile">
-            <span className="search-bar-btn" onClick={searchActive}>
-              <FaSearch />
-            </span>
-          </div>
-          <div
-            className={
-              active
-                ? 'collapse navbar-collapse sopen'
-                : 'collapse navbar-collapse'
-            }
-            id="itech_main_menu"
-          >
-            <ul className="navbar-nav menu-open text-lg-end">
-              <li className="menu-item-has-children">
+
+          {/* Call to Action */}
+          <div className="cta d-flex gap-3 align-items-center">
+            {/* Menu */}
+            <ul className="menu mt-3">
+              <li className="menu-item">
                 <Link to="/">Home</Link>
-                {/* <ul className="sub-menu">
-                  <li>
-                    <Link to="/">IT / Softwer Agency</Link>
-                  </li>
-                  <li>
-                    <Link to="/index-2">SaaS App Landing</Link>
-                  </li>
-                  <li>
-                    <Link to="/index-3">Payments Solution</Link>
-                  </li>
-                  <li>
-                    <Link to="/index-4">Software Company</Link>
-                  </li>
-                  <li>
-                    <Link to="/index-5">Artificial Intelligence</Link>
-                  </li>
-                  <li>
-                    <Link to="/index-6">NFT Service</Link>
-                  </li>
-                  <li>
-                    <Link to="/index-7">Cyber Security</Link>
-                  </li>
-                  <li>
-                    <Link to="/index-8">Hardware Service</Link>
-                  </li>
-                  <li>
-                    <Link to="/index-9">ICO Landing</Link>
-                  </li>
-                  <li>
-                    <Link to="/index-10">Personal Portfolio</Link>
-                  </li>
-                  <li>
-                    <Link to="/index-11">SEO Service</Link>
-                  </li>
-                </ul> */}
               </li>
-              <li className="menu-item-has-children">
+              <li className="menu-item menu-item-has-children">
                 <Link to="/about">About Us</Link>
-                {/* <ul className="sub-menu">
+                <ul className="sub-menu">
                   <li>
-                    <Link to="/service">Service 01</Link>
+                    <Link to="/team">Our Team</Link>
                   </li>
                   <li>
-                    <Link to="/service-2">Service 02</Link>
+                    <Link to="/history">Our History</Link>
                   </li>
-                  <li>
-                    <Link to="/service-3">Service 03</Link>
-                  </li>
-                  <li>
-                    <Link to="/service-4">Service 04</Link>
-                  </li>
-                  <li>
-                    <Link to="/service-5">Service 05</Link>
-                  </li>
-                  <li>
-                    <Link to="/service-details">Service Single</Link>
-                  </li>
-                </ul> */}
+                </ul>
               </li>
-              <li className="menu-item-has-children">
-                <Link to="/service">Our Services</Link>
+              <li className="menu-item menu-item-has-children">
+                <Link to="/services">Our Services</Link>
                 <ul className="sub-menu">
                   <li>
                     <Link to="/mobile-app">
@@ -186,7 +74,7 @@ const NavBar = () => {
                   </li> */}
                 </ul>
               </li>
-              <li className="menu-item-has-children mega-menu">
+              <li className="menu-item">
                 <Link to="/technologies">Technologies</Link>
                 {/* <div className="sub-menu">
                   <div className="row">
@@ -293,8 +181,7 @@ const NavBar = () => {
                   </div>
                 </div> */}
               </li>
-
-              <li className="menu-item-has-children">
+              <li className="menu-item">
                 <Link to="/career">Career</Link>
                 {/* <ul className="sub-menu">
                   <li>
@@ -314,23 +201,72 @@ const NavBar = () => {
                   </li>
                 </ul> */}
               </li>
-              <li>
+              <li className="menu-item">
                 <Link to="/contact">Contact Us</Link>
               </li>
             </ul>
-          </div>
-          <div className="nav-right-part nav-right-part-desktop align-self-center">
-            <a className="navbar-phone" href="tel:">
-              <span className="icon">
-                <img src="assets/img/icon/1.png" alt="img" />
-              </span>
-              <span>Need help?</span>
-              <h5>+353 85 161 3637</h5>
-            </a>
+            <i
+              onClick={() => setOpen(true)}
+              className="bi bi-search text-white mobile-nav-toggle fs-4"
+            ></i>
+
+            <i
+              onClick={() => setOpen(true)}
+              className="bi bi-list text-white mobile-nav-toggle fs-4"
+            ></i>
+            <button className="cta-button">
+              Get Started
+              <i className="bi bi-arrow-right"></i>
+            </button>
           </div>
         </div>
       </nav>
-      {/* navbar end */}
+      {open && (
+        <Drawer
+          isOpen={open}
+          setIsOpen={setOpen}
+          content={
+            <>
+              <ul className="menu2 text-black">
+                <li className="menu-item">
+                  <Link to="/">Home</Link>
+                </li>
+                <li className="menu-item menu-item-has-children">
+                  <Link to="/about">About Us</Link>
+                  <ul className="sub-menu">
+                    <li>
+                      <Link to="/team">Our Team</Link>
+                    </li>
+                    <li>
+                      <Link to="/history">Our History</Link>
+                    </li>
+                  </ul>
+                </li>
+                <li className="menu-item menu-item-has-children">
+                  <Link to="/services">Services</Link>
+                  <ul className="sub-menu">
+                    <li>
+                      <Link to="/mobile-app">Mobile App Development</Link>
+                    </li>
+                    <li>
+                      <Link to="/web-development">Web Development</Link>
+                    </li>
+                    <li>
+                      <Link to="/digital-marketing">Digital Marketing</Link>
+                    </li>
+                  </ul>
+                </li>
+                <li className="menu-item">
+                  <Link to="/technologies">Technologies</Link>
+                </li>
+                <li className="menu-item">
+                  <Link to="/contact">Contact Us</Link>
+                </li>
+              </ul>
+            </>
+          }
+        />
+      )}
     </>
   );
 };

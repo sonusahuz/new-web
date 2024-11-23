@@ -27,8 +27,6 @@ const About = () => {
       {/* ServiceAreaOne */}
       {/* <ServiceAreaOne /> */}
 
-    
-
       {/* Work Process One */}
       <WorkProcessOne />
 

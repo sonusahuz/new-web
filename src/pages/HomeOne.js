@@ -1,17 +1,17 @@
-import React from "react";
-import AboutAreaOne from "../components/AboutAreaOne";
-import BannerOne from "../components/BannerOne";
-import BlogAreaOne from "../components/BlogAreaOne";
-import CaseStudyAreaOne from "../components/CaseStudyAreaOne";
-import ContactAreaOne from "../components/ContactAreaOne";
-import CounterAreaOne from "../components/CounterAreaOne";
-import FaqAreaOne from "../components/FaqAreaOne";
-import FooterOne from "../components/FooterOne";
-import NavBar from "../components/NavBar";
-import PricingAreaOne from "../components/PricingAreaOne";
-import ServiceAreaOne from "../components/ServiceAreaOne";
-import TeamAreaOne from "../components/TeamAreaOne";
-import WorkProcessOne from "../components/WorkProcessOne";
+import React from 'react';
+import AboutAreaOne from '../components/AboutAreaOne';
+import BannerOne from '../components/BannerOne';
+import BlogAreaOne from '../components/BlogAreaOne';
+import CaseStudyAreaOne from '../components/CaseStudyAreaOne';
+import ContactAreaOne from '../components/ContactAreaOne';
+import CounterAreaOne from '../components/CounterAreaOne';
+import FaqAreaOne from '../components/FaqAreaOne';
+import FooterOne from '../components/FooterOne';
+import NavBar from '../components/NavBar';
+import PricingAreaOne from '../components/PricingAreaOne';
+import ServiceAreaOne from '../components/ServiceAreaOne';
+import TeamAreaOne from '../components/TeamAreaOne';
+import WorkProcessOne from '../components/WorkProcessOne';
 
 const HomeOne = () => {
   return (
