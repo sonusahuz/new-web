@@ -33,8 +33,7 @@ const UiuxDesignArea = () => {
             <div className="col-12 col-md-6 text-center">
               <img
                 src={'/assets/uiuxdesign/images/ui-ux.png'}
-                className="img-fluid "
-                style={{ maxWidth: '500px' }}
+                className="img-fluid ui-img"
                 alt="UI/UX Design Logo"
               />
             </div>

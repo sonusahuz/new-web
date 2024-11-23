@@ -181,6 +181,9 @@ input:focus {
     font-size: 40px;
     text-align: left;
   }
+  .ui-img {
+    width: 200px;
+  }
 }
 
 .description {
@@ -289,4 +292,8 @@ input:focus {
     width: 50px;
     font-size: 20px;
   }
+}
+
+.ui-img {
+  width: 500px;
 }
