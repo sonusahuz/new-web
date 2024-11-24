@@ -22,8 +22,14 @@ const HomeOne = () => {
       {/* Banner One */}
       <BannerOne />
 
+      {/* Counter Area One */}
+      <CounterAreaOne />
+
       {/* About Area One */}
       <AboutAreaOne />
+
+      {/* Case Study Area One */}
+      <CaseStudyAreaOne />
 
       {/* Service Area One */}
       <ServiceAreaOne />
@@ -31,14 +37,8 @@ const HomeOne = () => {
       {/* FAQ Area One */}
       <FaqAreaOne />
 
-      {/* Case Study Area One */}
-      <CaseStudyAreaOne />
-
       {/* Team Area One */}
       {/* <TeamAreaOne /> */}
-
-      {/* Counter Area One */}
-      <CounterAreaOne />
 
       {/* Contact Area One */}
       <ContactAreaOne />

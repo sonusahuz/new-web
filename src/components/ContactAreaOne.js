@@ -5,7 +5,7 @@ const ContactAreaOne = () => {
   return (
     <>
       {/* ========================= contact Area One start =========================*/}
-      <div className="contact-area">
+      <div className="contact-area pd-top-110">
         <div className="container">
           <div className="contact-inner-1">
             <img
