@@ -4,10 +4,7 @@ const FaqAreaOne = () => {
   return (
     <>
       {/*==================== Faq area start ====================*/}
-      <div
-        className="faq-area faq-area-margin-top bg-cover pd-top-90 pd-bottom-110"
-        style={{ backgroundImage: 'url("./assets/img/bg/3.png")' }}
-      >
+      <div className="faq-area faq-area-margin-top bg-cover pd-top-60 pd-bottom-60 pd-top-120 pd-bottom-120">
         <div className="container">
           <div className="row pd-top-120">
             <div
@@ -17,7 +14,11 @@ const FaqAreaOne = () => {
               data-aos-duration="1500"
             >
               <div className="about-thumb-inner pt-lg-3">
-                <img className="main-img rounded" src="assets/img/faq.jpeg" alt="img" />
+                <img
+                  className="main-img rounded"
+                  src="assets/img/faq.jpeg"
+                  alt="img"
+                />
               </div>
             </div>
             <div

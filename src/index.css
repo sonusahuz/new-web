@@ -368,3 +368,24 @@ input:focus {
     font-size: 20px;
   }
 }
+
+/* Custom CSS */
+@media (max-width: 991.98px) {
+  /* Small screens (sm and below) */
+  .pd-top-60 {
+    padding-top: 60px !important;
+  }
+  .pd-bottom-60 {
+    padding-bottom: 60px !important;
+  }
+}
+
+@media (min-width: 992px) {
+  /* Large screens (lg and above) */
+  .pd-top-120 {
+    padding-top: 120px !important;
+  }
+  .pd-bottom-120 {
+    padding-bottom: 120px !important;
+  }
+}

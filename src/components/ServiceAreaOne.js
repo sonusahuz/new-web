@@ -6,12 +6,11 @@ const ServiceAreaOne = () => {
     <>
       {/* <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet"></link> */}
       {/*=================== service area start ===================*/}
-      <div className="service-area bg-relative pd-top-100">
-        <img
-          className="position-bottom-left top_image_bounce"
-          src="assets/img/icon/4.png"
-          alt="img"
-        />
+
+      <div
+        className="service-area bg-relative pd-top-60 pd-bottom-60 pd-top-120 pd-bottom-120"
+        style={{ backgroundImage: 'url("./assets/img/bg/3.png")' }}
+      >
         <div className="container">
           <div className="section-title text-center">
             <h6 className="sub-title">COPREHENSIVE DIGITAL SOLUTIONS</h6>
@@ -156,7 +155,11 @@ const ServiceAreaOne = () => {
                   data-aos-delay={700}
                 >
                   <div className="features-item" style={{ height: 80 }}>
-                    <GoLaw className="bi bi-law" style={{ color: '#11dbcf' }}  size={35}/>
+                    <GoLaw
+                      className="bi bi-law"
+                      style={{ color: '#11dbcf' }}
+                      size={35}
+                    />
                     <h3>
                       <a href="/legal-services" className="stretched-link p-2">
                         Legal Services

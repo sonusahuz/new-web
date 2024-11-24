@@ -4,11 +4,9 @@ const AboutAreaOne = () => {
   return (
     <>
       <div
-        className="about-area pd-top-120"
+        className="about-area pd-top-60 pd-bottom-60 pd-top-120 pd-bottom-120"
         style={{
           backgroundImage: `url('./assets/img/background-website1.jpg')`,
-          backgroundSize: 'cover',
-          backgroundPosition: 'center',
         }}
       >
         <div className="container">
@@ -24,12 +22,12 @@ const AboutAreaOne = () => {
                   className="rounded"
                   src="assets/img/who-we-are.jpg"
                   alt="img"
-                  style={{ width: '100%', height: '400px' , objectFit: 'cover' }}
+                  style={{ width: '100%', height: '400px', objectFit: 'cover' }}
                 />
               </div>
             </div>
             <div
-              className="col-lg-6 "
+              className="col-lg-6 text-black"
               data-aos="fade-left"
               data-aos-delay="100"
               data-aos-duration="1500"
@@ -37,7 +35,7 @@ const AboutAreaOne = () => {
               <div className="section-title mt-5 mt-lg-0">
                 <h6 className="sub-title">About Us</h6>
                 <h2 className="title">Who We Are</h2>
-                <p className="content mb-4 mb-xl-5">
+                <p className="content mb-4 mb-xl-5  text-black">
                   Nyas Consultants is dedicated to helping businesses streamline
                   their operations and achieve sustainable growth. Our team is a
                   blend of seasoned consultants and virtual assistants with
@@ -46,6 +44,15 @@ const AboutAreaOne = () => {
                   your evolving needs. From improving day-to-day operations to
                   supporting strategic initiatives, we empower you to focus on
                   what truly matters: growing your business
+                </p>
+              </div>
+              <div className="section-title mt-5 mt-lg-0">
+                <h2 className="title">Who We Are</h2>
+                <p className="content mb-4 mb-xl-5  text-black">
+                  To empower businesses through streamlined, data-driven
+                  operations solutions that are supported by skilled virtual
+                  assistants. We believe that every business deserves to operate
+                  efficiently and effectively, no matter the size.
                 </p>
               </div>
               <div>
