@@ -35,7 +35,7 @@ const CounterAreaOne = () => {
                       isVisible && (
                         <span className="counter">
                           <CountUp duration={1} delay={0} start={0} end={10} />{' '}
-                          10K+
+                          K+
                         </span>
                       )
                     }
