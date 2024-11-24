@@ -16,12 +16,12 @@ const HomePage = () => {
       <Container>
         <Row className="align-items-center">
           <Col lg={7} className="text-white">
-            <h1 className="display-4 fw-bold mb-4">
+            <h1 className="display-4 fw-bold mb-4 text-white">
               We Build Website That
               <br />
               Build Your Business
             </h1>
-            <p className="lead mb-4">
+            <p className="lead mb-4 text-white">
               Alpha Infotech is the best website designing company in delhi with
               commitment to quantify and the development of true worth.
             </p>

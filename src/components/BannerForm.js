@@ -4,8 +4,10 @@ import { Form, Button } from 'react-bootstrap';
 const BannerForm = () => {
   return (
     <div className="bg-dark text-light p-4 rounded-3 mt-5 mt-lg-0">
-      <h2 className="mb-4">Get Connect</h2>
-      <p className="mb-4">Got a project that you would like to discuss</p>
+      <h2 className="mb-4 text-white">Get Connect</h2>
+      <p className="mb-4 text-white">
+        Got a project that you would like to discuss
+      </p>
       <Form>
         <Form.Group className="mb-3">
           <Form.Control
