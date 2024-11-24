@@ -246,7 +246,7 @@ const MetaCampaignArea = () => {
       {/* End Frequently Asked Questions Section */}
       {/* ======= Contact Section ======= */}
       <section id="contact" className="contact section-bg">
-        <div className="container">
+        <div className="container fs-6">
           <div className="section-title">
             <h2 data-aos="fade-in">Contact</h2>
             <p data-aos="fade-in">

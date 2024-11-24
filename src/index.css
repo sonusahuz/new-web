@@ -236,10 +236,17 @@ input:focus {
 .contact {
   font-size: 60px;
 }
+.contact-form {
+  width: 400px;
+}
 
 @media screen and (max-width: 768px) {
   .contact {
     font-size: 40px;
+  }
+  .contact-form {
+    width: 330px;
+    margin-bottom: 60px;
   }
   .request {
     font-size: 40px;
