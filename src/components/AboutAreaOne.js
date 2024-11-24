@@ -4,16 +4,16 @@ const AboutAreaOne = () => {
   return (
     <>
       <div
-        className="about-area pd-top-60 pd-bottom-60 pd-top-120 pd-bottom-120"
+        className="about-area py-5 d-flex align-items-center"
         style={{
           backgroundImage: `url('./assets/img/background-website1.jpg')`,
         }}
       >
         <div className="container">
-          <div className="row">
-            <div className="col-lg-6">
+          <div className="row align-items-center">
+            <div className="col-lg-6 d-flex justify-content-center align-items-center">
               <div
-                className="about-thumb-inner pe-xl-5 me-xl-5 "
+                className="about-thumb-inner pe-xl-5 me-xl-5"
                 data-aos="fade-right"
                 data-aos-delay="100"
                 data-aos-duration="1500"
@@ -22,7 +22,11 @@ const AboutAreaOne = () => {
                   className="rounded"
                   src="assets/img/who-we-are.jpg"
                   alt="img"
-                  style={{ width: '100%', height: '400px', objectFit: 'cover' }}
+                  style={{
+                    width: '100%',
+                    height: '400px',
+                    objectFit: 'cover',
+                  }}
                 />
               </div>
             </div>
@@ -32,10 +36,25 @@ const AboutAreaOne = () => {
               data-aos-delay="100"
               data-aos-duration="1500"
             >
-              <div className="section-title mt-5 mt-lg-0">
-                <h6 className="sub-title">About Us</h6>
-                <h2 className="title">Who We Are</h2>
-                <p className="content mb-4 mb-xl-5  text-black">
+              <div className="section-title">
+                <h6
+                  className="sub-title"
+                  style={{
+                    fontWeight: 600,
+                  }}
+                >
+                  About Us
+                </h6>
+                <h2
+                  className="title"
+                  style={{
+                    fontWeight: 900,
+                    fontSize: '38px',
+                  }}
+                >
+                  Who We Are
+                </h2>
+                <p className="content mb-xl-5 text-black">
                   Nyas Consultants is dedicated to helping businesses streamline
                   their operations and achieve sustainable growth. Our team is a
                   blend of seasoned consultants and virtual assistants with
@@ -46,9 +65,17 @@ const AboutAreaOne = () => {
                   what truly matters: growing your business
                 </p>
               </div>
-              <div className="section-title mt-5 mt-lg-0">
-                <h2 className="title">Who We Are</h2>
-                <p className="content mb-4 mb-xl-5  text-black">
+              <div className="section-title ">
+                <h2
+                  className="title"
+                  style={{
+                    fontWeight: 900,
+                    fontSize: '38px',
+                  }}
+                >
+                  Our Mission
+                </h2>
+                <p className="content mb-4 mb-xl-5 text-black">
                   To empower businesses through streamlined, data-driven
                   operations solutions that are supported by skilled virtual
                   assistants. We believe that every business deserves to operate
@@ -57,14 +84,14 @@ const AboutAreaOne = () => {
               </div>
               <div>
                 <button className="text-white rounded-pill py-2 px-3">
-                  Read More <i className="bi bi-arrow-right"></i>{' '}
+                  Read More <i className="bi bi-arrow-right"></i>
                 </button>
               </div>
             </div>
           </div>
         </div>
       </div>
-      {/* ================== AboutAreaOne End  ==================*/}
+      {/* ================== AboutAreaOne End ================== */}
     </>
   );
 };

@@ -4,7 +4,7 @@ const FaqAreaOne = () => {
   return (
     <>
       {/*==================== Faq area start ====================*/}
-      <div className="faq-area faq-area-margin-top bg-cover pd-top-60 pd-bottom-60 pd-top-120 pd-bottom-120">
+      <div className="faq-area faq-area-margin-top bg-cover py-5">
         <div className="container">
           <div className="row pd-top-120">
             <div

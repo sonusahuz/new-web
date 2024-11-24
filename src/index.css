@@ -1,8 +1,16 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+
 :root {
   --bs-primary: #3b82f6;
   --bs-primary-rgb: 59, 130, 246;
 }
 
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Nunito', sans-serif;
+}
 .btn-primary {
   --bs-btn-bg: var(--bs-primary);
   --bs-btn-border-color: var(--bs-primary);
@@ -372,11 +380,11 @@ input:focus {
 /* Custom CSS */
 @media (max-width: 991.98px) {
   /* Small screens (sm and below) */
-  .pd-top-60 {
-    padding-top: 60px !important;
+  .pd-top-20 {
+    padding-top: 20px !important;
   }
-  .pd-bottom-60 {
-    padding-bottom: 60px !important;
+  .pd-bottom-20 {
+    padding-bottom: 20px !important;
   }
 }
 

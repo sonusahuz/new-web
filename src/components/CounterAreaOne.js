@@ -40,14 +40,14 @@ const CounterAreaOne = () => {
                               delay={0}
                               start={0}
                               end={10}
-                            />{' '}
+                            />
                             K+
                           </span>
                         )
                       }
                     </TrackVisibility>
                   </h2>
-                  <p className="text-white">Projects Completed</p>
+                  <p className="text-white fs-bold">Projects Completed</p>
                 </div>
               </div>
             </div>
@@ -83,7 +83,7 @@ const CounterAreaOne = () => {
                       }
                     </TrackVisibility>
                   </h2>
-                  <p className="text-white">Client Satisfaction</p>
+                  <p className="text-white fs-bold">Client Satisfaction</p>
                 </div>
               </div>
             </div>
@@ -119,7 +119,7 @@ const CounterAreaOne = () => {
                       }
                     </TrackVisibility>
                   </h2>
-                  <p className="text-white">Years of Experience</p>
+                  <p className="text-white fs-bold">Years of Experience</p>
                 </div>
               </div>
             </div>
@@ -155,7 +155,7 @@ const CounterAreaOne = () => {
                       }
                     </TrackVisibility>
                   </h2>
-                  <p className="text-white">Talented Members </p>
+                  <p className="text-white fs-bold">Talented Members </p>
                 </div>
               </div>
             </div>

@@ -7,7 +7,7 @@ const CaseStudyAreaOne = () => {
     <>
       {/*================== case-study area start ==================*/}
       <div
-        className="case-study-area bg-relative pd-top-60 pd-bottom-60 pd-top-120 pd-bottom-120 mb-3"
+        className="case-study-area bg-relative py-5"
         style={{
           backgroundImage: 'url("./assets/img/background-website1.jpg")',
         }}
