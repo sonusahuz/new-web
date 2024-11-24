@@ -41,7 +41,7 @@ const HomeOne = () => {
       {/* <TeamAreaOne /> */}
 
       {/* Contact Area One */}
-      <ContactAreaOne />
+      {/* <ContactAreaOne /> */}
 
       {/* Work Process One */}
       <WorkProcessOne />
