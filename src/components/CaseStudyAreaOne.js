@@ -46,24 +46,24 @@ const CaseStudyAreaOne = () => {
                 data-aos-duration="1500"
               >
                 <div className="pt-3">
-                  <li className="mb-2">
+                  <li className="mb-3">
                     Tailored Solutions for Every Business We understand that
                     every business is unique. Our approach is personalized, with
                     solutions crafted to meet your specific operational needs
                     and growth objectives.
                   </li>
-                  <li className="mb-2">
+                  <li className="mb-3">
                     Experienced Professionals Our team of operations consultants
                     and virtual assistants brings extensive experience across
                     various industries, ensuring top-quality service and
                     effective problem-solving.
                   </li>{' '}
-                  <li className="mb-2">
+                  <li className="mb-3">
                     Focus on Efficiency and Cost-Savings Our strategies focus on
                     eliminating waste, improving productivity, and reducing
                     costs, helping your business achieve more with less.
                   </li>{' '}
-                  <li className="mb-2">
+                  <li className="mb-3">
                     Data-Driven and Results-Oriented With a strong focus on
                     performance metrics and data-driven decision-making, we
                     provide insights that align with your long-term goals,

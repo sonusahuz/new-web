@@ -31,9 +31,9 @@ const AboutAreaOne = () => {
               data-aos-delay="100"
               data-aos-duration="1500"
             >
-              <div className="section-title">
+              <div className="section-title" style={{ margin: 0, padding: 0 }}>
                 <h6
-                  className="sub-title"
+                  className="sub-title pt-3"
                   style={{
                     fontWeight: 600,
                   }}
@@ -41,7 +41,7 @@ const AboutAreaOne = () => {
                   About Us
                 </h6>
                 <h2
-                  className="title"
+                  className="title mb-2"
                   style={{
                     fontWeight: 900,
                     fontSize: '38px',
@@ -49,7 +49,7 @@ const AboutAreaOne = () => {
                 >
                   Who We Are
                 </h2>
-                <p className="mt-1 mb-xl-5 text-black">
+                <p className="mt-0 mb-0 text-black">
                   Nyas Consultants is dedicated to helping businesses streamline
                   their operations and achieve sustainable growth. Our team is a
                   blend of seasoned consultants and virtual assistants with
@@ -57,12 +57,12 @@ const AboutAreaOne = () => {
                   solutions that are not only efficient but also adaptable to
                   your evolving needs. From improving day-to-day operations to
                   supporting strategic initiatives, we empower you to focus on
-                  what truly matters: growing your business
+                  what truly matters: growing your business.
                 </p>
               </div>
-              <div className="section-title">
+              <div className="section-title" style={{ margin: 0, padding: 0 }}>
                 <h2
-                  className="title"
+                  className="title mb-2 mt-4"
                   style={{
                     fontWeight: 900,
                     fontSize: '38px',
@@ -70,14 +70,14 @@ const AboutAreaOne = () => {
                 >
                   Our Mission
                 </h2>
-                <p className="mt-1 mb-4 mb-xl-5 text-black">
+                <p className="mt-0 mb-0 text-black">
                   To empower businesses through streamlined, data-driven
                   operations solutions that are supported by skilled virtual
                   assistants. We believe that every business deserves to operate
                   efficiently and effectively, no matter the size.
                 </p>
               </div>
-              <div>
+              <div className='mt-4'>
                 <button className="text-white rounded-pill py-2 px-3">
                   Read More <i className="bi bi-arrow-right"></i>
                 </button>

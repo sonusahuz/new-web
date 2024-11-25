@@ -23,7 +23,7 @@ const AboutAreaTwo = () => {
           </h1>
         </div>
       </div>
-      <div className="about-area pt-5">
+      <div className="about-area pt-lg-5">
         <div className="container">
           <div className="row">
             <div

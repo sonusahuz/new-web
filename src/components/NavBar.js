@@ -6,30 +6,38 @@ const NavBar = () => {
   return (
     <Navbar
       expand="lg"
-      style={{ backgroundImage: 'url("./assets/img/bg/3.png")' }}
+      className="bg-black text-white"
+      style={{
+        backgroundColor: 'rgba(0, 0, 0, 0.7)', // Semi-transparent black background
+        backdropFilter: 'blur(10px)', // Apply blur effect
+        WebkitBackdropFilter: 'blur(10px)', // For Safari support
+        color: 'white',
+      }}
     >
       <Container>
         <Navbar.Brand
           href="/"
           className="fw-bold d-flex align-items-center gap-2"
         >
-          <img src="assets/img/logo4.png" alt="img" style={{ width: '80px' }} />
+          <img
+            src="assets/img/logo4.png"
+            alt="logo"
+            style={{ width: '80px' }}
+          />
         </Navbar.Brand>
-        <Navbar.Toggle aria-controls="basic-navbar-nav">
-          <Menu />
+        <Navbar.Toggle aria-controls="basic-navbar-nav" className='text-white'>
+          <Menu  className='border-white'/>
         </Navbar.Toggle>
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="ms-auto align-items-center">
-            <Nav.Link href="/" className="fw-semibold">
+            <Nav.Link href="/" className="fw-semibold text-white">
               Home
             </Nav.Link>
-
-            <Nav.Link href="/about" className="fw-semibold">
+            <Nav.Link href="/about" className="fw-semibold text-white">
               About Us
             </Nav.Link>
-
             <NavDropdown
-              title="Services"
+              title={<span className="fw-semibold text-white">Services</span>}
               id="services-dropdown"
               className="fw-semibold"
             >
@@ -40,11 +48,9 @@ const NavBar = () => {
                 Cross Platform Apps Development
               </NavDropdown.Item>
               <NavDropdown.Item href="/digital-product-development">
-                {' '}
                 Software Development
               </NavDropdown.Item>
               <NavDropdown.Item href="/project-management">
-                {' '}
                 Operations Consultancy Services
               </NavDropdown.Item>
               <NavDropdown.Item href="/meta-campaign">
@@ -54,20 +60,16 @@ const NavBar = () => {
                 Legal Services
               </NavDropdown.Item>
             </NavDropdown>
-
-            <Nav.Link href="/technologies" className="fw-semibold">
+            <Nav.Link href="/technologies" className="fw-semibold text-white">
               Technologies
             </Nav.Link>
-
-            <Nav.Link href="/career" className="fw-semibold">
+            <Nav.Link href="/career" className="fw-semibold text-white">
               Career
             </Nav.Link>
-
-            <Nav.Link href="/contact" className="fw-semibold">
+            <Nav.Link href="/contact" className="fw-semibold text-white">
               Contact
             </Nav.Link>
-
-            <button className="ms-3 d-flex align-items-center gap-2 border-1 bg-primary text-white rounded-pill px-3 py-2">
+            <button className="ms-3 d-flex align-items-center gap-2 border-0 bg-primary text-white rounded-pill px-3 py-2">
               <span>Get Started</span>
               <ArrowRight size={18} />
             </button>

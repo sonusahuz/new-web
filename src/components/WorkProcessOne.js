@@ -4,7 +4,7 @@ const WorkProcessOne = () => {
   return (
     <>
       {/*==================== Work Process One start ====================*/}
-      <div className="work-process-area py-5">
+      <div className="work-process-area mt-5">
         <div className="container">
           <div className="section-title text-center">
             <h6 className="sub-title">Our Streamlined Process</h6>

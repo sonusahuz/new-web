@@ -16,7 +16,7 @@ const FooterOne = () => {
   return (
     <>
       {/* ================== Footer One Start ==================*/}
-      <footer className="footer-area bg-black bg-cover">
+      <footer className="footer-area bg-black bg-cover mb-0">
         <div className="container pt-5">
           <div className="row">
             <div className="col-lg-3 col-md-6">
