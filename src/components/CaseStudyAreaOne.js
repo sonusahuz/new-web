@@ -28,7 +28,7 @@ const CaseStudyAreaOne = () => {
                   data-aos-duration="1500"
                 >
                   <img
-                    className="rounded"
+                    className="rounded animated-image"
                     src="assets/img/why-choose-background1.png"
                     alt="img"
                     style={{

@@ -50,6 +50,7 @@ Version: 1.0.0
 //== Pages
 //== Sections
 @import 'sections/_section-title';
+@import 'sections/_navbar';
 @import 'sections/_banner';
 @import 'sections/_about';
 @import 'sections/_service';
@@ -68,44 +69,44 @@ Version: 1.0.0
 @import './sections/_extra';
 @import 'sections/_responsive';
 
-
 $color_1: var(--heading-color);
 $color_2: var(--accent-color);
 $background-color_1: var(--surface-color);
 $border-color_1: var(--accent-color);
 
 .features {
-	.features-item {
-		background-color: $background-color_1;
-		display: flex;
-		align-items: center;
-		padding: 20px;
-		transition: 0.3s;
-		border: 1px solid color-mix(in srgb, var(--default-color,black), transparent 90%);
-		position: relative;
-		i {
-			font-size: 32px;
-			padding-right: 10px;
-			line-height: 0;
-		}
-		h3 {
-			font-weight: 700;
-			margin: 0;
-			padding: 0;
-			line-height: 1;
-			font-size: 16px;
-			a {
-				color: $color_1;
-				transition: 0.3s;
-			}
-		}
-		&:hover {
-			border-color: $border-color_1;
-			h3 {
-				a {
-					color: $color_2;
-				}
-			}
-		}
-	}
+  .features-item {
+    background-color: $background-color_1;
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    transition: 0.3s;
+    border: 1px solid
+      color-mix(in srgb, var(--default-color, black), transparent 90%);
+    position: relative;
+    i {
+      font-size: 32px;
+      padding-right: 10px;
+      line-height: 0;
+    }
+    h3 {
+      font-weight: 700;
+      margin: 0;
+      padding: 0;
+      line-height: 1;
+      font-size: 16px;
+      a {
+        color: $color_1;
+        transition: 0.3s;
+      }
+    }
+    &:hover {
+      border-color: $border-color_1;
+      h3 {
+        a {
+          color: $color_2;
+        }
+      }
+    }
+  }
 }

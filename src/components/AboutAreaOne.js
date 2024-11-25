@@ -20,7 +20,7 @@ const AboutAreaOne = () => {
                 data-aos-duration="1500"
               >
                 <img
-                  className="rounded who-we-are"
+                  className="rounded who-we-are animated-image"
                   src="assets/img/who-we-are.jpg"
                   alt="img"
                 />

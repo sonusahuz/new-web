@@ -15,7 +15,7 @@ const FaqAreaOne = () => {
             >
               <div className="about-thumb-inner pt-lg-3">
                 <img
-                  className="main-img rounded"
+                  className="main-img rounded animated-image"
                   src="assets/img/faq.jpeg"
                   alt="img"
                 />

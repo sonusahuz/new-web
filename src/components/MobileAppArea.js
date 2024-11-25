@@ -79,10 +79,17 @@ const MobileAppArea = () => {
     >
       {/* Header Section */}
       <div className="container d-flex flex-wrap align-items-center justify-content-between py-5">
-        <h1 className="text-black fw-bold fs-1">DIGITAL APP DEVELOPMENT</h1>
+        <h1
+          className="text-black fw-bold fs-1"
+          style={{
+            fontFamily: 'sans-serif',
+          }}
+        >
+          DIGITAL APP DEVELOPMENT
+        </h1>
         <img
           src="./assets/img/4-removebg-preview.png"
-          className="img-fluid"
+          className="img-fluid animated-image"
           alt="Digital Development"
           style={{ maxWidth: '400px' }}
         />
@@ -93,7 +100,7 @@ const MobileAppArea = () => {
         <div>
           <h1
             className="text-black text-center py-3 fw-bold fs-1"
-            style={{ fontSize: '60px' }}
+            style={{ fontSize: '60px', fontFamily: 'sans-serif' }}
           >
             DIGITAL EMPOWERMENT SOLUTIONS
           </h1>
@@ -113,7 +120,7 @@ const MobileAppArea = () => {
       <div className="container my-5">
         <h1
           className="text-black text-center fw-bold fs-1"
-          style={{ fontSize: '60px' }}
+          style={{ fontSize: '60px', fontFamily: 'sans-serif' }}
         >
           INNOVATIVE DIGITAL SOLUTIONS
         </h1>
@@ -152,7 +159,7 @@ const MobileAppArea = () => {
           <div className="col-lg-6 text-center">
             <img
               src="./assets/img/5-removebg-preview.png"
-              className="img-fluid"
+              className="img-fluid animated-image"
               alt="Innovative Solutions"
               style={{ maxWidth: '900px' }}
             />
@@ -169,7 +176,14 @@ const MobileAppArea = () => {
         </h1>
         <div className="row mt-5">
           {services.map((service, index) => (
-            <div className="col-xl-4 col-md-6" key={index}>
+            <div
+              className="col-xl-4 col-md-6 animated-image hover-scale"
+              style={{
+                transition: 'transform 0.3s ease',
+                transform: 'scale(1)',
+              }}
+              key={index}
+            >
               <div className="style-4 text-center">
                 <div className="thumb">
                   <img
@@ -201,7 +215,7 @@ const MobileAppArea = () => {
               <div className="accordion-item" key={item.id}>
                 <h2 className="accordion-header" id={`heading${item.id}`}>
                   <button
-                    className="accordion-button"
+                    className="accordion-button bg-white hover:border-0"
                     type="button"
                     data-bs-toggle="collapse"
                     data-bs-target={`#collapse${item.id}`}
