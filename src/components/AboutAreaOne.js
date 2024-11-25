@@ -19,14 +19,9 @@ const AboutAreaOne = () => {
                 data-aos-duration="1500"
               >
                 <img
-                  className="rounded"
+                  className="rounded who-we-are"
                   src="assets/img/who-we-are.jpg"
                   alt="img"
-                  style={{
-                    width: '100%',
-                    height: '400px',
-                    objectFit: 'cover',
-                  }}
                 />
               </div>
             </div>

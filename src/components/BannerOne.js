@@ -1,6 +1,7 @@
 import React from 'react';
 import { Container, Row, Col, Button } from 'react-bootstrap';
 import BannerForm from './BannerForm';
+import { Link } from 'react-router-dom';
 
 const HomePage = () => {
   return (
@@ -27,21 +28,25 @@ const HomePage = () => {
               operations.
             </p>
             <div className="d-flex gap-3">
-              <button
-                type="submit"
-                className="d-flex align-items-center bg-info rounded-pill text-white px-4 px-lg-5 py-2 py-lg-3"
-                style={{ fontSize: '14px', fontWeight: 'bold' }}
-              >
-                Our Services
-              </button>
+              <Link to="/service">
+                <button
+                  type="submit"
+                  className="d-flex align-items-center bg-info rounded-pill text-white px-4 px-lg-5 py-2 py-lg-3"
+                  style={{ fontSize: '13px', fontWeight: 'bold' }}
+                >
+                  OUR SERVICES
+                </button>
+              </Link>
 
-              <button
-                type="submit"
-                className="d-flex align-items-center bg-danger rounded-pill text-white px-4 px-lg-5 py-2 py-lg-3"
-                style={{ fontSize: '14px', fontWeight: 'bold' }}
-              >
-                CONNECT WITH US
-              </button>
+              <Link to={'/contact'}>
+                <button
+                  type="submit"
+                  className="d-flex align-items-center bg-danger rounded-pill text-white px-4 px-lg-5 py-2 py-lg-3"
+                  style={{ fontSize: '13px', fontWeight: 'bold' }}
+                >
+                  CONNECT WITH US
+                </button>
+              </Link>
             </div>
           </Col>
           <Col lg={5}>
