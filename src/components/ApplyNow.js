@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 
-const ChatBotModal = ({
+const ApplyNow = ({
   openChat,
   setOpenChat,
   width = '400px',
@@ -10,8 +10,7 @@ const ChatBotModal = ({
     name: '',
     email: '',
     phone: '',
-    service: '',
-    message: '',
+    resume: null,
   });
 
   if (!openChat) return null;
@@ -26,10 +25,10 @@ const ChatBotModal = ({
   const handleSubmit = (e) => {
     e.preventDefault();
 
-    const { name, email, phone, service } = formData;
+    const { name, email, phone, resume } = formData;
 
     // Check if required fields are filled
-    if (!name || !email || !phone || !service) {
+    if (!name || !email || !phone || !resume) {
       alert('Please fill out all required fields.');
       return;
     }
@@ -44,8 +43,8 @@ const ChatBotModal = ({
   };
 
   return (
-    <div className="modal-overlay2">
-      <div className="modal-content2" style={{ width }}>
+    <div className="modal-overlay">
+      <div className="modal-content" style={{ width }}>
         <div className="banner">
           <div className="modal-header mb-2">
             <h1 className="fs-3">Get In Touch</h1>
@@ -104,35 +103,21 @@ const ChatBotModal = ({
                   required
                 />
               </div>
-              <div className="mb-3">
-                <label htmlFor="service" className="form-label">
-                  Select Service
+
+              <div class="mb-3">
+                <label for="formFile" class="form-label">
+                  Upload Resume
                 </label>
-                <select
-                  className="form-select"
-                  id="service"
-                  value={formData.service}
+                <input
+                  value={formData.resume}
                   onChange={handleInputChange}
                   required
-                >
-                  <option value="">Select -</option>
-                  <option value="Custom Website Design & Development">
-                    Custom Website Design & Development
-                  </option>
-                  <option value="MVP Development & Testing">
-                    MVP Development & Testing
-                  </option>
-                  <option value="UI/UX Design & Prototyping">
-                    UI/UX Design & Prototyping
-                  </option>
-                  <option value="Ongoing Software & Website Maintenance">
-                    Ongoing Software & Website Maintenance
-                  </option>
-                  <option value="Blockchain Solutions & Decentralized Applications">
-                    Blockchain Solutions & Decentralized Applications
-                  </option>
-                </select>
+                  class="form-control"
+                  type="file"
+                  id="formFile"
+                />
               </div>
+
               <div>
                 <button
                   type="submit"
@@ -149,4 +134,4 @@ const ChatBotModal = ({
   );
 };
 
-export default ChatBotModal;
+export default ApplyNow;

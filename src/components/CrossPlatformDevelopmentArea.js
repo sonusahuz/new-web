@@ -617,7 +617,7 @@ const CrossPlatformDevelopmentArea = () => {
       >
         <i className="bi bi-arrow-up-short" />
       </a>
-      {/* Preloader */}
+      {/* Preloader */}c
       {/* <div id="preloader" /> */}
       {/* Vendor JS Files */}
       {/* Main JS File */}

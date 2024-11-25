@@ -18,11 +18,19 @@ const About = () => {
       {/* Navigation Bar */}
       <NavBar />
 
-      {/* About Area One */}
-      <AboutAreaTwo />
+      <div
+        style={{
+          backgroundImage: 'url("./assets/img/contact-background.webp")',
+          backgroundSize: 'cover',
+          backgroundPosition: 'center',
+        }}
+      >
+        {/* About Area One */}
+        <AboutAreaTwo />
 
-      {/* Work Process One */}
-      <WorkProcessOne />
+        {/* Work Process One */}
+        <WorkProcessOne />
+      </div>
 
       {/* Footer One */}
       <FooterOne />

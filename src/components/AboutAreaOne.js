@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 const AboutAreaOne = () => {
   return (
@@ -77,10 +78,12 @@ const AboutAreaOne = () => {
                   efficiently and effectively, no matter the size.
                 </p>
               </div>
-              <div className='mt-4'>
-                <button className="text-white rounded-pill py-2 px-3">
-                  Read More <i className="bi bi-arrow-right"></i>
-                </button>
+              <div className="mt-4">
+                <Link to={'/about'}>
+                  <button className="text-white rounded-pill py-2 px-3">
+                    Read More <i className="bi bi-arrow-right"></i>
+                  </button>
+                </Link>
               </div>
             </div>
           </div>

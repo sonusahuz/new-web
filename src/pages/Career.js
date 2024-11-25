@@ -13,10 +13,18 @@ const Career = () => {
       {/* NavbarEight */}
       <NavBar />
 
-      {/* WhyChooseTwo */}
-      <CareerAreaOne />
+      <div
+        style={{
+          backgroundImage: 'url("./assets/img/contact-background.webp")',
+          backgroundSize: 'cover',
+          backgroundPosition: 'center',
+        }}
+      >
+        {/* WhyChooseTwo */}
+        <CareerAreaOne />
 
-      <WorkProcessTwo />
+        <WorkProcessTwo />
+      </div>
 
       {/* ServiceAreaNine */}
       {/* <ServiceAreaNine /> */}

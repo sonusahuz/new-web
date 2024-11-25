@@ -66,40 +66,49 @@ const ServiceAreaGroupThree = () => {
         </div>
       </div>
 
-      {/* Section Title */}
-      <div>
-        <h1 className="text-center fw-bold fs-1 py-4">
-          Comprehensive Business Solutions with Nyas Consultants!
-        </h1>
-      </div>
-
-      {/* Services */}
-      <div className="service-area bg-relative">
-        <div className="container">
-          <div className="row">
-            {services.map((service, index) => (
-              <div className="col-lg-4 col-md-6" key={index}>
-                <div className="single-work-process-inner">
-                  <div className="thumb mb-3">
-                    <img
-                      src={service.img}
-                      style={{ width: '100%' }}
-                      alt={service.title}
-                    />
-                  </div>
-                  <div className="details">
-                    <h5 className="mb-3">{service.title}</h5>
-                    <p className="content mb-3">{service.description}</p>
-                    <Link className="read-more-text" to={service.link}>
-                      Read More <FaArrowRight />
-                    </Link>
+      <div
+        style={{
+          backgroundImage: 'url("./assets/img/contact-background.webp")',
+          backgroundSize: 'cover',
+          backgroundPosition: 'center',
+        }}
+      >
+        {' '}
+        <div>
+          <h1 className="text-center fw-bold fs-1 py-4">
+            Comprehensive Business Solutions with Nyas Consultants!
+          </h1>
+        </div>
+        {/* Services */}
+        <div className="service-area bg-relative">
+          <div className="container">
+            <div className="row">
+              {services.map((service, index) => (
+                <div className="col-lg-4 col-md-6" key={index}>
+                  <div className="single-work-process-inner bg-white">
+                    <div className="thumb mb-3">
+                      <img
+                        src={service.img}
+                        style={{ width: '100%' }}
+                        alt={service.title}
+                      />
+                    </div>
+                    <div className="details">
+                      <h5 className="mb-3">{service.title}</h5>
+                      <p className="content mb-3">{service.description}</p>
+                      <Link className="read-more-text" to={service.link}>
+                        Read More <FaArrowRight />
+                      </Link>
+                    </div>
                   </div>
                 </div>
-              </div>
-            ))}
+              ))}
+            </div>
           </div>
         </div>
       </div>
+
+      {/* Section Title */}
     </>
   );
 };

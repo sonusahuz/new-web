@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { useNavigate } from 'react-router-dom';
 
-const App = () => {
+const ContactMain = () => {
   const [formData, setFormData] = useState({
     name: '',
     email: '',
@@ -53,89 +53,97 @@ const App = () => {
   return (
     <div>
       {/* Header Section */}
-      <div className="bg-primary text-white" style={{ padding: '20px 0' }}>
-        <div className="container d-flex flex-wrap align-items-center justify-content-between p-lg-0">
-          {/* Left Section */}
-          <div>
-            <h1 className="text-white fw-bold contact"> CONTACT US</h1>
-            <p className="mt-3 text-white fs-3 description">
-              Connect with Nyas Consultants for innovative tech <br />{' '}
-              solutions—your partner in driving digital transformation!
-            </p>
-          </div>
-
-          {/* Right Section */}
-          <div className="d-flex align-items-center justify-content-between">
-            {/* Left Section - Two icons stacked */}
-            <div className="d-flex flex-column align-items-center">
-              <div className="mb-3">
-                <img
-                  src="/assets/img/email.png" // Replace with your Gmail icon
-                  alt="Gmail"
-                  className="rounded-circle"
-                  style={{ width: '130px', height: '120px' }}
-                />
-              </div>
-
-              <div>
-                <img
-                  src="/assets/img/internet.png" // Replace with your Phone icon
-                  alt="Phone"
-                  className="rounded-circle"
-                  style={{ width: '130px', height: '120px' }}
-                />
-              </div>
-            </div>
-
-            {/* Right Section - Single icon */}
-            <div>
-              <img
-                src="/assets/img/phone.png" // Replace with your Globe icon
-                alt="Globe"
-                className="rounded-circle"
-                style={{ width: '130px', height: '120px' }}
-              />
-            </div>
-          </div>
+      <div
+        style={{
+          backgroundImage: 'url("./assets/img/about-background.jpeg")',
+          backgroundSize: 'cover',
+          backgroundPosition: 'center',
+          height: '300px',
+        }}
+      >
+        <div className="container py-5 d-flex align-items-center justify-content-start">
+          <h1
+            className="text-white fw-bold"
+            style={{ fontSize: '60px', paddingTop: '45px' }}
+          >
+            CONTACT US{' '}
+          </h1>
         </div>
       </div>
 
-      {/* Request a Consultation Section */}
       <div
-        className={`app-container container py-5 ${
-          animate ? 'animate-swipe-up' : ''
-        }`}
+        className="py-5"
+        style={{
+          backgroundImage: 'url("./assets/img/contact-background.webp")',
+          backgroundSize: 'cover',
+          backgroundPosition: 'center',
+        }}
       >
-        <div className="row contact-img-form">
-          {/* Left Side */}
-          <div className="col-lg-6 text-center">
-            <h2 className="text-center mb-4 fw-bold request">
-              Request a Consultation
-            </h2>
-            <img
-              src="/assets/img/contact-form.png" // Replace with your image URL
-              alt="Consultation illustration"
-              className="img-fluid contact-img"
-            />
+        <h1 className="fs-1 fw-bold text-center mb-5">
+          REQUEST A CONSULTATION
+        </h1>
+        {/* Main Content Section */}
+        <div className="row g-4 align-items-start mx-auto gap-4 justify-content-center container">
+          {/* Left Side: Contact Info */}
+          <div className="col-lg-6">
+            <div
+              className="border-1 p-4 rounded-4 shadow-sm bg-white"
+              style={{ height: '692px' }}
+            >
+              <div className="card-body text-left">
+                <h3 className="card-title text-primary fw-bold mb-3">
+                  CONTACT INFORMATION
+                </h3>
+                <p className="fs-4 text-black">
+                  Connect with Nyas today for tailored solutions that drive
+                  growth, streamline operations, and elevate your success—let’s
+                  achieve your goals together!
+                </p>
+                <div className="d-flex align-items-center mb-3">
+                  <i className="bi bi-geo-alt-fill text-danger fs-2 me-2"></i>
+                  <span className="text-black">
+                    60 East 65th Street NY 10065
+                  </span>
+                </div>
+                <div className="d-flex align-items-center mb-3">
+                  <i className="bi bi-envelope-fill text-danger fs-2 me-2"></i>
+                  <span className="text-black">info@nyasconsultants.com</span>
+                </div>
+                <div className="d-flex align-items-center mb-3">
+                  <i className="bi bi-telephone-fill text-danger fs-2 me-2"></i>
+                  <span className="text-black">+447492884455</span>
+                </div>
+                <div className="d-flex justify-content-start">
+                  <a href="#" className="text-primary fs-2 me-3">
+                    <i className="bi bi-facebook"></i>
+                  </a>
+                  <a href="#" className="text-primary fs-2 me-3">
+                    <i className="bi bi-instagram"></i>
+                  </a>
+                  <a href="#" className="text-primary fs-2">
+                    <i className="bi bi-linkedin"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
           </div>
 
-          {/* Right Side - Form */}
+          {/* Right Side: Form */}
           <div
-            className="col-lg-6 border-1 rounded-2 animate"
-            style={{ width: 'auto', height: 'auto', padding: '20px' }}
+            className="col-lg-6 border-1 p-4 rounded-4 shadow-sm bg-white"
+            style={{ width: '600px' }}
           >
-            <h1 className="fs-3 mb-4 fw-bold">Get in Touch</h1>
+            <h2 className="fw-bold mb-4">Get in Touch</h2>
             <form onSubmit={handleSubmit}>
-              {/* Form fields */}
               <div className="mb-3">
                 <label htmlFor="name" className="form-label">
                   Name
                 </label>
                 <input
                   type="text"
-                  className="form-control form-control-lg"
-                  placeholder="Enter Your Name"
                   id="name"
+                  className="form-control"
+                  placeholder="Enter Your Name"
                   value={formData.name}
                   onChange={handleInputChange}
                   required
@@ -147,9 +155,9 @@ const App = () => {
                 </label>
                 <input
                   type="email"
-                  className="form-control form-control-lg"
-                  placeholder="Enter Your Email"
                   id="email"
+                  className="form-control"
+                  placeholder="Enter Your Email"
                   value={formData.email}
                   onChange={handleInputChange}
                   required
@@ -161,9 +169,9 @@ const App = () => {
                 </label>
                 <input
                   type="text"
-                  placeholder="Enter Your Phone Number"
-                  className="form-control form-control-lg"
                   id="phone"
+                  className="form-control"
+                  placeholder="Enter Your Phone Number"
                   value={formData.phone}
                   onChange={(e) => {
                     const value = e.target.value.replace(/[^0-9]/g, '');
@@ -177,8 +185,8 @@ const App = () => {
                   Select Service
                 </label>
                 <select
-                  className="form-select form-select-lg"
                   id="service"
+                  className="form-select"
                   value={formData.service}
                   onChange={handleInputChange}
                   required
@@ -206,27 +214,35 @@ const App = () => {
                   Message
                 </label>
                 <textarea
-                  className="form-control form-control-lg"
                   id="message"
+                  className="form-control"
                   placeholder="Enter Your Message"
                   value={formData.message}
                   onChange={handleInputChange}
+                  rows="4"
                 />
               </div>
-              <div>
-                <button
-                  type="submit"
-                  className="btn rounded-1 btn-primary mt-0 w-100 border-radius-5"
-                >
-                  Submit
-                </button>
-              </div>
+              <button type="submit" className="btn btn-primary w-100">
+                Submit
+              </button>
             </form>
           </div>
         </div>
+      </div>
+      <div style={{ width: '100%', height: '500px' }}>
+        <iframe
+          title="Google Map"
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3153.835434509612!2d-122.42177868468143!3d37.77492927975908!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8085809c497b850f%3A0x3e645f3e27bdf0e3!2sSan%20Francisco%2C%20CA%2C%20USA!5e0!3m2!1sen!2sin!4v1694537087334!5m2!1sen!2sin"
+          width="100%"
+          height="100%"
+          style={{ border: '0' }}
+          allowFullScreen=""
+          loading="lazy"
+          referrerPolicy="no-referrer-when-downgrade"
+        ></iframe>
       </div>
     </div>
   );
 };
 
-export default App;
+export default ContactMain;

@@ -1,440 +1,232 @@
 import React from 'react';
 
 const MobileAppArea = () => {
-  return (
-    <>
-      <link
-        href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i"
-        rel="stylesheet"
-      />
-      {/* Vendor CSS Files */}
-      <link
-        href="assets/assets1/vendor/bootstrap/css/bootstrap.min.css"
-        rel="stylesheet"
-      />
-      <link
-        href="assets/assets1/vendor/icofont/icofont.min.css"
-        rel="stylesheet"
-      />
-      <link
-        href="assets/assets1/vendor/boxicons/css/boxicons.min.css"
-        rel="stylesheet"
-      />
+  const accordionArr = [
+    {
+      id: 'One',
+      question:
+        'What is the difference between native mobile app development and cross-platform app development?',
+      answer:
+        'Native mobile app development focuses on creating apps for specific platforms like Android or iOS, ensuring optimal performance and deep integration with device features. Cross-platform app development, on the other hand, uses a single codebase to create apps that work on both iOS and Android, saving development time and cost, but might sacrifice some performance and native features.',
+    },
+    {
+      id: 'Two',
+      question:
+        'How can enterprise application development improve my business operations?',
+      answer:
+        'Enterprise application development helps streamline and automate complex business processes, improving efficiency, collaboration, and productivity across your organization. Custom applications can be tailored to meet your specific business needs, from inventory management to HR systems, leading to better workflow and data management.',
+    },
+    {
+      id: 'Three',
+      question:
+        'What are the benefits of using SaaS solutions for my business?',
+      answer:
+        'SaaS (Software as a Service) solutions offer businesses flexible, scalable, and cost-effective cloud-based applications. With SaaS, your team can access essential tools anytime, anywhere, without worrying about infrastructure, software updates, or maintenance. This helps you stay focused on your core business functions while benefiting from the latest technological advancements.',
+    },
+    {
+      id: 'Four',
+      question:
+        "How can product strategy and development consulting help my app's success?",
+      answer:
+        'Product strategy and development consulting provides expert guidance at every stage of the app development process. From ideation to launch, consultants help align your app with your business goals, ensuring it addresses market needs, attracts users, and delivers a strong return on investment. The right strategy can make the difference between success and failure in the competitive app market.',
+    },
+    {
+      id: 'Five',
+      question:
+        'What are IoT-enabled applications and how can they benefit my business?',
+      answer:
+        'IoT-enabled applications connect devices through the internet to gather and exchange data, enhancing user experiences and enabling smarter decision-making. For businesses, IoT apps can help monitor assets, improve operational efficiency, and provide real-time insights that enhance customer satisfaction, security, and product performance.',
+    },
+    {
+      id: 'Six',
+      question:
+        'Is it necessary to choose between native, hybrid, and cross-platform app development?',
+      answer:
+        'The choice depends on your business needs and goals. Native apps offer superior performance and platform-specific features, while cross-platform apps allow you to reach both iOS and Android users with a single codebase. Hybrid apps combine the strengths of both, making them ideal for businesses that need to balance performance with cost-efficiency. A consultation can help you select the best approach based on your project requirements.',
+    },
+  ];
 
-      <link href="assets/assets1/vendor/venobox/venobox.css" rel="stylesheet" />
-      <link
-        href="assets/assets1/vendor/owl.carousel/assets/assets1/owl.carousel.min.css"
-        rel="stylesheet"
-      />
-      {/* <link href="assets/assets1/vendor/aos/aos.css" rel="stylesheet" /> */}
-      {/* Template Main CSS File */}
-      <link href="assets/assets1/css/style.css" rel="stylesheet" />
-      <section id="hero">
-        <div className="container">
-          <div className="row">
-            <div
-              className="col-lg-6 pt-5 pt-lg-0 order-2 order-lg-1 d-flex flex-column justify-content-center"
-              data-aos="fade-up"
-            >
-              <div>
-                <h1>Digital App Development Services</h1>
-                <h2>
-                  Our Digital App Development Services offer scalable mobile,
-                  enterprise, SaaS, and IoT solutions, with expert strategy and
-                  consulting to align your app with business goals.
-                </h2>
-                <a href="#about" className="btn-get-started scrollto">
-                  Get Started
-                </a>
-              </div>
-            </div>
-            <div
-              className="col-lg-6 order-1 order-lg-2 hero-img"
-              data-aos="fade-left"
-            >
-              <img
-                src="assets/assets1/img/hero-img.png"
-                className="img-fluid"
-                alt=""
-              />
-            </div>
+  const services = [
+    {
+      img: 'assets/img/1.png',
+      title: 'Mobile App Development (Android & iOS)',
+      description:
+        'Developing high-quality, responsive mobile applications for Android and iOS platforms, offering seamless experiences on all devices. ',
+    },
+    {
+      img: 'assets/img/2.png',
+      title: 'Enterprise Application Development',
+      description:
+        'Creating robust, scalable applications to support complex organizational operations, improve workflow efficiency, and boost productivity',
+    },
+    {
+      img: 'assets/img/3.png',
+      title: 'SaaS Integration & Cloud Application Development ',
+      description:
+        'Building Software as a Service (SaaS) solutions, offering scalable, cloud-based applications accessible to businesses and users anytime, anywhere. ',
+    },
+  ];
+
+  return (
+    <div
+      style={{
+        backgroundImage: 'url("./assets/img/contact-background.webp")',
+        backgroundSize: 'cover',
+        backgroundPosition: 'center',
+        padding: '0',
+        margin: '0',
+      }}
+    >
+      {/* Header Section */}
+      <div className="container d-flex flex-wrap align-items-center justify-content-between py-5">
+        <h1 className="text-black fw-bold fs-1">DIGITAL APP DEVELOPMENT</h1>
+        <img
+          src="./assets/img/4-removebg-preview.png"
+          className="img-fluid"
+          alt="Digital Development"
+          style={{ maxWidth: '400px' }}
+        />
+      </div>
+
+      {/* Empowerment Section */}
+      <div className="container">
+        <div>
+          <h1
+            className="text-black text-center py-3 fw-bold fs-1"
+            style={{ fontSize: '60px' }}
+          >
+            DIGITAL EMPOWERMENT SOLUTIONS
+          </h1>
+          <p className="text-black">
+            At Nyas Consultants, we specialize in delivering comprehensive
+            Digital App Development Services designed to empower your business.
+            From scalable mobile apps to enterprise solutions, SaaS platforms,
+            and IoT integration, our offerings are tailored to meet your unique
+            needs. Backed by expert strategy and consulting, we ensure your app
+            aligns seamlessly with your business objectives, driving efficiency,
+            engagement, and growth.
+          </p>
+        </div>
+      </div>
+
+      {/* Innovative Solutions Section */}
+      <div className="container my-5">
+        <h1
+          className="text-black text-center fw-bold fs-1"
+          style={{ fontSize: '60px' }}
+        >
+          INNOVATIVE DIGITAL SOLUTIONS
+        </h1>
+        <div className="row align-items-center mt-4">
+          <div className="col-lg-6 mb-3">
+            <p className="text-black">
+              At Nyas, we specialize in delivering high-quality digital
+              solutions across mobile app development, enterprise applications,
+              SaaS, cloud solutions, IoT, and product strategy consulting,
+              ensuring businesses stay ahead of the curve.
+            </p>
+            <ul className="list-unstyled">
+              <li className="text-black mb-2">
+                <i className="bi bi-check2-all text-success fs-5"></i>{' '}
+                High-quality mobile apps for Android and iOS.
+              </li>
+              <li className="text-black mb-2">
+                <i className="bi bi-check2-all text-success fs-5"></i> Robust
+                enterprise apps to streamline business operations.
+              </li>
+              <li className="text-black mb-2">
+                <i className="bi bi-check2-all text-success fs-5"></i> Scalable
+                SaaS and cloud solutions for businesses.
+              </li>
+              <li className="text-black mb-2">
+                <i className="bi bi-check2-all text-success fs-5"></i> Product
+                strategy consulting for successful app launches.
+              </li>
+              <li className="text-black">
+                <i className="bi bi-check2-all text-success fs-5"></i>{' '}
+                IoT-driven applications enhancing operational efficiency and
+                experiences.
+              </li>
+            </ul>
+          </div>
+          <div className="col-lg-6 text-center">
+            <img
+              src="./assets/img/5-removebg-preview.png"
+              className="img-fluid"
+              alt="Innovative Solutions"
+              style={{ maxWidth: '900px' }}
+            />
           </div>
         </div>
-      </section>
-      {/* End Hero */}
-      <main id="main">
-        {/* ======= About Section ======= */}
-        <section id="about" className="about">
-          <div className="container">
-            <div className="row">
-              <div className="col-lg-6" data-aos="zoom-in">
-                <img
-                  src="assets/assets1/img/about.jpg"
-                  className="img-fluid"
-                  alt=""
-                />
-              </div>
-              <div
-                className="col-lg-6 d-flex flex-column justify-contents-center"
-                data-aos="fade-left"
-              >
-                <div className="content pt-4 pt-lg-0">
-                  <h3>Innovative Digital Solutions</h3>
-                  <p className="font-italic">
-                    At Nyas, we specialize in delivering high-quality digital
-                    solutions across mobile app development, enterprise
-                    applications, SaaS, cloud solutions, IoT, and product
-                    strategy consulting, ensuring businesses stay ahead of the
-                    curve.
-                  </p>
-                  <ul>
-                    <li>
-                      <i className="icofont-check-circled" /> High-quality
-                      mobile apps for Android and iOS.
-                    </li>
-                    <li>
-                      <i className="icofont-check-circled" /> Robust enterprise
-                      apps to streamline business operations.
-                    </li>
-                    <li>
-                      <i className="icofont-check-circled" /> Scalable SaaS and
-                      cloud solutions for businesses.
-                    </li>
-                    <li>
-                      <i className="icofont-check-circled" /> Product strategy
-                      consulting for successful app launches.
-                    </li>
-                    <li>
-                      <i className="icofont-check-circled" /> IoT-driven
-                      applications enhancing operational efficiency and
-                      experiences.
-                    </li>
-                  </ul>
+      </div>
+
+      <div className="container">
+        <h1
+          className="text-black text-center fw-bold fs-1"
+          style={{ fontSize: '60px' }}
+        >
+          COMPREHENSIVE MOBILE & ENTERPRISE APPLICATION DEVELOPMENT SOLUTIONS
+        </h1>
+        <div className="row mt-5">
+          {services.map((service, index) => (
+            <div className="col-xl-4 col-md-6" key={index}>
+              <div className="style-4 text-center">
+                <div className="thumb">
+                  <img
+                    src={service.img}
+                    alt={`${service.title} image`}
+                    style={{
+                      width: '350px',
+                      height: '350px',
+                      objectFit: 'cover',
+                    }}
+                  />
+                </div>
+                <div className="details mb-4 p-4">
+                  <h5 className="mb-3">{service.title}</h5>
+                  <p className="content mb-0">{service.description}</p>
                 </div>
               </div>
             </div>
+          ))}
+        </div>
+      </div>
+
+      {/* FAQ Section */}
+      <div className="container">
+        <section id="faq" className="py-5">
+          <h2 className="text-center mb-4">Frequently Asked Questions</h2>
+          <div className="accordion" id="accordionExample">
+            {accordionArr.map((item, index) => (
+              <div className="accordion-item" key={item.id}>
+                <h2 className="accordion-header" id={`heading${item.id}`}>
+                  <button
+                    className="accordion-button"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target={`#collapse${item.id}`}
+                    aria-expanded={index === 0 ? 'true' : 'false'}
+                    aria-controls={`collapse${item.id}`}
+                  >
+                    {item.question}
+                  </button>
+                </h2>
+                <div
+                  id={`collapse${item.id}`}
+                  className={`accordion-collapse collapse ${
+                    index === 0 ? 'show' : ''
+                  }`}
+                  aria-labelledby={`heading${item.id}`}
+                  data-bs-parent="#accordionExample"
+                >
+                  <div className="accordion-body">{item.answer}</div>
+                </div>
+              </div>
+            ))}
           </div>
         </section>
-        {/* End About Section */}
-        {/* ======= Features Section ======= */}
-        <section id="features" className="features">
-          <div className="container">
-            <div className="row">
-              <div className="col-lg-6 mt-2 mb-tg-0 order-2 order-lg-1">
-                <ul className="nav nav-tabs flex-column">
-                  <li className="nav-item" data-aos="fade-up">
-                    <a
-                      className="nav-link active show"
-                      data-toggle="tab"
-                      href="#tab-1"
-                    >
-                      <h4>Mobile App Development (Android &amp; iOS)</h4>
-                      <p>
-                        Developing high-quality, responsive mobile applications
-                        for Android and iOS platforms, offering seamless
-                        experiences on all devices.
-                      </p>
-                    </a>
-                  </li>
-                  <li
-                    className="nav-item mt-2"
-                    data-aos="fade-up"
-                    data-aos-delay={100}
-                  >
-                    <a className="nav-link" data-toggle="tab" href="#tab-2">
-                      <h4>Enterprise Application Development</h4>
-                      <p>
-                        Creating robust, scalable applications to support
-                        complex organizational operations, improve workflow
-                        efficiency, and boost productivity.
-                      </p>
-                    </a>
-                  </li>
-                  <li
-                    className="nav-item mt-2"
-                    data-aos="fade-up"
-                    data-aos-delay={200}
-                  >
-                    <a className="nav-link" data-toggle="tab" href="#tab-3">
-                      <h4>
-                        SaaS Integration &amp; Cloud Application Development
-                      </h4>
-                      <p>
-                        Building Software as a Service (SaaS) solutions,
-                        offering scalable, cloud-based applications accessible
-                        to businesses and users anytime, anywhere.
-                      </p>
-                    </a>
-                  </li>
-                  <li
-                    className="nav-item mt-2"
-                    data-aos="fade-up"
-                    data-aos-delay={300}
-                  >
-                    <a className="nav-link" data-toggle="tab" href="#tab-4">
-                      <h4>Product Strategy &amp; Development Consulting</h4>
-                      <p>
-                        Offering expert guidance from ideation through launch to
-                        help align app development with business goals and
-                        ensure product-market fit.
-                      </p>
-                    </a>
-                  </li>
-                </ul>
-              </div>
-              <div className="col-lg-6 order-1 order-lg-2" data-aos="zoom-in">
-                <div className="tab-content">
-                  <div className="tab-pane active show" id="tab-1">
-                    <figure>
-                      <img
-                        src="assets/assets1/img/features-1.png"
-                        alt=""
-                        className="img-fluid"
-                      />
-                    </figure>
-                  </div>
-                  <div className="tab-pane" id="tab-2">
-                    <figure>
-                      <img
-                        src="assets/assets1/img/features-2.png"
-                        alt=""
-                        className="img-fluid"
-                      />
-                    </figure>
-                  </div>
-                  <div className="tab-pane" id="tab-3">
-                    <figure>
-                      <img
-                        src="assets/assets1/img/features-3.png"
-                        alt=""
-                        className="img-fluid"
-                      />
-                    </figure>
-                  </div>
-                  <div className="tab-pane" id="tab-4">
-                    <figure>
-                      <img
-                        src="assets/assets1/img/features-4.png"
-                        alt=""
-                        className="img-fluid"
-                      />
-                    </figure>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
-        {/* End Features Section */}
-        {/* ======= F.A.Q Section ======= */}
-        <section id="faq" className="faq section py-5">
-          <div className="section-title" data-aos="fade-up">
-            <h2>Frequently Asked Questions</h2>
-          </div>
-          <div className="container">
-            <div className="accordion" id="faqAccordion">
-              <div className="accordion-item">
-                <h2 className="accordion-header" id="headingOne">
-                  <button
-                    className="accordion-button"
-                    type="button"
-                    data-bs-toggle="collapse"
-                    data-bs-target="#collapseOne"
-                    aria-expanded="true"
-                    aria-controls="collapseOne"
-                  >
-                    What is the difference between native mobile app development
-                    and cross-platform app development?
-                  </button>
-                </h2>
-                <div
-                  id="collapseOne"
-                  className="accordion-collapse collapse show"
-                  aria-labelledby="headingOne"
-                  data-bs-parent="#faqAccordion"
-                >
-                  <div className="accordion-body">
-                    Native mobile app development focuses on creating apps for
-                    specific platforms like Android or iOS, ensuring optimal
-                    performance and deep integration with device features.
-                    Cross-platform app development, on the other hand, uses a
-                    single codebase to create apps that work on both iOS and
-                    Android, saving development time and cost, but might
-                    sacrifice some performance and native features.
-                  </div>
-                </div>
-              </div>
-
-              <div className="accordion-item">
-                <h2 className="accordion-header" id="headingTwo">
-                  <button
-                    className="accordion-button"
-                    type="button"
-                    data-bs-toggle="collapse"
-                    data-bs-target="#collapseTwo"
-                    aria-expanded="false"
-                    aria-controls="collapseTwo"
-                  >
-                    How can enterprise application development improve my
-                    business operations?
-                  </button>
-                </h2>
-                <div
-                  id="collapseTwo"
-                  className="accordion-collapse collapse"
-                  aria-labelledby="headingTwo"
-                  data-bs-parent="#faqAccordion"
-                >
-                  <div className="accordion-body">
-                    Enterprise application development helps streamline and
-                    automate complex business processes, improving efficiency,
-                    collaboration, and productivity across your organization.
-                    Custom applications can be tailored to meet your specific
-                    business needs, from inventory management to HR systems,
-                    leading to better workflow and data management.
-                  </div>
-                </div>
-              </div>
-
-              <div className="accordion-item">
-                <h2 className="accordion-header" id="headingThree">
-                  <button
-                    className="accordion-button"
-                    type="button"
-                    data-bs-toggle="collapse"
-                    data-bs-target="#collapseThree"
-                    aria-expanded="false"
-                    aria-controls="collapseThree"
-                  >
-                    What are the benefits of using SaaS solutions for my
-                    business?
-                  </button>
-                </h2>
-                <div
-                  id="collapseThree"
-                  className="accordion-collapse collapse"
-                  aria-labelledby="headingThree"
-                  data-bs-parent="#faqAccordion"
-                >
-                  <div className="accordion-body">
-                    SaaS (Software as a Service) solutions offer businesses
-                    flexible, scalable, and cost-effective cloud-based
-                    applications. With SaaS, your team can access essential
-                    tools anytime, anywhere, without worrying about
-                    infrastructure, software updates, or maintenance. This helps
-                    you stay focused on your core business functions while
-                    benefiting from the latest technological advancements.
-                  </div>
-                </div>
-              </div>
-
-              <div className="accordion-item">
-                <h2 className="accordion-header" id="headingFour">
-                  <button
-                    className="accordion-button"
-                    type="button"
-                    data-bs-toggle="collapse"
-                    data-bs-target="#collapseFour"
-                    aria-expanded="false"
-                    aria-controls="collapseFour"
-                  >
-                    How can product strategy and development consulting help my
-                    app's success?
-                  </button>
-                </h2>
-                <div
-                  id="collapseFour"
-                  className="accordion-collapse collapse"
-                  aria-labelledby="headingFour"
-                  data-bs-parent="#faqAccordion"
-                >
-                  <div className="accordion-body">
-                    Product strategy and development consulting provides expert
-                    guidance at every stage of the app development process. From
-                    ideation to launch, consultants help align your app with
-                    your business goals, ensuring it addresses market needs,
-                    attracts users, and delivers a strong return on investment.
-                    The right strategy can make the difference between success
-                    and failure in the competitive app market.
-                  </div>
-                </div>
-              </div>
-
-              <div className="accordion-item">
-                <h2 className="accordion-header" id="headingFive">
-                  <button
-                    className="accordion-button"
-                    type="button"
-                    data-bs-toggle="collapse"
-                    data-bs-target="#collapseFive"
-                    aria-expanded="false"
-                    aria-controls="collapseFive"
-                  >
-                    What are IoT-enabled applications and how can they benefit
-                    my business?
-                  </button>
-                </h2>
-                <div
-                  id="collapseFive"
-                  className="accordion-collapse collapse"
-                  aria-labelledby="headingFive"
-                  data-bs-parent="#faqAccordion"
-                >
-                  <div className="accordion-body">
-                    IoT-enabled applications connect devices through the
-                    internet to gather and exchange data, enhancing user
-                    experiences and enabling smarter decision-making. For
-                    businesses, IoT apps can help monitor assets, improve
-                    operational efficiency, and provide real-time insights that
-                    enhance customer satisfaction, security, and product
-                    performance.
-                  </div>
-                </div>
-              </div>
-
-              <div className="accordion-item">
-                <h2 className="accordion-header" id="headingSix">
-                  <button
-                    className="accordion-button"
-                    type="button"
-                    data-bs-toggle="collapse"
-                    data-bs-target="#collapseSix"
-                    aria-expanded="false"
-                    aria-controls="collapseSix"
-                  >
-                    Is it necessary to choose between native, hybrid, and
-                    cross-platform app development?
-                  </button>
-                </h2>
-                <div
-                  id="collapseSix"
-                  className="accordion-collapse collapse"
-                  aria-labelledby="headingSix"
-                  data-bs-parent="#faqAccordion"
-                >
-                  <div className="accordion-body">
-                    The choice depends on your business needs and goals. Native
-                    apps offer superior performance and platform-specific
-                    features, while cross-platform apps allow you to reach both
-                    iOS and Android users with a single codebase. Hybrid apps
-                    combine the strengths of both, making them ideal for
-                    businesses that need to balance performance with
-                    cost-efficiency. A consultation can help you select the best
-                    approach based on your project requirements.
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
-      </main>
-      {/* End #main */}
-      <a href="#" className="back-to-top">
-        <i className="bx bxs-up-arrow-alt" />
-      </a>
-      {/* Vendor JS Files */}
-      {/* Template Main JS File */}
-    </>
+      </div>
+    </div>
   );
 };
 

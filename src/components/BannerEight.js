@@ -53,7 +53,14 @@ const BannerEight = () => {
           </h1>
         </div>
       </div>
-      <div className="service-area ServiceAreaSeven bg-cover pd-top-120 pd-bottom-90 pd-top-110 pd-bottom-90">
+      <div
+        style={{
+          backgroundImage: 'url("./assets/img/contact-background.webp")',
+          backgroundSize: 'cover',
+          backgroundPosition: 'center',
+        }}
+        className="service-area ServiceAreaSeven bg-cover pd-top-120 pd-bottom-90 pd-top-110 pd-bottom-90"
+      >
         <div className="container">
           <div className="row justify-content-center">
             <div className="col-xl-7 col-lg-8">

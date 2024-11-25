@@ -1,6 +1,8 @@
-import React from 'react';
+import React, { useState } from 'react';
+import ApplyNow from './ApplyNow';
 
 const WorkProcessTwo = () => {
+  const [open, setOpen] = useState(false);
   return (
     <>
       {/*==================== Work Process One start ====================*/}
@@ -89,6 +91,7 @@ const WorkProcessTwo = () => {
               or mail us to get started with Nyas Career!
             </p>
             <button
+              onClick={() => setOpen(true)}
               type="submit"
               className="d-flex align-items-center bg-danger rounded-pill text-white px-4 py-2"
               style={{ fontSize: '14px', fontWeight: 'bold' }}
@@ -102,6 +105,7 @@ const WorkProcessTwo = () => {
           </div>
         </div>
       </div>
+      {open && <ApplyNow openChat={open} setOpenChat={setOpen} />}
     </>
   );
 };

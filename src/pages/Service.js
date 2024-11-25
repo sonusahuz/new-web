@@ -11,6 +11,7 @@ const Service = () => {
       {/* Navigation Bar */}
       <NavBar />
 
+
       {/* Service Area One */}
       <ServiceAreaGroup />
 
