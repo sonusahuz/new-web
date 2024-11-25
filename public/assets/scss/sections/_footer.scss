@@ -3,9 +3,8 @@
 ---------------------------------------------------*/
 .footer-area {
   position: relative;
-  margin-top: 90px;
   &:after {
-    content: "";
+    content: '';
     position: absolute;
     height: 100%;
     width: 100%;

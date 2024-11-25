@@ -145,55 +145,19 @@ const FooterOne = () => {
             <div className="col-lg-3 col-md-6">
               <div className="widget widget-recent-post">
                 <h4 className="widget-title">Contact us</h4>
-                <ul>
-                  <li>
-                    <div className="media">
-                      <div className="media-left">
-                        <img src="assets/img/widget/1.png" alt="blog" />
-                      </div>
-                      <div className="media-body align-self-center">
-                        <div className="post-info mb-2">
-                          <FaCalendarAlt />
-                          <span>january 11, 2023</span>
-                        </div>
-                        <h6 className="title mb-0">
-                          <Link to="/blog-details">
-                            Social Media For Promote Business.
-                          </Link>
-                        </h6>
-                      </div>
-                    </div>
-                  </li>
-                  <li>
-                    <div className="media">
-                      <div className="media-left">
-                        <img src="assets/img/widget/2.png" alt="blog" />
-                      </div>
-                      <div className="media-body align-self-center">
-                        <div className="post-info mb-2">
-                          <FaCalendarAlt />
-                          <span>january 11, 2023</span>
-                        </div>
-                        <h6 className="title mb-0">
-                          <Link to="/blog-details">
-                            Marketing For Base market watch
-                          </Link>
-                        </h6>
-                      </div>
-                    </div>
-                  </li>
-                </ul>
                 <div className="details">
                   <p className="mt-3">
-                    <FaPhoneAlt /> +353 85 161 3637
+                    <FaPhoneAlt className="text-primary" /> +353 85 161 3637
                   </p>
 
                   <p className="mt-2">
-                    <FaEnvelope /> info@nyasconsultants.com
+                    <FaEnvelope className="text-primary" />{' '}
+                    info@nyasconsultants.com
                   </p>
 
                   <p className="mt-2">
-                    <FaHome /> Mountjoy, Dublin1, <br></br>
+                    <FaHome className="text-primary" /> Mountjoy, Dublin1,{' '}
+                    <br></br>
                     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;D01 XY58, IRELAND
                   </p>
                 </div>
