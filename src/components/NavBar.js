@@ -1,6 +1,7 @@
 import React from 'react';
 import { Navbar, Nav, NavDropdown, Container } from 'react-bootstrap';
 import { Menu, ArrowRight } from 'lucide-react';
+import { Link } from 'react-router-dom';
 
 const NavBar = () => {
   return (
@@ -25,8 +26,8 @@ const NavBar = () => {
             style={{ width: '80px' }}
           />
         </Navbar.Brand>
-        <Navbar.Toggle aria-controls="basic-navbar-nav" className='text-white'>
-          <Menu  className='border-white'/>
+        <Navbar.Toggle aria-controls="basic-navbar-nav" className="text-white">
+          <Menu className="border-white" />
         </Navbar.Toggle>
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="ms-auto align-items-center">
@@ -69,10 +70,12 @@ const NavBar = () => {
             <Nav.Link href="/contact" className="fw-semibold text-white">
               Contact
             </Nav.Link>
-            <button className="ms-3 d-flex align-items-center gap-2 border-0 bg-primary text-white rounded-pill px-3 py-2">
-              <span>Get Started</span>
-              <ArrowRight size={18} />
-            </button>
+            <Link to={'/contact'}>
+              <button className="ms-3 d-flex align-items-center gap-2 border-0 bg-primary text-white rounded-pill px-3 py-2">
+                <span>Get Started</span>
+                <ArrowRight size={18} />
+              </button>
+            </Link>
           </Nav>
         </Navbar.Collapse>
       </Container>

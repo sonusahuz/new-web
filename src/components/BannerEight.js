@@ -74,7 +74,7 @@ const BannerEight = () => {
           </div>
           <div className="row">
             {services.map((service, index) => (
-              <div className="col-xl-4 col-md-6" key={index}>
+              <div className="col-xl-4 col-md-6 animated-image" key={index}>
                 <div className="style-4 text-center">
                   <div className="thumb">
                     <img

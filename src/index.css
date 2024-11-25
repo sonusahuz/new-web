@@ -44,14 +44,17 @@
 }
 
 .dropdown-menu {
+  position: absolute; /* Ensures it detaches from document flow */
+  top: 100%; /* Position below the dropdown trigger */
+  left: 0; /* Aligns to the left of the trigger */
+  z-index: 1050; /* Ensures it appears above other elements */
   border: none;
   box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1),
     0 2px 4px -1px rgba(0, 0, 0, 0.06);
   border-radius: 0.5rem;
-  z-index: 100w;
   background: #fff;
+  min-width: 200px; /* Adjust to your needs */
 }
-
 .dropdown-item {
   padding: 0.75rem 1.5rem;
   font-weight: 500;
@@ -324,25 +327,21 @@ input:focus {
   }
 }
 
-.app-container.animate-swipe-up {
-  opacity: 1;
-  transform: translateY(0);
-}
-
-/* Up and down smooth animation */
 @keyframes smoothUpDown {
-  0% {
-    transform: translateY(0);
-  }
-  50% {
-    transform: translateY(-10px);
-  }
+  0%,
   100% {
     transform: translateY(0);
   }
+  50% {
+    transform: translateY(-20px);
+  }
 }
 
-.image-container,
+.animated-image {
+  animation: smoothUpDown 3s ease-in-out infinite;
+}
+
+*/ .image-container,
 .form-container {
   animation: smoothUpDown 3s ease-in-out infinite;
 }

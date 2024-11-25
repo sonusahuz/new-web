@@ -24,13 +24,9 @@ const CrossPlatformDevelopmentArea = () => {
       />
       {/* Main CSS File */}
       <link href="assets/assetscross/css/main.css" rel="stylesheet" />
-
       <main className="main">
         {/* Hero Section */}
         <section id="hero" className="hero section">
-          <div className="hero-bg">
-            <img src="assets/assetscross/img/hero-bg-light.webp" alt="" />
-          </div>
           <div className="container text-center">
             <div className="d-flex flex-column justify-content-center align-items-center">
               <h1 data-aos="fade-up">
@@ -138,19 +134,15 @@ const CrossPlatformDevelopmentArea = () => {
         </section>
         {/* /Featured Services Section */}
         {/* About Section */}
-        <section id="about" className="about section">
-          <div className="container">
-            <div className="row gy-4">
-              <div
-                className="col-lg-6 content"
-                data-aos="fade-up"
-                data-aos-delay={100}
-              >
-                <p className="who-we-are">
-                  Cross-platform mobile development...
-                </p>
-                <h4>The Rise of Cross-Platform Mobile Development</h4>
-                <p className="fst-italic">
+        <section id="about" class="about section py-5">
+          <div class="container">
+            <div class="row gy-4">
+              <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
+                <p class="fw-bold">CROSS-PLATFORM MOBILE DEVELOPMENT....</p>
+                <h4 class="fw-bold">
+                  The Rise of Cross-Platform Mobile Development
+                </h4>
+                <p class="fst-italic">
                   As businesses face the growing challenge of developing mobile
                   apps for both Android and iOS, cross-platform mobile
                   development has emerged as a popular solution. This approach
@@ -163,64 +155,60 @@ const CrossPlatformDevelopmentArea = () => {
                   solutions to efficiently create apps that cater to both
                   audiences.
                 </p>
-                <ul>
-                  <li>
-                    <i className="bi bi-check-circle" />{' '}
-                    <span>
+                <ul class="list-unstyled">
+                  <li class="mb-2">
+                    <i class="bi bi-check-circle text-success"></i>
+                    <span style={{ paddingLeft: '10px' }}>
                       Native apps require separate development for Android and
                       iOS.
                     </span>
                   </li>
-                  <li>
-                    <i className="bi bi-check-circle" />{' '}
-                    <span>
+                  <li class="mb-2">
+                    <i class="bi bi-check-circle text-success"></i>
+                    <span style={{ paddingLeft: '10px' }}>
                       PWAs combine web and app features with limited
                       functionality.
                     </span>
                   </li>
-                  <li>
-                    <i className="bi bi-check-circle" />{' '}
-                    <span>
+                  <li class="mb-2">
+                    <i class="bi bi-check-circle text-success"></i>
+                    <span style={{ paddingLeft: '10px' }}>
                       Cross-platform apps share code, saving time and cost.
                     </span>
                   </li>
-                  <li>
-                    <i className="bi bi-check-circle" />{' '}
-                    <span>
+                  <li class="mb-2">
+                    <i class="bi bi-check-circle text-success"></i>
+                    <span style={{ paddingLeft: '10px' }}>
                       Hybrid apps combine native and web technologies with
                       performance issues.
                     </span>
                   </li>
                 </ul>
-                {/* <a href="#" class="read-more"><span>Read More</span><i class="bi bi-arrow-right"></i></a> */}
               </div>
-              <div
-                className="col-lg-6 about-images"
-                data-aos="fade-up"
-                data-aos-delay={200}
-              >
-                <div className="row gy-4">
-                  <div className="col-lg-6">
+
+              <div class="col-lg-6" data-aos="fade-up" data-aos-delay="200">
+                <div class="row gy-4">
+                  <div class="col-6">
                     <img
                       src="assets/assetscross/img/reactfinal.png"
-                      className="img-fluid"
-                      alt=""
+                      class="img-fluid "
+                      alt="React Development"
                     />
                   </div>
-                  <div className="col-lg-6">
-                    <div className="row gy-4">
-                      <div className="col-lg-12">
+                  <div class="col-6">
+                    <div class="row gy-4">
+                      <div class="col-12">
                         <img
                           src="assets/assetscross/img/ios1.png"
-                          className="img-fluid"
-                          alt=""
+                          class="img-fluid"
+                          alt="iOS Development"
                         />
                       </div>
-                      <div className="col-lg-12">
+                      <div class="col-12">
                         <img
                           src="assets/assetscross/img/react-1.png"
-                          className="img-fluid"
-                          alt=""
+                          class="img-fluid"
+                          alt="React Framework"
                         />
                       </div>
                     </div>
@@ -230,6 +218,7 @@ const CrossPlatformDevelopmentArea = () => {
             </div>
           </div>
         </section>
+
         {/* /Features Details Section */}
         {/* Services Section */}
         <section id="services" className="services section light-background">
@@ -617,8 +606,7 @@ const CrossPlatformDevelopmentArea = () => {
       >
         <i className="bi bi-arrow-up-short" />
       </a>
-      {/* Preloader */}c
-      {/* <div id="preloader" /> */}
+      {/* Preloader */}c{/* <div id="preloader" /> */}
       {/* Vendor JS Files */}
       {/* Main JS File */}
     </>

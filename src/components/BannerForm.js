@@ -3,7 +3,10 @@ import { Form, Button } from 'react-bootstrap';
 
 const BannerForm = () => {
   return (
-    <div className="bg-black text-light p-4 rounded-3 mt-5 mt-lg-0 contact-form">
+    <div
+      className="bg-black text-light p-4 rounded-3 mt-5 mt-lg-0 contact-form"
+      style={{ zIndex: 0 }}
+    >
       <h2 className="mb-4 text-white">Let's Connect</h2>
       <p className="mb-4 text-white">
         Got A Project That You Would Like To Discuss
@@ -61,7 +64,7 @@ const BannerForm = () => {
         <button
           type="submit"
           className="mx-auto d-flex align-items-center bg-danger rounded-pill text-white px-4 py-2"
-          style={{ fontSize: '14px' , fontWeight:"bold"}}
+          style={{ fontSize: '14px', fontWeight: 'bold' }}
         >
           SEND REQUEST
         </button>
