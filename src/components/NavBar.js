@@ -39,32 +39,30 @@ const NavBar = () => {
       {/* navbar start */}
       <nav className="navbar navbar-area navbar-area_1 navbar-expand-lg">
         <div className="container nav-container navbar-bg">
-          <div className="d-flex align-items-center justify-content-between w-100">
-            <div className="logo">
-              <Link to="/">
-                <img
-                  src="assets/img/logo4.png"
-                  alt="img"
-                  style={{ width: '100px' }}
-                />
-              </Link>
-            </div>
-            <div className="responsive-mobile-menu">
-              <button
-                onClick={menuActive}
-                className={
-                  active
-                    ? 'menu toggle-btn d-block d-lg-none open'
-                    : 'menu toggle-btn d-block d-lg-none'
-                }
-                data-target="#itech_main_menu"
-                aria-expanded="false"
-                aria-label="Toggle navigation"
-              >
-                <span className="icon-left" />
-                <span className="icon-right" />
-              </button>
-            </div>
+          <div className="responsive-mobile-menu">
+            <button
+              onClick={menuActive}
+              className={
+                active
+                  ? 'menu toggle-btn d-block d-lg-none open'
+                  : 'menu toggle-btn d-block d-lg-none'
+              }
+              data-target="#itech_main_menu"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <span className="icon-left" />
+              <span className="icon-right" />
+            </button>
+          </div>
+          <div className="logo">
+            <Link to="/">
+              <img
+                src="assets/img/logo4.png"
+                alt="img"
+                style={{ width: '100px' }}
+              />
+            </Link>
           </div>
           <div
             className={
