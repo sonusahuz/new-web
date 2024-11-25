@@ -341,7 +341,7 @@ input:focus {
   animation: smoothUpDown 3s ease-in-out infinite;
 }
 
-*/ .image-container,
+*.image-container,
 .form-container {
   animation: smoothUpDown 3s ease-in-out infinite;
 }
