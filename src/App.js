@@ -106,41 +106,31 @@ function App() {
         <Route exact path="/project-details" element={<ProjectDetails />} />
         <Route exact path="/technologies" element={<Technologies />} />
         <Route exact path="/career" element={<Career />} />
-
         <Route
           exact
           path="/custom-website-design-development"
           element={<CustomWebsiteDesign />}
         />
-
         <Route
           exact
           path="/mvp-development-testing"
           element={<MVPDevelopmentTesting />}
         />
-
         <Route
           exact
           path="/ui-ux-design-prototyping"
           element={<UiuxDesignPrototype />}
         />
-
         {/* 5 part here  */}
-
         <Route
           exact
           path="/blockchain-solutions"
           element={<BlockChainSolution />}
         />
-
         <Route exact path="/mobile-app" element={<MobileApp />} />
-
         <Route exact path="/legal-services" element={<LegalService />} />
-
         {/* 9 part hre  */}
-
         <Route exact path="/virtual-assistant" element={<VirtualAssistant />} />
-
         <Route
           exact
           path="/project-management"
@@ -152,13 +142,12 @@ function App() {
           element={<ProjectManagement2 />}
         />
         <Route exact path="/meta-campaign" element={<MetaCampaign />} />
-
         <Route
           exact
           path="/cross-platfrom-development"
           element={<CrossPlatformDevelopment />}
         />
-a
+        a
         <Route
           exact
           path="/digital-product-development"

@@ -12,17 +12,8 @@ const ServiceThree = () => {
       {/* Navigation Bar */}
       <NavBar />
 
-      {/* Navigation Bar */}
-      <Breadcrumb title={'Our Services'} />
-
-      {/* ServiceAreaGroupThree */}
       <ServiceAreaGroupThree />
 
-      {/* <ServiceAreaSeven /> */}
-      {/* Pricing Area One */}
-      {/* <PricingAreaOne /> */}
-
-      {/* Footer One */}
       <FooterOne />
     </>
   );

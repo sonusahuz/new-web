@@ -54,7 +54,7 @@ const AboutAreaOne = () => {
                 >
                   Who We Are
                 </h2>
-                <p className="content mb-xl-5 text-black">
+                <p className="mt-1 mb-xl-5 text-black">
                   Nyas Consultants is dedicated to helping businesses streamline
                   their operations and achieve sustainable growth. Our team is a
                   blend of seasoned consultants and virtual assistants with
@@ -65,7 +65,7 @@ const AboutAreaOne = () => {
                   what truly matters: growing your business
                 </p>
               </div>
-              <div className="section-title ">
+              <div className="section-title">
                 <h2
                   className="title"
                   style={{
@@ -75,7 +75,7 @@ const AboutAreaOne = () => {
                 >
                   Our Mission
                 </h2>
-                <p className="content mb-4 mb-xl-5 text-black">
+                <p className="mt-1 mb-4 mb-xl-5 text-black">
                   To empower businesses through streamlined, data-driven
                   operations solutions that are supported by skilled virtual
                   assistants. We believe that every business deserves to operate

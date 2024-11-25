@@ -20,21 +20,13 @@ const NavBar = () => {
         </Navbar.Toggle>
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="ms-auto align-items-center">
-            <Nav.Link href="#home" className="fw-semibold">
+            <Nav.Link href="/" className="fw-semibold">
               Home
             </Nav.Link>
 
-            <NavDropdown
-              title="About Us"
-              id="about-dropdown"
-              className="fw-semibold"
-            >
-              <NavDropdown.Item href="/">Our Company</NavDropdown.Item>
-              <NavDropdown.Item href="/">Our Team</NavDropdown.Item>
-              <NavDropdown.Item href="/">Mission & Vision</NavDropdown.Item>
-              <NavDropdown.Divider />
-              <NavDropdown.Item href="">Testimonials</NavDropdown.Item>
-            </NavDropdown>
+            <Nav.Link href="/about" className="fw-semibold">
+              About Us
+            </Nav.Link>
 
             <NavDropdown
               title="Services"
@@ -55,7 +47,6 @@ const NavBar = () => {
                 {' '}
                 Operations Consultancy Services
               </NavDropdown.Item>
-              <NavDropdown.Divider />
               <NavDropdown.Item href="/meta-campaign">
                 Digital Marketing
               </NavDropdown.Item>
@@ -64,42 +55,19 @@ const NavBar = () => {
               </NavDropdown.Item>
             </NavDropdown>
 
-            <NavDropdown
-              title="Technologies"
-              id="tech-dropdown"
-              className="fw-semibold"
-            >
-              <NavDropdown.Item href="#frontend">Frontend</NavDropdown.Item>
-              <NavDropdown.Item href="#backend">Backend</NavDropdown.Item>
-              <NavDropdown.Item href="#mobile">Mobile</NavDropdown.Item>
-              <NavDropdown.Item href="#database">Database</NavDropdown.Item>
-              <NavDropdown.Divider />
-              <NavDropdown.Item href="#devops">DevOps</NavDropdown.Item>
-            </NavDropdown>
+            <Nav.Link href="/technologies" className="fw-semibold">
+              Technologies
+            </Nav.Link>
 
-            <NavDropdown
-              title="Career"
-              id="career-dropdown"
-              className="fw-semibold"
-            >
-              <NavDropdown.Item href="#openings">
-                Current Openings
-              </NavDropdown.Item>
-              <NavDropdown.Item href="#internships">
-                Internships
-              </NavDropdown.Item>
-              <NavDropdown.Item href="#culture">
-                Company Culture
-              </NavDropdown.Item>
-              <NavDropdown.Divider />
-              <NavDropdown.Item href="#apply">Apply Now</NavDropdown.Item>
-            </NavDropdown>
+            <Nav.Link href="/career" className="fw-semibold">
+              Career
+            </Nav.Link>
 
             <Nav.Link href="/contact" className="fw-semibold">
               Contact
             </Nav.Link>
 
-            <button className="ms-3 d-flex align-items-center gap-2 border-1 bg-white rounded-pill px-3 py-2">
+            <button className="ms-3 d-flex align-items-center gap-2 border-1 bg-primary text-white rounded-pill px-3 py-2">
               <span>Get Started</span>
               <ArrowRight size={18} />
             </button>

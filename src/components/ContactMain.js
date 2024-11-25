@@ -53,8 +53,8 @@ const App = () => {
   return (
     <div>
       {/* Header Section */}
-      <div className="bg-primary text-white">
-        <div className="container d-flex flex-wrap align-items-center justify-content-between py-5 p-lg-0">
+      <div className="bg-primary text-white" style={{ padding: '20px 0' }}>
+        <div className="container d-flex flex-wrap align-items-center justify-content-between p-lg-0">
           {/* Left Section */}
           <div>
             <h1 className="text-white fw-bold contact"> CONTACT US</h1>
@@ -65,7 +65,7 @@ const App = () => {
           </div>
 
           {/* Right Section */}
-          <div className="d-flex align-items-center justify-content-between py-4">
+          <div className="d-flex align-items-center justify-content-between">
             {/* Left Section - Two icons stacked */}
             <div className="d-flex flex-column align-items-center">
               <div className="mb-3">

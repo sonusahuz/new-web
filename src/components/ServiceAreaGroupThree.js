@@ -2,148 +2,104 @@ import React from 'react';
 import { FaArrowRight } from 'react-icons/fa';
 import { Link } from 'react-router-dom';
 
+const services = [
+  {
+    img: 'assets/img/service1.png',
+    title: 'Digital App Development Services',
+    description:
+      'We specialize in developing cutting-edge digital applications, delivering scalable solutions for mobile, enterprise, SaaS, and IoT platforms. Our expert strategy and consulting services ensure each solution is tailored to align perfectly with your business goals, driving efficiency and growth.',
+    link: '/mobile-app',
+  },
+  {
+    img: 'assets/img/service2.png',
+    title: 'Cross Platform Apps Development',
+    description:
+      'Cross-platform mobile development allows businesses to efficiently create high-quality apps for Android and iOS using shared code. This approach reduces costs and development time while ensuring seamless performance, enabling you to effect.',
+    link: '/cross-platfrom-development',
+  },
+  {
+    img: 'assets/img/service3.png',
+    title: 'Software Development',
+    description:
+      'We deliver tailored software solutions to drive your business forward, offering website development, MVP testing, UI/UX design, ongoing maintenance, and blockchain integration. Our expertise ensures secure, innovative, and user-focused digital experiences that keep you ahead of the curve.',
+    link: '/digital-product-development',
+  },
+  {
+    img: 'assets/img/service4.png',
+    title: 'Operations Consultancy Services',
+    description:
+      'Nyas Consultants drive business success by streamlining operations through advanced process improvement, strategic technology integration, expert virtual assistant support, continuous performance monitoring, and targeted business development. We deliver efficiency.',
+    link: '/project-management',
+  },
+  {
+    img: 'assets/img/service5.png',
+    title: 'Digital Marketing',
+    description:
+      'Nyas Consultants delivers targeted digital marketing solutions to amplify your online presence. From SEO optimization to high-converting Google Ads and Meta campaigns, we drive traffic, generate quality leads, and accelerate business growth with strategies designed for measurable success.',
+    link: '/meta-campaign',
+  },
+  {
+    img: 'assets/img/service6.png',
+    title: 'Legal Service',
+    description:
+      'Nyas delivers expert legal support to attorneys, law firms, and businesses, ensuring seamless compliance and precision in handling legal requirements. Our services streamline processes and provide thorough, efficient preparation for all legal matters, empowering you to achieve your objectives confidently.',
+    link: '/legal-services',
+  },
+];
+
 const ServiceAreaGroupThree = () => {
   return (
     <>
-      {/* service area start */}
-      <div className="service-area bg-relative pd-top-120">
+      {/* Background Banner */}
+      <div
+        style={{
+          backgroundImage: 'url("./assets/img/about-background.jpeg")',
+          backgroundSize: 'cover',
+          backgroundPosition: 'center',
+          padding: '100px 0',
+        }}
+      >
+        <div className="container d-flex align-items-center justify-content-start">
+          <h1 className="text-white" style={{ fontSize: '50px' }}>
+            OUR SERVICES
+          </h1>
+        </div>
+      </div>
+
+      {/* Section Title */}
+      <div>
+        <h1 className="text-center fw-bold fs-1 py-4">
+          Comprehensive Business Solutions with Nyas Consultants!
+        </h1>
+      </div>
+
+      {/* Services */}
+      <div className="service-area bg-relative">
         <div className="container">
-          <div className="row justify-content-center">
-            <div className="col-xl-7 col-lg-8">
-              <div className="section-title text-center">
-                <h6 className="color-base bg-none mb-3">Our Services</h6>
-                <h2 className="title">
-                  We Provide the best Technology Services
-                </h2>
-              </div>
-            </div>
-          </div>
           <div className="row">
-            <div className="col-lg-4 col-md-6">
-              <div className="single-work-process-inner">
-                <div className="thumb mb-4">
-                  <img src="assets/img/icon/18.svg" alt="img" />
-                </div>
-                <div className="details">
-                  <h5 className="mb-3">Digital App Development Services</h5>
-                  <p className="content mb-3">
-                    Our Digital App Development Services deliver scalable
-                    mobile, enterprise, SaaS, and IoT solutions, enhanced by
-                    expert strategy and consulting to align seamlessly with your
-                    unique business objectives.
-                  </p>
-                  <Link className="read-more-text" to="/mobile-app">
-                    Read More <FaArrowRight />
-                  </Link>
-                </div>
-              </div>
-            </div>
-            <div className="col-lg-4 col-md-6">
-              <div className="single-work-process-inner">
-                <div className="thumb mb-3">
-                  <img src="assets/img/icon/16.svg" alt="img" />
-                </div>
-                <div className="details">
-                  <h5 className="mb-3">Cross Platform Apps Development</h5>
-                  <p className="content mb-3">
-                    Cross-platform mobile development enables businesses to
-                    create apps for Android and iOS efficiently, sharing code to
-                    reduce costs and time, while reaching a broader audience
-                    effectively.
-                  </p>
-                  <Link
-                    className="read-more-text"
-                    to="/cross-platfrom-development"
-                  >
-                    Read More <FaArrowRight />
-                  </Link>
+            {services.map((service, index) => (
+              <div className="col-lg-4 col-md-6" key={index}>
+                <div className="single-work-process-inner">
+                  <div className="thumb mb-3">
+                    <img
+                      src={service.img}
+                      style={{ width: '100%' }}
+                      alt={service.title}
+                    />
+                  </div>
+                  <div className="details">
+                    <h5 className="mb-3">{service.title}</h5>
+                    <p className="content mb-3">{service.description}</p>
+                    <Link className="read-more-text" to={service.link}>
+                      Read More <FaArrowRight />
+                    </Link>
+                  </div>
                 </div>
               </div>
-            </div>
-            <div className="col-lg-4 col-md-6">
-              <div className="single-work-process-inner">
-                <div className="thumb mb-3">
-                  <img src="assets/img/icon/17.svg" alt="img" />
-                </div>
-                <div className="details">
-                  <h5 className="mb-3">Software Development</h5>
-                  <p className="content mb-3">
-                    We provide custom software solutions, including website
-                    development, MVP testing, UI/UX design, maintenance, and
-                    blockchain expertise, ensuring secure, engaging, and
-                    up-to-date digital experiences for businesses
-                  </p>
-                  <Link
-                    className="read-more-text"
-                    to="/digital-product-development"
-                  >
-                    Read More <FaArrowRight />
-                  </Link>
-                </div>
-              </div>
-            </div>
-            <div className="col-lg-4 col-md-6">
-              <div className="single-work-process-inner">
-                <div className="thumb mb-3">
-                  <img src="assets/img/icon/20.svg" alt="img" />
-                </div>
-                <div className="details">
-                  <h5 className="mb-3">Operations Consultancy Services</h5>
-                  <p className="content mb-3">
-                    Nyas Consultants optimize business operations with process
-                    improvement, technology implementation, virtual assistant
-                    support, continuous monitoring, and business development
-                    strategies for enhanced efficiency, growth, and brand
-                    recognition.
-                  </p>
-                  <Link className="read-more-text" to="/project-management">
-                    Read More <FaArrowRight />
-                  </Link>
-                </div>
-              </div>
-            </div>
-            <div className="col-lg-4 col-md-6">
-              <div className="single-work-process-inner">
-                <div className="thumb mb-4">
-                  <img src="assets/img/icon/18.svg" alt="img" />
-                </div>
-                <div className="details">
-                  <h5 className="mb-3">Digital Marketing</h5>
-                  <p className="content mb-3">
-                    Nyas Consultants offers tailored digital marketing services,
-                    including SEO, Google Ads, and Meta campaigns, to enhance
-                    online visibility, drive traffic, generate leads, and boost
-                    business growth.
-                  </p>
-                  <Link className="read-more-text" to="/meta-campaign">
-                    Read More <FaArrowRight />
-                  </Link>
-                </div>
-              </div>
-            </div>
-            <div className="col-lg-4 col-md-6">
-              <div className="single-work-process-inner">
-                <div className="thumb mb-3">
-                  <img src="assets/img/icon/16.svg" alt="img" />
-                </div>
-                <div className="details">
-                  <h5 className="mb-3">Legal Service</h5>
-                  <p className="content mb-3">
-                    - Nyas provides expert paralegal support, assisting
-                    attorneys, law firms, and businesses with legal
-                    requirements, ensuring compliance, and delivering efficient,
-                    thorough preparation for all legal matters.
-                  </p>
-                  <Link className="read-more-text" to="/legal-services">
-                    Read More <FaArrowRight />
-                  </Link>
-                </div>
-              </div>
-            </div>
+            ))}
           </div>
         </div>
       </div>
-      {/* service area end */}
     </>
   );
 };

@@ -10,6 +10,7 @@ import TeamAreaOne from '../components/TeamAreaOne';
 import WorkProcessOne from '../components/WorkProcessOne';
 import ServiceAreaOne from '../components/ServiceAreaOne';
 import CaseStudyAreaOne from '../components/CaseStudyAreaOne';
+import AboutAreaTwo from '../components/AboutAreaTwo';
 
 const About = () => {
   return (
@@ -17,15 +18,8 @@ const About = () => {
       {/* Navigation Bar */}
       <NavBar />
 
-      {/* Navigation Bar */}
-      <Breadcrumb title={'About Us'} />
-
       {/* About Area One */}
-      <AboutAreaOne />
-      <CaseStudyAreaOne />
-
-      {/* ServiceAreaOne */}
-      {/* <ServiceAreaOne /> */}
+      <AboutAreaTwo />
 
       {/* Work Process One */}
       <WorkProcessOne />

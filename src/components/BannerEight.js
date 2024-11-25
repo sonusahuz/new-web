@@ -1,80 +1,96 @@
-import React, { useState } from 'react';
-import { FaArrowAltCircleRight } from 'react-icons/fa';
-import ModalVideo from 'react-modal-video';
-import { Link } from 'react-router-dom';
-
 const BannerEight = () => {
-  const [isOpen, setOpen] = useState(false);
+  const services = [
+    {
+      img: 'assets/img/technology1.webp',
+      title: 'Next Js',
+      description:
+        'Build fast, user-friendly websites with Next.js and React framework.',
+    },
+    {
+      img: 'assets/img/technology/3.png',
+      title: 'Node Js',
+      description:
+        'Powerful server-side development made easy with Node.js and JavaScript.',
+    },
+    {
+      img: 'assets/img/technology/2.png',
+      title: 'React Js',
+      description:
+        'Build interactive user interfaces quickly with React.js and component-based architecture.',
+    },
+    {
+      img: 'assets/img/technology2.webp',
+      title: 'PHP & Laravel',
+      description:
+        'Create dynamic webapplications effortlessly using PHP and Laravel framework.',
+    },
+    {
+      img: 'assets/img/technology3.jpg',
+      title: 'Flutter',
+      description:
+        "Build beautiful apps faster with Flutter's seamless cross-platform development.",
+    },
+    {
+      img: 'assets/img/technology4.jpg',
+      title: 'AWS',
+      description:
+        'Unlock cloud potential with AWS: scalable, reliable, and secure solutions.',
+    },
+  ];
   return (
-    <>
-      {/* ================== Banner Start ==================*/}
+    <div>
       <div
-        className="banner-area bg-relative banner-area-2 bg-cover mt-0"
-        style={{ backgroundImage: 'url("./assets/img/technology/technology.jpeg")' }}
+        style={{
+          backgroundImage: 'url("./assets/img/about-background.jpeg")',
+          backgroundSize: 'cover',
+          backgroundPosition: 'center',
+          padding: '100px 0',
+        }}
       >
+        <div className="container d-flex align-items-center justify-content-start">
+          <h1 className="text-white" style={{ fontSize: '50px' }}>
+            Technologies{' '}
+          </h1>
+        </div>
+      </div>
+      <div className="service-area ServiceAreaSeven bg-cover pd-top-120 pd-bottom-90 pd-top-110 pd-bottom-90">
         <div className="container">
-          <div className="row">
-            <div className="col-lg-6 pb-xl-5 align-self-center">
-              <div className="banner-inner pe-xl-4 pb-5">
-                <h6
-                  className="bg-none text-white wow animated fadeInLeft mb-4"
-                  data-wow-duration="1.5s"
-                  data-wow-delay="0.3s"
-                >
-                  Technology 
-                </h6>
-                <h2
-                  className="title text-white wow animated fadeInLeft"
-                  data-wow-duration="1.5s"
-                  data-wow-delay="0.4s"
-                >
-                  Build fast, user-friendly platforms innovatively
+          <div className="row justify-content-center">
+            <div className="col-xl-7 col-lg-8">
+              <div className="section-title text-center">
+                <h2 className="title">
+                  Develop Fast, User-Friendly Platforms with Innovative
+                  Frameworks
                 </h2>
-                <p
-                  className="content text-white pe-xl-4 wow animated fadeInLeft"
-                  data-wow-duration="1.5s"
-                  data-wow-delay="0.5s"
-                >
-                  Elevate web and app development by creating dynamic, responsive platforms that harness modern frameworks, ensuring fast performance, intuitive user experiences, and seamless functionality across devices.
-
-                </p>
-                <Link
-                  className="btn btn-base  border-radius-0 wow animated fadeInLeft"
-                  data-wow-duration="1.5s"
-                  data-wow-delay="0.6s"
-                  to="/contact"
-                >
-                  Free Consulting <FaArrowAltCircleRight className="mt-4" />
-                </Link>
-                <div
-                  className="d-inline-block align-self-center wow animated fadeInLeft mt-4 mt-md-0"
-                  data-wow-duration="1.5s"
-                  data-wow-delay="0.7s"
-                >
-                  {/* <Link
-                    onClick={() => setOpen(true)}
-                    className="video-play-btn-hover"
-                    to="#"
-                  >
-                    <img src="assets/img/video.svg" alt="img" />{' '}
-                    <h6 className="d-inline-block text-white">Watch Video</h6>
-                  </Link> */}
-                </div>
               </div>
             </div>
           </div>
+          <div className="row">
+            {services.map((service, index) => (
+              <div className="col-xl-4 col-md-6" key={index}>
+                <div className="style-4 text-center">
+                  <div className="thumb">
+                    <img
+                      src={service.img}
+                      alt={`${service.title} image`}
+                      style={{
+                        width: '350px',
+                        height: '350px',
+                        objectFit: 'cover',
+                      }}
+                    />
+                  </div>
+                  <div className="details mb-4 p-4">
+                    <h5 className="mb-3">{service.title}</h5>
+                    <p className="content mb-0">{service.description}</p>
+                  </div>
+                </div>
+              </div>
+            ))}
+          </div>
         </div>
       </div>
-
-      {/* ================== Banner End ==================*/}
-      <ModalVideo
-        channel="youtube"
-        autoplay
-        isOpen={isOpen}
-        videoId="XM6kTQPzzpQ"
-        onClose={() => setOpen(false)}
-      />
-    </>
+    </div>
   );
 };
 

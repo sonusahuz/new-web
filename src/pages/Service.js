@@ -11,9 +11,6 @@ const Service = () => {
       {/* Navigation Bar */}
       <NavBar />
 
-      {/* Navigation Bar */}
-      <Breadcrumb title={'Service'} />
-
       {/* Service Area One */}
       <ServiceAreaGroup />
 

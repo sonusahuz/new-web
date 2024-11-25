@@ -247,7 +247,13 @@ input:focus {
 .contact-form {
   width: 400px;
 }
-
+.about-image {
+  width: 90%;
+  height: 500px;
+}
+.career-description {
+  width: 500px;
+}
 @media screen and (max-width: 768px) {
   .contact {
     font-size: 40px;
@@ -262,6 +268,14 @@ input:focus {
   }
   .ui-img {
     width: 200px;
+  }
+  .about-image {
+    width: 100%;
+    height: auto;
+  }
+
+  .career-description {
+    width: 340px;
   }
 }
 
@@ -342,39 +356,18 @@ input:focus {
   border-radius: 50%;
 }
 
-.chat-icon {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  height: 50px;
-  width: 50px;
-  position: fixed; /* Use fixed to stick it to the screen's bottom-right corner */
-  bottom: 30px; /* Distance from the bottom edge of the screen */
-  right: 120px; /* Distance from the right edge of the screen */
-  background: #ffffff; /* Background color for better visibility */
-  border-radius: 50%; /* Circular shape */
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow */
-  cursor: pointer; /* Indicate clickability */
-  z-index: 1000; /* Ensure it's above other elements */
-  transition: transform 0.2s ease-in-out; /* Smooth scaling on hover */
-}
-
 .chat-icon:hover {
   transform: scale(1.1); /* Slight enlargement on hover */
+}
+.chat-icon {
+  border-radius: 100%;
+  width: 50px;
+  height: 50px;
+  padding: 10px;
 }
 
 .ui-img {
   width: 500px;
-}
-
-@media (max-width: 768px) {
-  .chat-icon {
-    bottom: 40px; /* Adjust position for smaller screens */
-    right: 20px;
-    height: 50px; /* Slightly smaller icon */
-    width: 50px;
-    font-size: 20px;
-  }
 }
 
 /* Custom CSS */

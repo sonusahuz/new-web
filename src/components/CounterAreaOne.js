@@ -21,12 +21,12 @@ const CounterAreaOne = () => {
               data-aos-delay="100"
               data-aos-duration="1500"
             >
-              <div className="single-counter-inner text-center text-lg-start mx-auto d-flex flex-column flex-lg-row align-items-center gap-4">
+              <div className="single-counter-inner text-center text-lg-start mx-auto d-flex flex-column flex-lg-row align-items-center gap-lg-4 gap-1">
                 <div className="thumb">
                   <img
                     src="assets/img/briefing2.png"
                     alt="img"
-                    style={{ width: '70px' }}
+                    style={{ width: '80px' }}
                   />
                 </div>
                 <div>
@@ -57,12 +57,12 @@ const CounterAreaOne = () => {
               data-aos-delay="150"
               data-aos-duration="1500"
             >
-              <div className="single-counter-inner text-center text-lg-start mx-auto d-flex flex-column flex-lg-row align-items-center gap-4">
+              <div className="single-counter-inner text-center text-lg-start mx-auto d-flex flex-column flex-lg-row align-items-center gap-lg-4 gap-1">
                 <div className="thumb">
                   <img
                     src="assets/img/approve.png"
                     alt="img"
-                    style={{ width: '70px' }}
+                    style={{ width: '80px' }}
                   />
                 </div>
                 <div>
@@ -93,12 +93,12 @@ const CounterAreaOne = () => {
               data-aos-delay="200"
               data-aos-duration="1500"
             >
-              <div className="single-counter-inner text-center text-lg-start mx-auto d-flex flex-column flex-lg-row align-items-center gap-4">
+              <div className="single-counter-inner text-center text-lg-start mx-auto d-flex flex-column flex-lg-row align-items-center gap-lg-4 gap-1">
                 <div className="thumb">
                   <img
                     src="assets/img/rocket2.png"
                     alt="img"
-                    style={{ width: '70px' }}
+                    style={{ width: '80px' }}
                   />
                 </div>
                 <div>
@@ -129,12 +129,12 @@ const CounterAreaOne = () => {
               data-aos-delay="250"
               data-aos-duration="1500"
             >
-              <div className="single-counter-inner text-center text-lg-start mx-auto d-flex flex-column flex-lg-row align-items-center gap-4">
+              <div className="single-counter-inner text-center text-lg-start mx-auto d-flex flex-column flex-lg-row align-items-center gap-lg-4 gap-1">
                 <div className="thumb">
                   <img
                     src="assets/img/rating.png"
                     alt="img"
-                    style={{ width: '70px' }}
+                    style={{ width: '80px' }}
                   />
                 </div>
                 <div>

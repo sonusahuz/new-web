@@ -1,7 +1,6 @@
 import React from 'react';
 import NavBar from '../components/NavBar';
 import BannerEight from '../components/BannerEight';
-import ServiceAreaSeven from '../components/ServiceAreaSeven';
 
 import SolutionOne from '../components/SolutionOne';
 
@@ -16,9 +15,6 @@ const Technologies = () => {
       {/* Banner Eight */}
       <BannerEight />
 
-      {/* Service Area Seven */}
-      <ServiceAreaSeven />
-
       {/* Why Choose */}
       {/* <WhyChoose /> */}
 
@@ -29,7 +25,7 @@ const Technologies = () => {
       {/* <WorkProcessSeven /> */}
 
       {/* SolutionOne */}
-      <SolutionOne />
+      {/* <SolutionOne /> */}
 
       {/* TeamAreaFive */}
       {/* <TeamAreaFive /> */}
@@ -46,7 +42,6 @@ const Technologies = () => {
       {/* FooterSeven */}
       {/* <FooterSeven /> */}
       <FooterOne />
-
     </>
   );
 };

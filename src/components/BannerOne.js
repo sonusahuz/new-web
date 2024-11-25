@@ -27,22 +27,21 @@ const HomePage = () => {
               operations.
             </p>
             <div className="d-flex gap-3">
-              <Button
-                variant="info"
-                size="lg"
-                className="text-white fw-semibold rounded-pill px-4"
-                style={{ fontSize: '16px' }}
+              <button
+                type="submit"
+                className="d-flex align-items-center bg-info rounded-pill text-white px-4 px-lg-5 py-2 py-lg-3"
+                style={{ fontSize: '14px', fontWeight: 'bold' }}
               >
                 Our Services
-              </Button>
-              <Button
-                variant="danger"
-                size="lg"
-                className="fw-semibold rounded-pill px-4"
-                style={{ fontSize: '16px' }}
+              </button>
+
+              <button
+                type="submit"
+                className="d-flex align-items-center bg-danger rounded-pill text-white px-4 px-lg-5 py-2 py-lg-3"
+                style={{ fontSize: '14px', fontWeight: 'bold' }}
               >
                 CONNECT WITH US
-              </Button>
+              </button>
             </div>
           </Col>
           <Col lg={5}>
