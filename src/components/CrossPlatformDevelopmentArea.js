@@ -333,7 +333,7 @@ const CrossPlatformDevelopmentArea = () => {
         {/* More Features Section */}
         <section id="more-features" className="more-features section">
           <div className="container">
-            <div className="row justify-content-around gy-4">
+            <div className="row justify-content-around gy-4 p-2">
               <div
                 className="col-lg-6 d-flex flex-column justify-content-center order-2 order-lg-1"
                 data-aos="fade-up"
@@ -392,7 +392,7 @@ const CrossPlatformDevelopmentArea = () => {
                 </div>
               </div>
               <div
-                className="features-image col-lg-5 order-1 order-lg-2"
+                className="features-image col-lg-5 order-1 order-lg-2 m-1"
                 data-aos="fade-up"
                 data-aos-delay={200}
               >

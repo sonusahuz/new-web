@@ -415,7 +415,7 @@ const ProjectManagementArea = () => {
                 </div>
               </div>
               <div
-                className="features-image col-lg-5 order-1 order-lg-2"
+                className="features-image col-lg-5 order-1 order-lg-2 m-1"
                 data-aos="fade-up"
                 data-aos-delay={200}
               >
