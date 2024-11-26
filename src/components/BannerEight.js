@@ -48,7 +48,12 @@ const BannerEight = () => {
         }}
       >
         <div className="container d-flex align-items-center justify-content-start">
-          <h1 className="text-white" style={{ fontSize: '50px' }}>
+          <h1
+            className="text-white"
+            style={{ fontSize: '50px' }}
+            data-aos="fade-up"
+            data-aos-delay={100}
+          >
             Technologies{' '}
           </h1>
         </div>
@@ -61,7 +66,7 @@ const BannerEight = () => {
         }}
         className="service-area ServiceAreaSeven bg-cover pd-top-120 pd-bottom-90 pd-top-110 pd-bottom-90"
       >
-        <div className="container">
+        <div className="container" data-aos="fade-up" data-aos-delay={100}>
           <div className="row justify-content-center">
             <div className="col-xl-7 col-lg-8">
               <div className="section-title text-center">

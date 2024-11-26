@@ -80,6 +80,8 @@ const MobileAppArea = () => {
       {/* Header Section */}
       <div className="container d-flex flex-wrap align-items-center justify-content-between py-5">
         <h1
+          data-aos="fade-up"
+          data-aos-delay={100}
           className="text-black fw-bold fs-1"
           style={{
             fontFamily: 'sans-serif',
@@ -97,7 +99,7 @@ const MobileAppArea = () => {
 
       {/* Empowerment Section */}
       <div className="container">
-        <div>
+        <div data-aos="fade-up" data-aos-delay={100}>
           <h1
             className="text-black text-center py-3 fw-bold fs-1"
             style={{ fontSize: '60px', fontFamily: 'sans-serif' }}
@@ -117,7 +119,7 @@ const MobileAppArea = () => {
       </div>
 
       {/* Innovative Solutions Section */}
-      <div className="container my-5">
+      <div className="container my-5" data-aos="fade-up" data-aos-delay={100}>
         <h1
           className="text-black text-center fw-bold fs-1"
           style={{ fontSize: '60px', fontFamily: 'sans-serif' }}
@@ -167,7 +169,7 @@ const MobileAppArea = () => {
         </div>
       </div>
 
-      <div className="container">
+      <div className="container" data-aos="fade-up" data-aos-delay={100}>
         <h1
           className="text-black text-center fw-bold fs-1"
           style={{ fontSize: '60px' }}

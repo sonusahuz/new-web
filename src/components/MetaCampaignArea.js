@@ -1,14 +1,9 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 const MetaCampaignArea = () => {
   return (
     <>
-      {/* Google Fonts */}
-      <link
-        href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i"
-        rel="stylesheet"
-      />
-      {/* Vendor CSS Files */}
       <link
         href="assets/assetsdigitalmarketing/vendor/icofont/icofont.min.css"
         rel="stylesheet"
@@ -34,44 +29,50 @@ const MetaCampaignArea = () => {
     * License: https://bootstrapmade.com/license/
     ======================================================== */}
       {/* ======= Hero Section ======= */}
-      <section id="hero">
-        <div className="container">
-          <div className="row d-flex align-items-center">
-            <div
-              className=" col-lg-6 py-5 py-lg-0 order-2 order-lg-1"
-              data-aos="fade-right"
+      <div
+        style={{
+          backgroundColor: '#213e58',
+          backgroundSize: 'cover',
+          backgroundPosition: 'center',
+        }}
+      >
+        <div className="container d-flex align-items-center justify-content-between flex-wrap">
+          <div data-aos="fade-up" data-aos-delay={100}>
+            <h1
+              className="text-white fw-bold"
+              style={{ fontSize: '60px', paddingTop: '45px' }}
             >
-              <h1>Elevate Your Brand with Nyas</h1>
-              <h2>
-                Boost brand impact with strategic Meta Campaigning and digital
-                marketing expertise.
-              </h2>
-              <a href="#contact" className="btn-get-started scrollto">
-                Get Started
-              </a>
-            </div>
-            <div
-              className="col-lg-6 order-1 order-lg-2 hero-img"
-              data-aos="fade-left"
+              Elevate Your Brand with Nyas
+            </h1>
+            <p className="text-white fs-5">
+              Boost brand impact with strategic Meta Campaigning and digital
+              marketing expertise.
+            </p>
+            <Link
+              to="/contact"
+              className="rounded-pill bg-warning text-white px-4 py-2"
             >
-              <img
-                src="assets/assetsdigitalmarketing/img/hero-img.png"
-                className="img-fluid"
-                alt=""
-              />
-            </div>
+              Get Started
+            </Link>
+          </div>
+          <div a>
+            <img
+              src="assets/assetsdigitalmarketing/img/hero-img.png"
+              className="img-fluid"
+              style={{ width: '257px' }}
+              alt=""
+            />
           </div>
         </div>
-      </section>
+      </div>
+
       {/* End Hero */}
       <main id="main">
-        {/* ======= Clients Section ======= */}
-        {/* ======= About Section ======= */}
         <section id="about" className="about section-bg">
           <div className="container">
             <div className="row">
-              <div className="image col-xl-5 d-flex align-items-stretch justify-content-center justify-content-lg-start" />
-              <div className="col-xl-7 pl-0 pl-lg-5 pr-lg-1 d-flex align-items-stretch">
+              <div className="image col-xl-6 d-flex align-items-stretch justify-content-center justify-content-lg-start animated-image rounded-2" />
+              <div className="col-xl-6 pl-0 pl-lg-5 pr-lg-1 d-flex align-items-stretch">
                 <div className="content d-flex flex-column justify-content-center">
                   <h3 data-aos="fade-in" data-aos-delay={100}>
                     Digital Campaigns

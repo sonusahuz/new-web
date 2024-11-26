@@ -60,7 +60,12 @@ const ServiceAreaGroupThree = () => {
         }}
       >
         <div className="container d-flex align-items-center justify-content-start">
-          <h1 className="text-white" style={{ fontSize: '50px' }}>
+          <h1
+            data-aos="fade-up"
+            data-aos-delay={100}
+            className="text-white"
+            style={{ fontSize: '50px' }}
+          >
             OUR SERVICES
           </h1>
         </div>

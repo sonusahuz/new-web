@@ -382,6 +382,37 @@ input:focus {
   width: 500px;
 }
 
+.chat-icon-container {
+  bottom: 2.2rem; /* Padding from the bottom */
+  left: 100px; /* Aligns the chat icon to the bottom-left corner */
+  z-index: 1000;
+  background-color: #0d6efd; /* Primary background color */
+  color: white;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.chat-icon-container:hover {
+  transform: scale(1.1);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+}
+
+.chat-icon {
+  font-size: 20px;
+  text-align: center;
+}
+
+.position-fixed {
+  position: fixed;
+}
+
 /* Custom CSS */
 @media (max-width: 991.98px) {
   /* Small screens (sm and below) */
@@ -390,6 +421,9 @@ input:focus {
   }
   .pd-bottom-20 {
     padding-bottom: 20px !important;
+  }
+  .chat-icon-container {
+    left: 1rem; /* Adjust padding for smaller screens */
   }
 }
 

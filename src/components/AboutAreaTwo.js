@@ -17,6 +17,8 @@ const AboutAreaTwo = () => {
         <div className="container py-5 d-flex align-items-center justify-content-start">
           <h1
             className="text-white"
+            data-aos="fade-up"
+            data-aos-delay={100}
             style={{ fontSize: '60px', paddingTop: '45px' }}
           >
             About Us{' '}
@@ -34,7 +36,7 @@ const AboutAreaTwo = () => {
             >
               <div className="about-thumb-inner">
                 <img
-                  className="main-img about-image"
+                  className="main-img about-image animated-image"
                   src="assets/img/about-image.jpg"
                   alt="img"
                 />

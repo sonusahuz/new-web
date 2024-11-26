@@ -25,7 +25,7 @@ const FooterOne = () => {
                   <img
                     src="assets/img/logo4.png"
                     alt="img"
-                    style={{ width: '50px' }}
+                    style={{ width: '100px' }}
                   />
                 </div>
                 <div className="details">

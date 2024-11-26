@@ -123,7 +123,7 @@ const ApplyNow = ({
                   type="submit"
                   className="btn rounded-1 btn-primary mt-0 w-100 border-radius-5"
                 >
-                  Send Message
+                  Submit
                 </button>
               </div>
             </form>

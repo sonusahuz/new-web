@@ -12,12 +12,17 @@ const CareerAreaOne = () => {
         }}
       >
         <div className="container d-flex align-items-center justify-content-start">
-          <h1 className="text-white" style={{ fontSize: '60px' }}>
+          <h1
+            className="text-white"
+            style={{ fontSize: '60px' }}
+            data-aos="fade-up"
+            data-aos-delay={100}
+          >
             CAREER{' '}
           </h1>
         </div>
       </div>
-      <div className="about-area pt-5">
+      <div className="about-area pt-5" data-aos="fade-up" data-aos-delay={100}>
         <div className="container">
           <div className="row">
             <div
@@ -79,7 +84,7 @@ const CareerAreaOne = () => {
             >
               <div className="about-thumb-inner">
                 <img
-                  className="main-img about-image"
+                  className="main-img about-image animated-image"
                   src="assets/img/career-image.png"
                   alt="img"
                 />

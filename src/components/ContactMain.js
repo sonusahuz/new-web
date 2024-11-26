@@ -63,6 +63,8 @@ const ContactMain = () => {
       >
         <div className="container py-5 d-flex align-items-center justify-content-start">
           <h1
+            data-aos="fade-up"
+            data-aos-delay={100}
             className="text-white fw-bold"
             style={{ fontSize: '60px', paddingTop: '45px' }}
           >
@@ -79,11 +81,19 @@ const ContactMain = () => {
           backgroundPosition: 'center',
         }}
       >
-        <h1 className="fs-1 fw-bold text-center mb-5">
+        <h1
+          className="fs-1 fw-bold text-center mb-5"
+          data-aos="fade-up"
+          data-aos-delay={100}
+        >
           REQUEST A CONSULTATION
         </h1>
         {/* Main Content Section */}
-        <div className="row g-4 align-items-start mx-auto gap-4 justify-content-center container">
+        <div
+          className="row g-4 align-items-start mx-auto gap-4 justify-content-center container"
+          data-aos="fade-up"
+          data-aos-delay={100}
+        >
           {/* Left Side: Contact Info */}
           <div className="col-lg-6">
             <div

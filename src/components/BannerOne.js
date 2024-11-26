@@ -16,7 +16,12 @@ const HomePage = () => {
     >
       <Container>
         <Row className="align-items-center justify-content-between">
-          <Col lg={7} className="text-white">
+          <Col
+            lg={7}
+            className="text-white"
+            data-aos="fade-up"
+            data-aos-delay={100}
+          >
             <h1 className="display-4 fw-bold mb-4 text-white">
               Your Ultimate Solution
               <br />
@@ -49,7 +54,7 @@ const HomePage = () => {
               </Link>
             </div>
           </Col>
-          <Col lg={5}>
+          <Col lg={5} data-aos="fade-up" data-aos-delay={100}c>
             <BannerForm />
           </Col>
         </Row>
