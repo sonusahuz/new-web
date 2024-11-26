@@ -35,37 +35,36 @@ const VirtualAssistantArea = () => {
     * License: https://bootstrapmade.com/license/
     ======================================================== */}
 
-      <main className="main">
+      <main>
         {/* Hero Section */}
-        <section id="hero" className="hero section">
-          <div className="hero-bg">
-            <img src="assets/assetscross/img/hero-bg-light.webp" alt="" />
-          </div>
+        <section id="hero">
           <div className="container text-center">
             <div className="d-flex flex-column justify-content-center align-items-center">
-              <h1 data-aos="fade-up">
-                Virtual <span>Assistance</span>
+              <h1
+                data-aos="fade-up"
+                className="fw-bold"
+                style={{ fontSize: '50px' }}
+              >
+                Virtual <span className="text-info">Assistance </span>
               </h1>
               <p data-aos="fade-up" data-aos-delay={100}>
                 Transform operations with expert virtual assistance, enabling
-                team focus on growth.
-                <br />
+                team focus on growth. <br />
               </p>
               <div className="d-flex" data-aos="fade-up" data-aos-delay={200}>
-                <a href="#about" className="btn-get-started">
+                <a
+                  href="#about"
+                  className="btn-get-started bg-info py-2 px-4 rounded-pill text-white"
+                >
                   Get Started
                 </a>
-                <a
-                  href="https://www.youtube.com/watch?v=Y7f98aduVJ8"
-                  class="glightbox btn-watch-video d-flex align-items-center"
-                >
-                  <i class="bi bi-play-circle"></i>
-                  <span>Watch Video</span>
-                </a>
+                {/* <a href="https://www.youtube.com/watch?v=Y7f98aduVJ8" class="glightbox btn-watch-video d-flex align-items-center"><i class="bi bi-play-circle"></i><span>Watch Video</span></a> */}
               </div>
               <img
                 src="assets/assetscross/img/hero-services-img.webp"
                 className="img-fluid hero-img"
+                alt=""
+                style={{ width: '400px' }}
                 data-aos="zoom-out"
                 data-aos-delay={300}
               />
@@ -163,10 +162,7 @@ const VirtualAssistantArea = () => {
                 data-aos="fade-up"
                 data-aos-delay={100}
               >
-                <p className="who-we-are">
-                  Empowering Your Business for Growth
-                </p>
-                <h3>Transform Your Business Operations</h3>
+                <h4>Transform Your Business Operations</h4>
                 <p className="fst-italic">
                   An exceptional virtual assistant service by Nyas Consultants
                   will revolutionize how your business operates daily. By
@@ -183,7 +179,6 @@ const VirtualAssistantArea = () => {
                   <li>
                     <i className="bi bi-check-circle" />{' '}
                     <span>
-                      {' '}
                       Outsource specialized tasks to focus on growth and
                       innovation.
                     </span>
@@ -191,7 +186,6 @@ const VirtualAssistantArea = () => {
                   <li>
                     <i className="bi bi-check-circle" />{' '}
                     <span>
-                      {' '}
                       Reduce operational costs while boosting team flexibility
                       and productivity.
                     </span>
@@ -199,7 +193,6 @@ const VirtualAssistantArea = () => {
                   <li>
                     <i className="bi bi-check-circle" />{' '}
                     <span>
-                      {' '}
                       Streamline processes with tailored virtual assistant
                       services.
                     </span>
@@ -207,7 +200,6 @@ const VirtualAssistantArea = () => {
                   <li>
                     <i className="bi bi-check-circle" />{' '}
                     <span>
-                      {' '}
                       Achieve objectives by delegating time-consuming tasks to
                       experts.
                     </span>
@@ -223,7 +215,7 @@ const VirtualAssistantArea = () => {
                 <div className="row gy-4">
                   <div className="col-lg-6">
                     <img
-                      src="assets/assetscross/img/about-company-1.jpg"
+                      src="assets/assetscross/img/project-second.png"
                       className="img-fluid"
                       alt=""
                     />
@@ -232,14 +224,14 @@ const VirtualAssistantArea = () => {
                     <div className="row gy-4">
                       <div className="col-lg-12">
                         <img
-                          src="assets/assetscross/img/about-company-2.jpg"
+                          src="assets/assetscross/img/project-second.1.png"
                           className="img-fluid"
                           alt=""
                         />
                       </div>
                       <div className="col-lg-12">
                         <img
-                          src="assets/assetscross/img/about-company-3.jpg"
+                          src="assets/assetscross/img/project-second.2.png"
                           className="img-fluid"
                           alt=""
                         />
@@ -445,7 +437,7 @@ const VirtualAssistantArea = () => {
               <div className="accordion-item">
                 <h2 className="accordion-header" id="headingOne">
                   <button
-                    className="accordion-button"
+                    className="accordion-button bg-white hover:border-0"
                     type="button"
                     data-bs-toggle="collapse"
                     data-bs-target="#collapseOne"
@@ -476,7 +468,7 @@ const VirtualAssistantArea = () => {
               <div className="accordion-item">
                 <h2 className="accordion-header" id="headingTwo">
                   <button
-                    className="accordion-button"
+                    className="accordion-button bg-white hover:border-0"
                     type="button"
                     data-bs-toggle="collapse"
                     data-bs-target="#collapseTwo"
@@ -507,7 +499,7 @@ const VirtualAssistantArea = () => {
               <div className="accordion-item">
                 <h2 className="accordion-header" id="headingThree">
                   <button
-                    className="accordion-button"
+                    className="accordion-button bg-white hover:border-0"
                     type="button"
                     data-bs-toggle="collapse"
                     data-bs-target="#collapseThree"
@@ -537,7 +529,7 @@ const VirtualAssistantArea = () => {
               <div className="accordion-item">
                 <h2 className="accordion-header" id="headingFour">
                   <button
-                    className="accordion-button"
+                    className="accordion-button bg-white hover:border-0"
                     type="button"
                     data-bs-toggle="collapse"
                     data-bs-target="#collapseFour"
@@ -567,7 +559,7 @@ const VirtualAssistantArea = () => {
               <div className="accordion-item">
                 <h2 className="accordion-header" id="headingFive">
                   <button
-                    className="accordion-button"
+                    className="accordion-button bg-white hover:border-0"
                     type="button"
                     data-bs-toggle="collapse"
                     data-bs-target="#collapseFive"
@@ -597,7 +589,7 @@ const VirtualAssistantArea = () => {
               <div className="accordion-item">
                 <h2 className="accordion-header" id="headingSix">
                   <button
-                    className="accordion-button"
+                    className="accordion-button bg-white hover:border-0"
                     type="button"
                     data-bs-toggle="collapse"
                     data-bs-target="#collapseSix"

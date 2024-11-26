@@ -34,16 +34,17 @@ const ProjectManagementArea = () => {
   * License: https://bootstrapmade.com/license/
   ======================================================== */}
 
-      <main className="main">
-        {/* Hero Section */}
-        <section id="hero" className="hero section">
-          <div className="hero-bg">
-            <img src="assets/assetscross/img/hero-bg-light.webp" alt="" />
-          </div>
+      <main>
+        <section>
           <div className="container text-center">
             <div className="d-flex flex-column justify-content-center align-items-center">
-              <h1 data-aos="fade-up">
-                Operations <span>Consultancy Services</span>
+              <h1
+                data-aos="fade-up"
+                className="fw-bold"
+                style={{ fontSize: '50px' }}
+              >
+                Operations{' '}
+                <span className="text-info">Consultancy Services</span>
               </h1>
               <p data-aos="fade-up" data-aos-delay={100}>
                 Optimizing processes, technology, and support for business
@@ -51,7 +52,10 @@ const ProjectManagementArea = () => {
                 <br />
               </p>
               <div className="d-flex" data-aos="fade-up" data-aos-delay={200}>
-                <a href="#about" className="btn-get-started">
+                <a
+                  href="#about"
+                  className="btn-get-started bg-info py-2 px-4 rounded-pill text-white"
+                >
                   Get Started
                 </a>
                 {/* <a href="https://www.youtube.com/watch?v=Y7f98aduVJ8" class="glightbox btn-watch-video d-flex align-items-center"><i class="bi bi-play-circle"></i><span>Watch Video</span></a> */}
@@ -60,6 +64,7 @@ const ProjectManagementArea = () => {
                 src="assets/assetscross/img/project.png"
                 className="img-fluid hero-img"
                 alt=""
+                style={{ width: '400px' }}
                 data-aos="zoom-out"
                 data-aos-delay={300}
               />

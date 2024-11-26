@@ -143,7 +143,6 @@ const ProjectsManagement = () => {
               data-aos="fade-up"
               data-aos-delay={100}
             >
-              <p class="who-we-are">Tailored project management solutions...</p>
               <h4>The Rise of Effective Project Management Solutions</h4>
               <p className="fst-italic">
                 In today’s fast-paced business world, efficient project
@@ -238,7 +237,7 @@ const ProjectsManagement = () => {
             <div className="accordion-item">
               <h2 className="accordion-header" id="headingOne">
                 <button
-                  className="accordion-button"
+                  className="accordion-button bg-white hover:border-0"
                   type="button"
                   data-bs-toggle="collapse"
                   data-bs-target="#collapseOne"
@@ -266,7 +265,7 @@ const ProjectsManagement = () => {
             <div className="accordion-item">
               <h2 className="accordion-header" id="headingTwo">
                 <button
-                  className="accordion-button collapsed"
+                  className="accordion-button collapsed bg-white hover:border-0"
                   type="button"
                   data-bs-toggle="collapse"
                   data-bs-target="#collapseTwo"
@@ -294,7 +293,7 @@ const ProjectsManagement = () => {
             <div className="accordion-item">
               <h2 className="accordion-header" id="headingThree">
                 <button
-                  className="accordion-button collapsed"
+                  className="accordion-button collapsed bg-white hover:border-0"
                   type="button"
                   data-bs-toggle="collapse"
                   data-bs-target="#collapseThree"
@@ -322,7 +321,7 @@ const ProjectsManagement = () => {
             <div className="accordion-item">
               <h2 className="accordion-header" id="headingFour">
                 <button
-                  className="accordion-button collapsed"
+                  className="accordion-button collapsed bg-white hover:border-0"
                   type="button"
                   data-bs-toggle="collapse"
                   data-bs-target="#collapseFour"
@@ -349,8 +348,8 @@ const ProjectsManagement = () => {
             {/* FAQ Item 5 */}
             <div className="accordion-item">
               <h2 className="accordion-header" id="headingFive">
-                <button
-                  className="accordion-button collapsed"
+                <button 
+                  className="accordion-button collapsed bg-white hover:border-0"
                   type="button"
                   data-bs-toggle="collapse"
                   data-bs-target="#collapseFive"
@@ -378,7 +377,7 @@ const ProjectsManagement = () => {
             <div className="accordion-item">
               <h2 className="accordion-header" id="headingSix">
                 <button
-                  className="accordion-button collapsed"
+                  className="accordion-button collapsed bg-white hover:border-0"
                   type="button"
                   data-bs-toggle="collapse"
                   data-bs-target="#collapseSix"
