@@ -30,7 +30,7 @@ const DigitalProductDevelopmentArea = () => {
         }}
       >
         <div className="container">
-          <div>
+          <div data-aos="fade-up" data-aos-delay={200}>
             <h1 className="title fs-2 text-center py-4 fw-bold">
               Full-Spectrum Software Development Services for Innovative
               Solutions
@@ -47,7 +47,12 @@ const DigitalProductDevelopmentArea = () => {
             </p>
           </div>
 
-          <div id="about" className="py-70">
+          <div
+            id="about"
+            className="py-70"
+            data-aos="fade-up"
+            data-aos-delay={200}
+          >
             <div>
               <div className="row text-center mb-60">
                 <div className="title wow fadeInUp">

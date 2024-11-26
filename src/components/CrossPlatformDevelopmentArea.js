@@ -24,20 +24,26 @@ const CrossPlatformDevelopmentArea = () => {
       />
       {/* Main CSS File */}
       <link href="assets/assetscross/css/main.css" rel="stylesheet" />
-      <main className="main">
-        {/* Hero Section */}
-        <section id="hero" className="hero section">
+      <main>
+        <section id="hero">
           <div className="container text-center">
             <div className="d-flex flex-column justify-content-center align-items-center">
-              <h1 data-aos="fade-up">
-                Cross <span>Platform</span>
+              <h1
+                data-aos="fade-up"
+                className="fw-bold"
+                style={{ fontSize: '50px' }}
+              >
+                Cross <span className="text-info">Platform</span>
               </h1>
               <p data-aos="fade-up" data-aos-delay={100}>
                 Boost your business with cross-platform app development using
                 React Native and Flutter. <br />
               </p>
               <div className="d-flex" data-aos="fade-up" data-aos-delay={200}>
-                <a href="#about" className="btn-get-started">
+                <a
+                  href="#about"
+                  className="btn-get-started bg-info py-2 px-4 rounded-pill text-white"
+                >
                   Get Started
                 </a>
                 {/* <a href="https://www.youtube.com/watch?v=Y7f98aduVJ8" class="glightbox btn-watch-video d-flex align-items-center"><i class="bi bi-play-circle"></i><span>Watch Video</span></a> */}

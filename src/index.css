@@ -97,7 +97,7 @@
   height: 100%;
   background-color: rgba(0, 0, 0, 0.5);
   display: flex;
-  justify-content: end;
+  justify-content: center;
   align-items: center;
   z-index: 1000;
   backdrop-filter: blur(5px); /* Blur the background */
