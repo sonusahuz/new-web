@@ -59,6 +59,13 @@ const BannerForm = () => {
             <option>UI/UX Design & Prototyping</option>
             <option>Ongoing Software & Website Maintenance</option>
             <option>BlockChain Solution & Decentralized Applications</option>
+            <option>Digital App Development Services</option>
+            <option>Legal Services</option>
+            <option>Operations Consultancy Services</option>
+            <option>Virtual Assistant & Administrative Support</option>
+            <option>Project Management</option>
+            <option>Digital Marketing</option>
+            <option>Cross Platform</option>
           </select>
         </div>
         <button

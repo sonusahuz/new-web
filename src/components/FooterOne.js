@@ -10,7 +10,7 @@ import {
   FaTwitter,
   FaYoutube,
 } from 'react-icons/fa';
-import { Link } from 'react-router-dom';
+import { a } from 'react-router-dom';
 
 const FooterOne = () => {
   return (
@@ -43,24 +43,24 @@ const FooterOne = () => {
                   </p>
                   <ul className="social-media">
                     <li>
-                      <Link to="#">
+                      <a t="#">
                         <FaFacebookF />
-                      </Link>
+                      </a>
                     </li>
                     <li>
-                      <Link to="#">
+                      <a t="#">
                         <FaTwitter />
-                      </Link>
+                      </a>
                     </li>
                     <li>
-                      <Link to="#">
+                      <a t="#">
                         <FaInstagram />
-                      </Link>
+                      </a>
                     </li>
                     <li>
-                      <Link to="#">
+                      <a t="#">
                         <FaYoutube />
-                      </Link>
+                      </a>
                     </li>
                   </ul>
                 </div>
@@ -71,36 +71,36 @@ const FooterOne = () => {
                 <h4 className="widget-title">Our Service</h4>
                 <ul>
                   <li>
-                    <Link to="/mobile-app">
+                    <a href="/mobile-app">
                       <FaArrowRight /> Digital App Development Services
-                    </Link>
+                    </a>
                   </li>
                   <li>
-                    <Link to="/cross-platfrom-development">
+                    <a href="/cross-platfrom-development">
                       <FaArrowRight /> Cross Platform Apps Development
-                    </Link>
+                    </a>
                   </li>
 
                   <li>
-                    <Link to="/digital-product-development">
+                    <a href="/digital-product-development">
                       <FaArrowRight />
                       Software Development
-                    </Link>
+                    </a>
                   </li>
                   <li>
-                    <Link to="/project-management">
+                    <a href="/project-management">
                       <FaArrowRight /> Operations Consultancy Services
-                    </Link>
+                    </a>
                   </li>
                   <li>
-                    <Link to="/meta-campaign">
+                    <a href="/meta-campaign">
                       <FaArrowRight /> Digital Marketing
-                    </Link>
+                    </a>
                   </li>
                   <li>
-                    <Link to="/legal-services">
+                    <a href="/legal-services">
                       <FaArrowRight /> Legal Service
-                    </Link>
+                    </a>
                   </li>
                 </ul>
               </div>
@@ -110,34 +110,34 @@ const FooterOne = () => {
                 <h4 className="widget-title">Quick links</h4>
                 <ul>
                   <li>
-                    <Link to="/">
+                    <a href="/">
                       <FaArrowRight /> Home
-                    </Link>
+                    </a>
                   </li>
                   <li>
-                    <Link to="/about">
+                    <a href="/about">
                       <FaArrowRight /> About Us
-                    </Link>
+                    </a>
                   </li>
                   <li>
-                    <Link to="/service">
+                    <a href="/service">
                       <FaArrowRight /> Our Services
-                    </Link>
+                    </a>
                   </li>
                   <li>
-                    <Link to="/technologies">
+                    <a href="/technologies">
                       <FaArrowRight /> Technologies
-                    </Link>
+                    </a>
                   </li>
                   <li>
-                    <Link to="/career">
+                    <a href="/career">
                       <FaArrowRight /> Career
-                    </Link>
+                    </a>
                   </li>
                   <li>
-                    <Link to="/contact">
+                    <a href="/contact">
                       <FaArrowRight /> Contact Us
-                    </Link>
+                    </a>
                   </li>
                 </ul>
               </div>
