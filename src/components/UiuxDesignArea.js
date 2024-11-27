@@ -44,12 +44,14 @@ const UiuxDesignArea = () => {
       {/* Introduction Section */}
       <section className="py-5">
         <div className="container">
-          <h2 className="mb-4 text-left">Complete Social Media Services</h2>
+          <h2 className="mb-4 text-left">
+            Crafting Engaging Digital Experiences
+          </h2>
           <p className="text-justify">
-            Exceptional UI/UX design is the backbone of any engaging digital
-            experience. Nyas’s approach to UI/UX design prioritizes ease of use,
-            aesthetic appeal, and meaningful user interactions to build products
-            that resonate with users.
+            At Nyas, we combine aesthetic design with seamless functionality to
+            create intuitive and visually captivating digital products. Our
+            user-centered approach ensures every interaction is meaningful,
+            leaving a lasting impression on your audience.
           </p>
           <h3 className="mt-5">Service Overview</h3>
           <p className="text-justify">

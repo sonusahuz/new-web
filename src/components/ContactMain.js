@@ -111,9 +111,7 @@ const ContactMain = () => {
                 </p>
                 <div className="d-flex align-items-center mb-3">
                   <i className="bi bi-geo-alt-fill text-danger fs-2 me-2"></i>
-                  <span className="text-black">
-                    60 East 65th Street NY 10065
-                  </span>
+                  <span className="text-black">Dublin 01, Dublin Ireland</span>
                 </div>
                 <div className="d-flex align-items-center mb-3">
                   <i className="bi bi-envelope-fill text-danger fs-2 me-2"></i>
@@ -242,7 +240,7 @@ const ContactMain = () => {
       <div style={{ width: '100%', height: '500px' }}>
         <iframe
           title="Google Map"
-          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3153.835434509612!2d-122.42177868468143!3d37.77492927975908!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8085809c497b850f%3A0x3e645f3e27bdf0e3!2sSan%20Francisco%2C%20CA%2C%20USA!5e0!3m2!1sen!2sin!4v1694537087334!5m2!1sen!2sin"
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d144969.72949106758!2d-6.410510118556277!3d53.32420655552519!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48670e80ea27ac2f%3A0xa00c7a9973171a0!2sDublin%2C%20Ireland!5e1!3m2!1sen!2sin!4v1732686651447!5m2!1sen!2sin"
           width="100%"
           height="100%"
           style={{ border: '0' }}
