@@ -39,7 +39,7 @@ const FooterOne = () => {
                     <FaPhoneAlt /> +447492884455
                   </p>
                   <p className="mt-2">
-                    <FaEnvelope /> +447492884455
+                    <FaEnvelope /> info@nyasconsultants.com
                   </p>
                   <ul className="social-media">
                     <li>
@@ -99,7 +99,7 @@ const FooterOne = () => {
                   </li>
                   <li>
                     <a href="/legal-services">
-                      <FaArrowRight /> Legal Service
+                      <FaArrowRight /> Paralegal Services
                     </a>
                   </li>
                 </ul>
