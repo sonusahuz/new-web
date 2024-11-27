@@ -106,7 +106,7 @@ const NavBar = () => {
                     <Link to="/meta-campaign">Digital Marketing</Link>
                   </li>
                   <li>
-                    <Link to="/legal-services">Legal Services</Link>
+                    <Link to="/legal-services">Paralegal Services</Link>
                   </li>
                 </ul>
               </li>

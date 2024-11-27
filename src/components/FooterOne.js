@@ -151,8 +151,7 @@ const FooterOne = () => {
                   </p>
 
                   <p className="mt-2">
-                    <FaEnvelope className="text-primary" />{' '}
-                    info@nyasconsultants.com
+                    <FaEnvelope className="text-primary" /> info@nyas
                   </p>
 
                   <p className="mt-2">

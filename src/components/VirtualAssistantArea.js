@@ -1,6 +1,8 @@
-import React from 'react';
+import React, { useState } from 'react';
+import GetStartedForm from './GetStartedForm';
 
 const VirtualAssistantArea = () => {
+  const [open, setOpen] = useState(false);
   return (
     <>
       {/* Fonts */}
@@ -52,12 +54,12 @@ const VirtualAssistantArea = () => {
                 team focus on growth. <br />
               </p>
               <div className="d-flex" data-aos="fade-up" data-aos-delay={200}>
-                <a
-                  href="#about"
+                <button
+                  onClick={() => setOpen(true)}
                   className="btn-get-started bg-info py-2 px-4 rounded-pill text-white"
                 >
                   Get Started
-                </a>
+                </button>
                 {/* <a href="https://www.youtube.com/watch?v=Y7f98aduVJ8" class="glightbox btn-watch-video d-flex align-items-center"><i class="bi bi-play-circle"></i><span>Watch Video</span></a> */}
               </div>
               <img
@@ -631,6 +633,7 @@ const VirtualAssistantArea = () => {
       {/* <div id="preloader" /> */}
       {/* Vendor JS Files */}
       {/* Main JS File */}
+      {open && <GetStartedForm setOpenChat={setOpen} openChat={open} />}
     </>
   );
 };

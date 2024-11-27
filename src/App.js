@@ -6,10 +6,7 @@ import ProjectDetails from './pages/ProjectDetails';
 import Contact from './pages/Contact';
 import Career from './pages/Career';
 import Technologies from './pages/Technologies';
-import HomeFour from './pages/HomeFour';
 import HomeOne from './pages/HomeOne';
-import HomeThree from './pages/HomeThree';
-import HomeTwo from './pages/HomeTwo';
 import Service from './pages/Service';
 import ServiceDetails from './pages/ServiceDetails';
 import Team from './pages/Team';
@@ -18,12 +15,6 @@ import AOS from 'aos';
 import 'aos/dist/aos.css';
 import { useEffect, useState } from 'react';
 import ScrollToTop from 'react-scroll-to-top';
-import HomeFive from './pages/HomeFive';
-import HomeSix from './pages/HomeSix';
-import HomeSeven from './pages/HomeSeven';
-import HomeEight from './pages/HomeEight';
-import HomeNine from './pages/HomeNine';
-import HomeTen from './pages/HomeTen';
 import ServiceTwo from './pages/ServiceTwo';
 import ServiceThree from './pages/ServiceThree';
 import ServiceFour from './pages/ServiceFour';
@@ -38,7 +29,6 @@ import BlogFour from './pages/BlogFour';
 import Project from './pages/Project';
 import ProjectTwo from './pages/ProjectTwo';
 import ProjectThree from './pages/ProjectThree';
-import HomeEleven from './pages/HomeEleven';
 import MobileApp from './pages/MobileApp';
 import CrossPlatformDevelopment from './pages/CrossPlatformDevelopment';
 import VirtualAssistant from './pages/VirtualAssistant';
@@ -70,40 +60,10 @@ function App() {
     <BrowserRouter>
       <Routes>
         <Route exact path="/" element={<HomeOne />} />
-        <Route exact path="/index-2" element={<HomeTwo />} />
-        <Route exact path="/index-3" element={<HomeThree />} />
-        <Route exact path="/index-4" element={<HomeFour />} />
-        <Route exact path="/index-5" element={<HomeFive />} />
-        <Route exact path="/index-6" element={<HomeSix />} />
-        <Route exact path="/index-7" element={<HomeSeven />} />
-        <Route exact path="/index-8" element={<HomeEight />} />
-        <Route exact path="/index-9" element={<HomeNine />} />
-        <Route exact path="/index-10" element={<HomeTen />} />
-        <Route exact path="/index-11" element={<HomeEleven />} />
         <Route exact path="/about" element={<About />} />
-        <Route exact path="/blog" element={<Blog />} />
-        <Route exact path="/blog-2" element={<BlogTwo />} />
-        <Route exact path="/blog-3" element={<BlogThree />} />
-        <Route exact path="/blog-4" element={<BlogFour />} />
-        <Route exact path="/blog-details" element={<BlogDetails />} />
         <Route exact path="/thank-you" element={<ThankYou />} />
         <Route exact path="/contact" element={<Contact />} />
-        <Route exact path="/service-3" element={<Service />} />
-        <Route exact path="/service-2" element={<ServiceTwo />} />
         <Route exact path="/service" element={<ServiceThree />} />
-        <Route exact path="/service-4" element={<ServiceFour />} />
-        <Route exact path="/service-5" element={<ServiceFive />} />
-        <Route exact path="/service-details" element={<ServiceDetails />} />
-        <Route exact path="/team" element={<Team />} />
-        <Route exact path="/team-details" element={<TeamDetails />} />
-        <Route exact path="/team-2" element={<TeamTwo />} />
-        <Route exact path="/team-3" element={<TeamThree />} />
-        <Route exact path="/pricing" element={<PriceOne />} />
-        <Route exact path="/pricing-2" element={<PriceTwo />} />
-        <Route exact path="/project" element={<Project />} />
-        <Route exact path="/project-2" element={<ProjectTwo />} />
-        <Route exact path="/project-3" element={<ProjectThree />} />
-        <Route exact path="/project-details" element={<ProjectDetails />} />
         <Route exact path="/technologies" element={<Technologies />} />
         <Route exact path="/career" element={<Career />} />
         <Route

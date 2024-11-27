@@ -112,7 +112,7 @@ const GetStartedForm = ({
                   value={formData.message}
                   onChange={handleInputChange}
                   required
-                  placeholder='Enter Your Message'
+                  placeholder="Enter Your Message"
                   class="form-control"
                   type="file"
                   id="formFile"

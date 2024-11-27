@@ -50,7 +50,7 @@ const LegalServiceArea = () => {
             className="text-white"
             style={{ fontSize: '60px', paddingTop: '45px' }}
           >
-            Our Legal Services{' '}
+            Paralegals Services{' '}
           </h1>
         </div>
       </div>
