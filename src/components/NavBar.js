@@ -69,6 +69,9 @@ const NavBar = () => {
                 ? 'collapse navbar-collapse sopen'
                 : 'collapse navbar-collapse'
             }
+            style={{
+              paddingRight: '200px',
+            }}
             id="itech_main_menu"
           >
             <ul className="navbar-nav menu-open text-lg-end">

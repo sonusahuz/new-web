@@ -147,17 +147,18 @@ const FooterOne = () => {
                 <h4 className="widget-title">Contact us</h4>
                 <div className="details">
                   <p className="mt-3">
-                    <FaPhoneAlt className="text-primary" /> +353 85 161 3637
+                    <FaPhoneAlt className="text-primary" /> +447492884455
                   </p>
 
                   <p className="mt-2">
-                    <FaEnvelope className="text-primary" /> info@nyas
+                    <FaEnvelope className="text-primary" />{' '}
+                    info@nyasconsultants.com
                   </p>
 
                   <p className="mt-2">
-                    <FaHome className="text-primary" /> Mountjoy, Dublin1,{' '}
+                    <FaHome className="text-primary" /> 60 East 65th Street,{' '}
                     <br></br>
-                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;D01 XY58, IRELAND
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; NY 10065
                   </p>
                 </div>
               </div>
