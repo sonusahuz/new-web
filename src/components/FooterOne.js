@@ -36,10 +36,10 @@ const FooterOne = () => {
                     solutionsfor your success.
                   </p>
                   <p className="mt-3">
-                    <FaPhoneAlt /> (+888) 123 456 765
+                    <FaPhoneAlt /> +447492884455
                   </p>
                   <p className="mt-2">
-                    <FaEnvelope /> (+888) 123 456 765
+                    <FaEnvelope /> +447492884455
                   </p>
                   <ul className="social-media">
                     <li>
