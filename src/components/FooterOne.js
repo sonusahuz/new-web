@@ -41,28 +41,6 @@ const FooterOne = () => {
                   <p className="mt-2">
                     <FaEnvelope /> info@nyasconsultants.com
                   </p>
-                  <ul className="social-media">
-                    <li>
-                      <a t="#">
-                        <FaFacebookF />
-                      </a>
-                    </li>
-                    <li>
-                      <a t="#">
-                        <FaTwitter />
-                      </a>
-                    </li>
-                    <li>
-                      <a t="#">
-                        <FaInstagram />
-                      </a>
-                    </li>
-                    <li>
-                      <a t="#">
-                        <FaYoutube />
-                      </a>
-                    </li>
-                  </ul>
                 </div>
               </div>
             </div>
@@ -156,10 +134,32 @@ const FooterOne = () => {
                   </p>
 
                   <p className="mt-2">
-                    <FaHome className="text-primary" /> 60 East 65th Street,{' '}
-                    <br></br>
-                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; NY 10065
+                    <FaHome className="text-primary" /> Dublin 01, Dublin
+                    Ireland{' '}
                   </p>
+
+                  <ul className="social-media mt-3">
+                    <li>
+                      <a t="#">
+                        <FaFacebookF />
+                      </a>
+                    </li>
+                    <li>
+                      <a t="#">
+                        <FaTwitter />
+                      </a>
+                    </li>
+                    <li>
+                      <a t="#">
+                        <FaInstagram />
+                      </a>
+                    </li>
+                    <li>
+                      <a t="#">
+                        <FaYoutube />
+                      </a>
+                    </li>
+                  </ul>
                 </div>
               </div>
             </div>
