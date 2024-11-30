@@ -6,7 +6,7 @@ import { Link } from 'react-router-dom';
 const HomePage = () => {
   return (
     <div
-      className="min-vh-100 d-flex align-items-start pt-5 justify-content-center"
+      className="min-lg-vh-100 d-flex align-items-start pt-5 justify-content-center"
       style={{
         backgroundImage:
           'linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("./assets/img/home-background.jpeg")',

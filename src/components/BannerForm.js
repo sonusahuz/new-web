@@ -4,7 +4,7 @@ import { Form, Button } from 'react-bootstrap';
 const BannerForm = () => {
   return (
     <div
-      className="bg-black text-light p-4 rounded-3 mt-5 mt-lg-0 contact-form"
+      className="bg-black text-light p-4 rounded-3 mt-4 mt-lg-0 contact-form"
       style={{ zIndex: 0 }}
     >
       <h2 className="mb-4 text-white">Let's Connect</h2>

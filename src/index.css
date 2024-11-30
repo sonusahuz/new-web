@@ -5,6 +5,12 @@
   --bs-primary-rgb: 59, 130, 246;
 }
 
+@media (min-width: 992px) {
+  .min-lg-vh-100 {
+    min-height: 88vh;
+  }
+}
+
 * {
   padding: 0;
   margin: 0;
@@ -265,12 +271,19 @@ input:focus {
   height: 500px;
   object-fit: cover;
 }
+@media screen and (max-width: 1024px) {
+  .contact-form {
+    width: 330px;
+    margin-bottom: 60px;
+  }
+}
+
 @media screen and (max-width: 768px) {
   .contact {
     font-size: 40px;
   }
   .contact-form {
-    width: 330px;
+    width: 100%;
     margin-bottom: 60px;
   }
   .request {

@@ -14,7 +14,7 @@ const CounterAreaOne = () => {
         }}
       >
         <div className="container">
-          <div className="d-flex flex-wrap mx-auto justify-content-center align-items-center gap-5 gap-lg-0">
+          <div className="d-flex flex-wrap mx-auto gap-5 gap-sm-0">
             <div
               className="col-lg-3 col-sm-6"
               data-aos="fade-up"
